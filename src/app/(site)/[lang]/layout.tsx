@@ -3,37 +3,40 @@ import { notFound } from "next/navigation";
 import LangSwitch from "@/components/LangSwitch";
 
 const SUPPORTED_LANGS = ["de", "en"] as const;
+type Lang = (typeof SUPPORTED_LANGS)[number];
 
-export default function SiteLayout({
+export default async function SiteLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  if (!SUPPORTED_LANGS.includes(params.lang as any)) notFound();
-  const lang = params.lang as (typeof SUPPORTED_LANGS)[number];
+  const { lang } = await params;
+
+  if (!SUPPORTED_LANGS.includes(lang as Lang)) notFound();
+  const safeLang = lang as Lang;
 
   return (
-    <html lang={lang}>
+    <html lang={safeLang}>
       <body className="bg-white text-zinc-900">
         <div className="min-h-screen flex flex-col">
           <header className="border-b">
             <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-6">
               <div className="flex items-center gap-6">
-                <Link href={`/${lang}`} className="font-semibold tracking-tight">
+                <Link href={`/${safeLang}`} className="font-semibold tracking-tight">
                   TattooMate
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-4 text-sm text-zinc-600">
-                  <Link className="hover:text-zinc-900" href={`/${lang}`}>Home</Link>
-                  <Link className="hover:text-zinc-900" href={`/${lang}/preise`}>Preise</Link>
-                  <Link className="hover:text-zinc-900" href={`/${lang}/warum`}>Warum</Link>
-                  <Link className="hover:text-zinc-900" href={`/${lang}/news`}>News</Link>
+                  <Link className="hover:text-zinc-900" href={`/${safeLang}`}>Home</Link>
+                  <Link className="hover:text-zinc-900" href={`/${safeLang}/preise`}>Preise</Link>
+                  <Link className="hover:text-zinc-900" href={`/${safeLang}/warum`}>Warum</Link>
+                  <Link className="hover:text-zinc-900" href={`/${safeLang}/news`}>News</Link>
                 </nav>
               </div>
 
-              <LangSwitch lang={lang} />
+              <LangSwitch lang={safeLang} />
             </div>
           </header>
 
