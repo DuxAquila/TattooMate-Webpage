@@ -16,6 +16,17 @@ export const metadata: Metadata = {
   title: "TattooMate",
   description:
     "TattooMate – digitale Lösung für Tattoo- und Piercingstudios.",
+
+  icons: {
+    icon: [
+      { url: "/favicons/favicon.ico" },
+      { url: "/favicons/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicons/favicon-96x96.png", sizes: "96x96", type: "image/png" }
+    ],
+    apple: "/favicons/apple-touch-icon.png"
+  },
+
+  manifest: "/favicons/site.webmanifest"
 };
 
 export default function RootLayout({
