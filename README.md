@@ -1,63 +1,66 @@
-TattooMate Webpage
+# TattooMate Webpage
 
-Dieses Repository enthält den Quellcode der offiziellen TattooMate-Webseite.
+Dieses Repository enthält den Quellcode der **offiziellen TattooMate-Webseite**.
 
-Die Webseite dient als öffentliche Marketing- und Informationsseite für das Projekt TattooMate und ist mit Next.js umgesetzt.
-Fokus liegt auf Performance, klarer Struktur und wartbarem Content.
+Die Webseite dient als öffentliche Marketing- und Informationsseite für das Projekt TattooMate und ist mit **Next.js** umgesetzt.
+Der Fokus liegt auf Performance, klarer Struktur und wartbarem Content.
 
-📌 Enthalten
+---
 
-Öffentliche Webseiten (z. B. Startseite, Preise, Informationen)
+## 📌 Enthalten
 
-Statischer Content
+* Öffentliche Webseiten (z. B. Startseite, Preise, Informationen)
+* Statischer Content
+* News- und Update-Bereich
+* SEO-optimierte Seiten
 
-News-/Update-Bereich
+---
 
-SEO-optimierte Seiten
+## ❌ Nicht enthalten
 
-❌ Nicht enthalten
+Dieses Repository enthält **bewusst keinen** Produkt- oder Systemcode:
 
-Dieses Repository enthält bewusst keinen Produkt- oder Systemcode:
-
-❌ TattooMate-App
-
-❌ Backend-Logik
-
-❌ Admin- oder Studio-Systeme
-
-❌ Lizenzserver oder Lizenzprüfung
-
-❌ Installations- oder Betriebsskripte
-
-❌ Produktive Konfigurationen (.env, Secrets, Tokens)
+* ❌ TattooMate-App
+* ❌ Backend-Logik
+* ❌ Admin- oder Studio-Systeme
+* ❌ Lizenzserver oder Lizenzprüfung
+* ❌ Installations- oder Betriebsskripte
+* ❌ Produktive Konfigurationen (.env, Secrets, Tokens)
 
 Produkt- und Lizenzcode werden separat und nicht öffentlich verwaltet.
 
-🚀 Lokale Entwicklung
+---
+
+## 🚀 Lokale Entwicklung
+
+```bash
 npm install
 npm run dev
+```
 
+Die Webseite ist anschließend unter
+[http://localhost:3000](http://localhost:3000) erreichbar.
 
-Danach ist die Webseite unter
-http://localhost:3000 erreichbar.
+---
 
-🛠️ Tech-Stack
+## 🛠️ Tech-Stack
 
-Next.js
+* Next.js
+* TypeScript
+* React
+* Modernes CSS / Utility-First Styling
 
-TypeScript
+---
 
-React
+## ⚖️ Lizenz
 
-Modern CSS / Utility-First Styling
+Der Quellcode dieses Repositories steht unter der **MIT-Lizenz**.
 
-⚖️ Lizenz
+Der Name **TattooMate** sowie Logos und sonstiges Branding sind **nicht automatisch** durch die Open-Source-Lizenz freigegeben.
 
-Der Quellcode dieses Repositories steht unter der MIT-Lizenz.
+---
 
-Der Name TattooMate sowie Logos und Branding sind nicht automatisch durch die Open-Source-Lizenz freigegeben.
+## ℹ️ Hinweis
 
-ℹ️ Hinweis
-
-Dieses Repository ist öffentlich, dient der Transparenz und als technische Referenz.
-Es stellt kein vollständiges Produkt dar.
+Dieses Repository ist öffentlich und dient der Transparenz sowie als technische Referenz.
+Es stellt **kein vollständiges Produkt** dar.

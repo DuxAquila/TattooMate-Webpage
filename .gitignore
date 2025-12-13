@@ -137,3 +137,11 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Archives / Backups (should never be committed)
+*.zip
+*.rar
+*.tar.gz
+*.7z
+*.bz2
+*.kate-swp
