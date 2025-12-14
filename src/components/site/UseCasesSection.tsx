@@ -133,8 +133,8 @@ export default function UseCasesSection({
 
             {preview === 'studio' && (
               <>
-                <h3>{previewEventTitle}</h3>
-                <p>{previewEventText}</p>
+                <h3>{previewStudioTitle}</h3>
+                <p>{previewStudioText}</p>
                 <img
                   src="/images/previews/studio-mode.png"
                   alt="Studio-Modus Vorschau"

@@ -74,6 +74,10 @@
           "title": "Event / convention mode",
           "text": "Fast walk-in flow with reduced inputs and clean separation for events."
         },
+        "studio": {
+          "title": "Studio Mode – Overview",
+          "text": "Classic studio procedure: complete information, clear documentation."
+        },
         "qrcode": {
           "title": "QR codes for forms",
           "text": "Form links as QR codes for studios and conventions — perfect for printing."
