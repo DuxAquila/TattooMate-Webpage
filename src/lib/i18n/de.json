@@ -116,6 +116,12 @@
         { "q": "Kann ich PDFs später erneut erzeugen?", "a": "Ja. Das Studio kann PDFs jederzeit im Admin erzeugen, drucken oder speichern." }
       ],
       "more": "Alle Fragen ansehen"
+    },
+    "cta": {
+      "headline": "Bereit für einen sauberen Ablauf im Studio?",
+      "subtitle": "Teste TattooMate in der Demo oder sprich kurz mit uns, wenn du Fragen hast.",
+      "primary": "Demo ansehen",
+      "secondary": "Kontakt"
     }
   },
   "footer": {
