@@ -1,0 +1,12 @@
+/* src/app/style/utilities.css */
+
+.tm-center{ text-align: center; }
+.tm-stack-sm{ display: grid; gap: var(--tm-space-sm); }
+.tm-stack-md{ display: grid; gap: var(--tm-space-md); }
+.tm-muted{ color: var(--tm-muted); }
+.tm-text{
+  margin: 0;
+  color: var(--tm-muted);
+  line-height: 1.6;
+}
+

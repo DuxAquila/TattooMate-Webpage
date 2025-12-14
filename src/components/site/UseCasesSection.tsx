@@ -41,35 +41,35 @@ export default function UseCasesSection({
   }, [preview]);
 
   return (
-    <section className="tm-usecases">
+    <section className="tm-section">
       <div className="tm-container">
-        <div className="tm-usecases__head">
-          <h2 className="tm-usecases__headline">{headline}</h2>
-          <p className="tm-usecases__subtitle">{subtitle}</p>
+        <div className="tm-head">
+          <h2 className="tm-h2">{headline}</h2>
+          <p className="tm-lead">{subtitle}</p>
         </div>
 
-        <div className="tm-usecases__grid">
+        <div className="tm-grid tm-grid--3">
           {items.map((item, idx) => (
-            <div key={idx} className="tm-usecase">
-              <h3 className="tm-usecase__title">{item.title}</h3>
-              <p className="tm-usecase__text">{item.text}</p>
+            <div key={idx} className="tm-card tm-card--hover">
+              <h3 className="tm-h3">{item.title}</h3>
+              <p className="tm-text">{item.text}</p>
             </div>
           ))}
         </div>
 
         {/* Pyramiden-Previews (statt Buttons) */}
-        <div className="tm-usecases__thumbs" aria-label="Vorschauen">
+        <div className="tm-thumbs tm-grid tm-grid--3" aria-label="Vorschauen">
           <button
             type="button"
             className="tm-thumb"
             onClick={() => setPreview('studio')}
             aria-label="Studio-Modus Vorschau öffnen"
           >
-            <div className="tm-thumb__media">
+            <div className="tm-media">
               <img
                 src="/images/previews/studio-mode.png"
                 alt="Studio-Modus Vorschau"
-                className="tm-thumb__img"
+                className="tm-media__img"
                 loading="lazy"
               />
             </div>
@@ -84,11 +84,11 @@ export default function UseCasesSection({
             onClick={() => setPreview('event')}
             aria-label="Event-Modus Vorschau öffnen"
           >
-            <div className="tm-thumb__media">
+            <div className="tm-media">
               <img
                 src="/images/previews/event-mode.png"
                 alt="Event-Modus Vorschau"
-                className="tm-thumb__img"
+                className="tm-media__img"
                 loading="lazy"
               />
             </div>
@@ -103,11 +103,11 @@ export default function UseCasesSection({
             onClick={() => setPreview('qrcode')}
             aria-label="QR-Code Tool Vorschau öffnen"
           >
-            <div className="tm-thumb__media">
+            <div className="tm-media">
               <img
                 src="/images/previews/qrcode-tool.png"
                 alt="QR-Code Tool Vorschau"
-                className="tm-thumb__img"
+                className="tm-media__img"
                 loading="lazy"
               />
             </div>

@@ -1,0 +1,44 @@
+/* src/app/style/base.css */
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
+  color: var(--tm-text);
+  background: var(--tm-bg);
+  line-height: 1.5;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.tm-h1{
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.tm-h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+@media (max-width: 900px){
+  .tm-h1{ font-size: 36px; }
+}
+

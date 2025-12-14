@@ -1,3 +1,5 @@
+// File: /src/app/(site)/[lang]/page.tsx
+
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import UseCasesSection from '@/components/site/UseCasesSection';
 import HowToSection from '@/components/site/HowToSection';
@@ -17,30 +19,30 @@ export default async function HomePage({
 
   return (
     <>
-    <section className="tm-hero">
-      <div className="tm-container tm-hero__inner">
-        <h1 className="tm-hero__title">{t(dict, "home.hero.title")}</h1>
+      <section className="tm-section tm-section--soft tm-section--accent-top">
+        <div className="tm-container tm-center tm-stack-md">
+          <h1 className="tm-h1">{t(dict, "home.hero.title")}</h1>
 
-        <p className="tm-hero__subtitle">{t(dict, "home.hero.subtitle")}</p>
+          <p className="tm-lead">{t(dict, "home.hero.subtitle")}</p>
 
-        <div className="tm-hero__actions">
-          <a href={`/${lang}/demo`} className="tm-btn tm-btn--primary">
-            {t(dict, "common.cta.demo")}
-          </a>
-          <a href={`/${lang}/funktionen`} className="tm-btn tm-btn--ghost">
-            {t(dict, "common.cta.features")}
-          </a>
+          <div className="tm-actions">
+            <a href={`/${lang}/demo`} className="tm-btn tm-btn--primary">
+              {t(dict, "common.cta.demo")}
+            </a>
+            <a href={`/${lang}/funktionen`} className="tm-btn tm-btn--ghost">
+              {t(dict, "common.cta.features")}
+            </a>
+          </div>
+
+          <div className="tm-badges">
+            <span className="tm-pill">{t(dict, "common.trust.dsgvo")}</span>
+            <span className="tm-pill">{t(dict, "common.trust.studio")}</span>
+            <span className="tm-pill">{t(dict, "common.trust.nocloud")}</span>
+          </div>
+
+          <p className="tm-note">{t(dict, "home.hero.note")}</p>
         </div>
-
-        <div className="tm-hero__trust">
-          <span className="tm-pill">{t(dict, "common.trust.dsgvo")}</span>
-          <span className="tm-pill">{t(dict, "common.trust.studio")}</span>
-          <span className="tm-pill">{t(dict, "common.trust.nocloud")}</span>
-        </div>
-
-        <p className="tm-hero__note">{t(dict, "home.hero.note")}</p>
-      </div>
-    </section>
+      </section>
     <UseCasesSection
       headline={t(dict, 'home.usecases.headline')}
       subtitle={t(dict, 'home.usecases.subtitle')}

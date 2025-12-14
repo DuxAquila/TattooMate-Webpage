@@ -1,0 +1,55 @@
+/* src/app/style/tokens.css */
+
+:root{
+  /* Colors */
+  --tm-text: #0f172a;
+  --tm-muted: #64748b;
+  --tm-border: #e5e7eb;
+  --tm-bg: #ffffff;
+  --tm-bg-soft: #f8fafc;
+  --tm-bg-dark: #020617;
+
+  /* Spacing */
+  --tm-space-xs: 8px;
+  --tm-space-sm: 16px;
+  --tm-space-md: 24px;
+  --tm-space-lg: 32px;
+  --tm-space-xl: 48px;
+  --tm-space-2xl: 88px;
+
+  /* Radius */
+  --tm-radius-sm: 8px;
+  --tm-radius-md: 12px;
+  --tm-radius-lg: 16px;
+  --tm-radius-pill: 999px;
+
+  /* Shadow */
+  --tm-shadow-soft: 0 10px 30px rgba(15,23,42,0.08);
+
+  /* Motion */
+  --tm-ease: cubic-bezier(.4,0,.2,1);
+
+  /* Accent */
+  --tm-accent-from: #ff3b3b;
+  --tm-accent-to:   #ff8a5c;
+
+/* Accent Colors */
+  --tm-accent:  #ff3b30;   /* Rot */
+  --tm-accent2: #ff8a00;   /* Orange */
+
+  /* Derived */
+  --tm-accent-border: rgba(255,59,48,0.22);
+  --tm-accent-shadow: rgba(255,59,48,0.18);
+  --tm-accent-shadow-hover: rgba(255,59,48,0.22);
+
+  /* Ghost Button */
+  --tm-ghost-from: #f1f5f9;   /* slate-100 */
+  --tm-ghost-to:   #e8eef5;   /* leicht dunkler */
+  --tm-ghost-hover-from: #e8eef5;
+  --tm-ghost-hover-to:   #dee6ef;
+
+  --tm-ghost-border: rgba(15,23,42,0.14);
+  --tm-ghost-text: var(--tm-text);
+
+}
+
