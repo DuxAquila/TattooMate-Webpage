@@ -1,0 +1,124 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
+type UseCase = {
+  title: string;
+  text: string;
+};
+
+export default function UseCasesSection({
+  headline,
+  subtitle,
+  items,
+  ctaEvent,
+  ctaQr,
+  previewEventTitle,
+  previewEventText,
+  previewQrTitle,
+  previewQrText,
+}: {
+  headline: string;
+  subtitle: string;
+  items: UseCase[];
+  ctaEvent: string;
+  ctaQr: string;
+  previewEventTitle: string;
+  previewEventText: string;
+  previewQrTitle: string;
+  previewQrText: string;
+}) {
+  const [preview, setPreview] = useState<null | 'event' | 'qrcode'>(null);
+  const [zoom, setZoom] = useState(false);
+  useEffect(() => { setZoom(false); }, [preview]);
+
+  return (
+    <section className="tm-usecases">
+      <div className="tm-container">
+        <div className="tm-usecases__head">
+          <h2 className="tm-usecases__headline">{headline}</h2>
+          <p className="tm-usecases__subtitle">{subtitle}</p>
+        </div>
+
+        <div className="tm-usecases__grid">
+          {items.map((item, idx) => (
+            <div key={idx} className="tm-usecase">
+              <h3 className="tm-usecase__title">{item.title}</h3>
+              <p className="tm-usecase__text">{item.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="tm-usecases__actions">
+          <button
+            type="button"
+            className="tm-btn tm-btn--primary"
+            onClick={() => setPreview('event')}
+          >
+            {ctaEvent}
+          </button>
+
+          <button
+            type="button"
+            className="tm-btn tm-btn--ghost"
+            onClick={() => setPreview('qrcode')}
+          >
+            {ctaQr}
+          </button>
+        </div>
+      </div>
+
+      {preview && (
+        <div className="tm-preview">
+          <div
+            className="tm-preview__backdrop"
+            onClick={() => setPreview(null)}
+          />
+
+          <div className="tm-preview__modal">
+            <button
+              className="tm-preview__close"
+              onClick={() => setPreview(null)}
+              aria-label="Schließen"
+            >
+              ×
+            </button>
+
+            {preview === 'event' && (
+              <>
+                <h3>{previewEventTitle}</h3>
+                <p>{previewEventText}</p>
+                <img
+                  src="/images/previews/event-mode.png"
+                  alt="Event-Modus Vorschau"
+                  className={`tm-preview__img ${zoom ? 'is-zoom' : ''}`}
+                  onClick={() => setZoom(z => !z)}
+                />
+                <p className="tm-preview__hint">
+                  {zoom ? 'Zum Verkleinern klicken' : 'Zum Zoomen klicken'}
+                </p>
+              </>
+            )}
+
+            {preview === 'qrcode' && (
+              <>
+                <h3>{previewQrTitle}</h3>
+                <p>{previewQrText}</p>
+                <img
+                  src="/images/previews/qrcode-tool.png"
+                  alt="QR-Code Tool Vorschau"
+                  className={`tm-preview__img ${zoom ? 'is-zoom' : ''}`}
+                  onClick={() => setZoom(z => !z)}
+                />
+                <p className="tm-preview__hint">
+                  {zoom ? 'Zum Verkleinern klicken' : 'Zum Zoomen klicken'}
+                </p>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+

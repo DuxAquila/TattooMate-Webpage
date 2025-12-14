@@ -1,4 +1,5 @@
 import { getDict, t } from "@/lib/i18n/dictionaries";
+import UseCasesSection from '@/components/site/UseCasesSection';
 
 export default async function HomePage({
   params,
@@ -9,6 +10,7 @@ export default async function HomePage({
   const dict = await getDict(lang as "de" | "en");
 
   const features = dict.home?.features?.items ?? [];
+  const usecases = dict.home?.usecases?.items ?? [];
 
   return (
     <>
@@ -52,6 +54,17 @@ export default async function HomePage({
         </div>
       </div>
     </section>
+      <UseCasesSection
+        headline={t(dict, 'home.usecases.headline')}
+        subtitle={t(dict, 'home.usecases.subtitle')}
+        items={dict.home.usecases.items}
+        ctaEvent={t(dict, 'home.usecases.cta.event')}
+        ctaQr={t(dict, 'home.usecases.cta.tools')}
+        previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
+        previewEventText={t(dict, 'home.usecases.preview.event.text')}
+        previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
+        previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
+      />
     </>
   );
 }

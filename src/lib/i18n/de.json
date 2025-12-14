@@ -47,6 +47,38 @@
           "text": "Alle Einwilligungen, Events und Kunden übersichtlich im Adminbereich – auch für Conventions geeignet."
         }
       ]
+    },
+    "usecases": {
+      "headline": "Für Studio-Alltag und Conventions gemacht",
+      "subtitle": "TattooMate passt sich deinem Setup an – egal ob Termin im Studio oder hektischer Messetag.",
+      "items": [
+        {
+          "title": "Studio-Modus",
+          "text": "Saubere Abläufe mit vollständigen Angaben, Checklisten und klarer Dokumentation – perfekt für Termine im Studio."
+        },
+        {
+          "title": "Event/Convention-Modus",
+          "text": "Schneller Ablauf für Walk-ins: reduzierte Eingaben, klare Übersicht und getrennte Erfassung für Events."
+        },
+        {
+          "title": "QR-Codes für Formulare",
+          "text": "Links zu Formularen als QR-Code ausgeben – ideal zum Ausdrucken am Stand oder für den Empfang im Studio."
+        }
+      ],
+      "cta": {
+        "event": "Event-Modus ansehen",
+        "tools": "QR-Code-Tool öffnen"
+      },
+      "preview": {
+        "event": {
+          "title": "Event / Convention Modus",
+          "text": "Schneller Walk-In Ablauf mit reduzierten Eingaben und sauberer Trennung für Events."
+        },
+        "qrcode": {
+          "title": "QR-Codes für Formulare",
+          "text": "Formular-Links als QR-Codes für Studio & Conventions – ideal zum Ausdrucken."
+        }
+      }
     }
   },
   "footer": {
