@@ -30,6 +30,23 @@
       "title": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
       "subtitle": "Rechtssicher. Digital. Einfach.",
       "note": "@common.note.germanOnly"
+    },
+    "features": {
+      "headline": "Alles, was Studios im Alltag wirklich brauchen",
+      "items": [
+        {
+          "title": "Digitale Formulare",
+          "text": "Tattoo-, Piercing- und weitere Einwilligungen direkt am Tablet oder Smartphone ausfüllen – ohne Papierchaos."
+        },
+        {
+          "title": "Rechtssichere Dokumentation",
+          "text": "Unterschriften, PDFs und Nachweise werden sauber und sicher gespeichert und sind jederzeit nachvollziehbar abrufbar."
+        },
+        {
+          "title": "Admin & Übersicht",
+          "text": "Alle Einwilligungen, Events und Kunden übersichtlich im Adminbereich – auch für Conventions geeignet."
+        }
+      ]
     }
   },
   "footer": {

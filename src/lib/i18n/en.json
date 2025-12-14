@@ -30,6 +30,23 @@
       "title": "Digital consent forms for tattoo & piercing studios",
       "subtitle": "Compliant. Digital. Simple.",
       "note": "@common.note.germanOnly"
+    },
+    "features": {
+      "headline": "Everything studios actually need day to day",
+      "items": [
+        {
+          "title": "Digital forms",
+          "text": "Tattoo, piercing and other consent forms filled out directly on tablet or smartphone – no paper clutter."
+        },
+        {
+          "title": "Legally compliant documentation",
+          "text": "Signatures, PDFs and supporting documents are stored cleanly and securely and can be retrieved at any time in a traceable manner."
+        },
+        {
+          "title": "Admin & overview",
+          "text": "All consents, events and customers clearly organized in the admin area – suitable for conventions as well."
+        }
+      ]
     }
   },
   "footer": {
