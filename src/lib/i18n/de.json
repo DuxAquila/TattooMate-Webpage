@@ -7,7 +7,10 @@
       "pricing": "Preise",
       "faq": "FAQ",
       "login": "Login",
-      "demo": "Live-Demo ansehen"
+      "demo": "Live-Demo ansehen",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "agb": "AGB"
     },
     "cta": {
       "demo": "Live-Demo ansehen",
@@ -28,5 +31,13 @@
       "subtitle": "Rechtssicher. Digital. Einfach.",
       "note": "@common.note.germanOnly"
     }
+  },
+  "footer": {
+    "claim": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
+    "meta": {
+      "copyright": "© {{year}} TattooMate",
+      "made": "Made in Germany"
+    }
   }
 }
+

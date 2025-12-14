@@ -7,7 +7,10 @@
       "pricing": "Pricing",
       "faq": "FAQ",
       "login": "Login",
-      "demo": "View live demo"
+      "demo": "View live demo",
+      "imprint": "Imprint",
+      "privacy": "Privacy policy",
+      "agb": "Terms"
     },
     "cta": {
       "demo": "View live demo",
@@ -28,5 +31,13 @@
       "subtitle": "Compliant. Digital. Simple.",
       "note": "@common.note.germanOnly"
     }
+  },
+  "footer": {
+    "claim": "Digital consent forms for tattoo & piercing studios",
+    "meta": {
+      "copyright": "© {{year}} TattooMate",
+      "made": "Made in Germany"
+    }
   }
 }
+
