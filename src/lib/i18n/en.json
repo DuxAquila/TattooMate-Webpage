@@ -1,5 +1,32 @@
 {
-  "home.title": "Digital consent forms for tattoo & piercing studios",
-  "home.subtitle": "Compliant. Digital. Simple.",
-  "home.note": "The app is currently German-only on purpose — legal requirements differ by country."
+  "common": {
+    "nav": {
+      "features": "Features",
+      "forms": "Forms",
+      "security": "Security",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "login": "Login",
+      "demo": "View live demo"
+    },
+    "cta": {
+      "demo": "View live demo",
+      "features": "Explore features"
+    },
+    "trust": {
+      "dsgvo": "GDPR compliant",
+      "studio": "Built for studios",
+      "nocloud": "No forced cloud"
+    },
+    "note": {
+      "germanOnly": "The app is currently German-only on purpose — legal requirements differ by country."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Digital consent forms for tattoo & piercing studios",
+      "subtitle": "Compliant. Digital. Simple.",
+      "note": "@common.note.germanOnly"
+    }
+  }
 }

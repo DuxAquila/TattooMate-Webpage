@@ -1,5 +1,32 @@
 {
-  "home.title": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
-  "home.subtitle": "Rechtssicher. Digital. Einfach.",
-  "home.note": "Die App ist aktuell bewusst auf Deutsch – Gesetze und Abläufe unterscheiden sich je Land."
+  "common": {
+    "nav": {
+      "features": "Funktionen",
+      "forms": "Formulare",
+      "security": "Sicherheit",
+      "pricing": "Preise",
+      "faq": "FAQ",
+      "login": "Login",
+      "demo": "Live-Demo ansehen"
+    },
+    "cta": {
+      "demo": "Live-Demo ansehen",
+      "features": "Funktionen entdecken"
+    },
+    "trust": {
+      "dsgvo": "DSGVO-konform",
+      "studio": "Für Studios entwickelt",
+      "nocloud": "Kein Cloud-Zwang"
+    },
+    "note": {
+      "germanOnly": "Die App ist aktuell bewusst auf Deutsch – Gesetze und Abläufe unterscheiden sich je Land."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
+      "subtitle": "Rechtssicher. Digital. Einfach.",
+      "note": "@common.note.germanOnly"
+    }
+  }
 }
