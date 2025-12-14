@@ -105,6 +105,29 @@
         "primary": "View demo",
         "secondary": "Features"
       }
+    },
+    "minifaq": {
+      "headline": "Quick answers",
+      "subtitle": "The most important questions – answered clearly and honestly.",
+      "items": [
+        {
+          "q": "Is TattooMate GDPR compliant?",
+          "a": "Yes. No ID documents or PDFs are sent by email. All documents are generated in the admin panel and remain under your control."
+        },
+        {
+          "q": "Can I separate studio work and conventions?",
+          "a": "Yes. Using the event/convention mode with its own data capture and separate overview."
+        },
+        {
+          "q": "Does it work on smartphones and tablets?",
+          "a": "Yes. Fully web-based and optimized for touch devices – no app installation required."
+        },
+        {
+          "q": "Can I generate PDFs again later?",
+          "a": "Yes. The studio can generate, print, or save PDFs at any time from the admin panel."
+        }
+      ],
+      "more": "View all questions"
     }
   },
   "footer": {

@@ -1,6 +1,7 @@
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import UseCasesSection from '@/components/site/UseCasesSection';
 import HowToSection from '@/components/site/HowToSection';
+import MiniFaqSection from '@/components/site/MiniFaqSection';
 
 export default async function HomePage({
   params,
@@ -77,6 +78,13 @@ export default async function HomePage({
         </div>
       </div>
     </section>
+    <MiniFaqSection
+      headline={t(dict, 'home.minifaq.headline')}
+      subtitle={t(dict, 'home.minifaq.subtitle')}
+      items={dict.home?.minifaq?.items ?? []}
+      moreLabel={t(dict, 'home.minifaq.more')}
+      moreHref={`/${lang}/faq`}
+    />
     </>
   );
 }

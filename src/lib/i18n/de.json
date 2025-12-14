@@ -105,6 +105,17 @@
         "primary": "Demo ansehen",
         "secondary": "Funktionen"
       }
+    },
+    "minifaq": {
+      "headline": "Kurz geklärt",
+      "subtitle": "Die wichtigsten Fragen – kurz und ehrlich beantwortet.",
+      "items": [
+        { "q": "Ist TattooMate DSGVO-konform?", "a": "Ja. Keine Ausweise oder PDFs per E-Mail. Dokumente werden im Admin erzeugt und bleiben unter deiner Kontrolle." },
+        { "q": "Kann ich Studio und Conventions trennen?", "a": "Ja. Über den Event-/Convention-Modus mit eigener Erfassung und separater Übersicht." },
+        { "q": "Läuft das auf Handy & Tablet?", "a": "Ja. Komplett webbasiert und für Touch-Bedienung optimiert – ohne App-Zwang." },
+        { "q": "Kann ich PDFs später erneut erzeugen?", "a": "Ja. Das Studio kann PDFs jederzeit im Admin erzeugen, drucken oder speichern." }
+      ],
+      "more": "Alle Fragen ansehen"
     }
   },
   "footer": {
