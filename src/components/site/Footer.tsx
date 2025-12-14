@@ -35,12 +35,14 @@ export default function Footer() {
   const href = (p: string) => `/${lang}${p.startsWith('/') ? p : `/${p}`}`;
 
   return (
-    <footer className="tm-footer">
-      <div className="tm-container tm-footer__inner">
+    <footer className="tm-section tm-section--accent-bottom">
+      <div className="tm-container tm-footer">
         <div className="tm-footer__top">
           <div className="tm-footer__brand">
-            <strong>TattooMate</strong>
-            <p>{tt('footer.claim', 'Digitale Einwilligungen')}</p>
+            <strong className="tm-footer__title">TattooMate</strong>
+            <p className="tm-muted">
+              {tt('footer.claim', 'Digitale Einwilligungen')}
+            </p>
           </div>
 
           <nav className="tm-footer__nav">

@@ -17,15 +17,13 @@ export default function CtaSection({
   secondaryHref: string;
 }) {
   return (
-    <section className="tm-cta">
+    <section className="tm-section">
       <div className="tm-container">
-        <div className="tm-cta__box">
-          <div className="tm-cta__content">
-            <h2 className="tm-cta__headline">{headline}</h2>
-            <p className="tm-cta__subtitle">{subtitle}</p>
-          </div>
+        <div className="tm-card tm-cta-box">
+          <h2 className="tm-h2">{headline}</h2>
+          <p className="tm-lead">{subtitle}</p>
 
-          <div className="tm-cta__actions">
+          <div className="tm-actions">
             <Link href={primaryHref} className="tm-btn tm-btn--primary">
               {primaryLabel}
             </Link>
