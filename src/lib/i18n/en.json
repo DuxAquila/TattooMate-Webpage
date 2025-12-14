@@ -79,6 +79,28 @@
           "text": "Form links as QR codes for studios and conventions — perfect for printing."
         }
       }
+    },
+    "howto": {
+      "headline": "How it works in the studio",
+      "subtitle": "In 3 steps – simple, fast, and properly documented.",
+      "items": [
+        {
+          "title": "Display the QR code",
+          "text": "The client scans it and is taken directly to the form (studio or event)."
+        },
+        {
+          "title": "Fill out and sign the form",
+          "text": "Everything on smartphone or tablet – including required fields, information texts, and signature."
+        },
+        {
+          "title": "PDF available in the admin panel",
+          "text": "The studio can generate the PDF at any time, print it, or save it."
+        }
+      ],
+      "cta": {
+        "primary": "View demo",
+        "secondary": "Features"
+      }
     }
   },
   "footer": {

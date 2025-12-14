@@ -1,5 +1,6 @@
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import UseCasesSection from '@/components/site/UseCasesSection';
+import HowToSection from '@/components/site/HowToSection';
 
 export default async function HomePage({
   params,
@@ -38,6 +39,28 @@ export default async function HomePage({
         <p className="tm-hero__note">{t(dict, "home.hero.note")}</p>
       </div>
     </section>
+    <UseCasesSection
+      headline={t(dict, 'home.usecases.headline')}
+      subtitle={t(dict, 'home.usecases.subtitle')}
+      items={dict.home.usecases.items}
+      ctaEvent={t(dict, 'home.usecases.cta.event')}
+      ctaQr={t(dict, 'home.usecases.cta.tools')}
+      previewStudioTitle={t(dict, 'home.usecases.preview.studio.title')}
+      previewStudioText={t(dict, 'home.usecases.preview.studio.text')}
+      previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
+      previewEventText={t(dict, 'home.usecases.preview.event.text')}
+      previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
+      previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
+    />
+    <HowToSection
+      headline={t(dict, 'home.howto.headline')}
+      subtitle={t(dict, 'home.howto.subtitle')}
+      items={dict.home?.howto?.items ?? []}
+      ctaPrimaryLabel={t(dict, 'home.howto.cta.primary')}
+      ctaPrimaryHref={`/${lang}/demo`}
+      ctaSecondaryLabel={t(dict, 'home.howto.cta.secondary')}
+      ctaSecondaryHref={`/${lang}/funktionen`}
+    />
     <section className="tm-features">
       <div className="tm-container">
         <h2 className="tm-features__headline">
@@ -54,17 +77,6 @@ export default async function HomePage({
         </div>
       </div>
     </section>
-      <UseCasesSection
-        headline={t(dict, 'home.usecases.headline')}
-        subtitle={t(dict, 'home.usecases.subtitle')}
-        items={dict.home.usecases.items}
-        ctaEvent={t(dict, 'home.usecases.cta.event')}
-        ctaQr={t(dict, 'home.usecases.cta.tools')}
-        previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
-        previewEventText={t(dict, 'home.usecases.preview.event.text')}
-        previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
-        previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
-      />
     </>
   );
 }

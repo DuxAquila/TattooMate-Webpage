@@ -74,10 +74,36 @@
           "title": "Event / Convention Modus",
           "text": "Schneller Walk-In Ablauf mit reduzierten Eingaben und sauberer Trennung für Events."
         },
+        "studio": {
+          "title": "Studio-Modus – Überblick",
+          "text": "Klassischer Ablauf im Studio: vollständige Angaben, klare Doku."
+        },
         "qrcode": {
           "title": "QR-Codes für Formulare",
           "text": "Formular-Links als QR-Codes für Studio & Conventions – ideal zum Ausdrucken."
         }
+      }
+    },
+    "howto":{
+      "headline": "So läuft’s im Studio",
+      "subtitle": "In 3 Schritten – simpel, schnell, sauber dokumentiert.",
+      "items": [
+        {
+          "title": "QR-Code aushängen",
+          "text": "Kunde scannt, landet direkt im Formular (Studio oder Event)."
+        },
+        {
+          "title": "Formular ausfüllen & unterschreiben",
+          "text": "Alles am Handy/Tablet – inkl. Pflichtfelder, Aufklärungstexte, Unterschrift."
+        },
+        {
+          "title": "PDF im Admin verfügbar",
+          "text": "Studio kann jederzeit PDF erzeugen, drucken oder speichern."
+        }
+      ],
+      "cta": {
+        "primary": "Demo ansehen",
+        "secondary": "Funktionen"
       }
     }
   },
