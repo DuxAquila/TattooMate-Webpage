@@ -1,26 +1,349 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* =========================================================
+   TattooMate – Design Tokens (1 Quelle der Wahrheit)
+   ========================================================= */
+html, body { margin: 0; padding: 0; }
+* { box-sizing: border-box; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--tm-bg, #fff);
+  color: var(--tm-text, #0f172a);
+  font-family: var(--font-sans, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif);
+}
+:root{
+  --tm-accent: #ff3b30;
+  --tm-accent2:#ff8a00;
+
+  --tm-bg: #ffffff;
+  --tm-surface: rgba(255,255,255,0.86);
+  --tm-border: rgba(15,23,42,0.10);
+
+  --tm-text: #0f172a;
+  --tm-muted:#475569;
+
+  --tm-radius: 14px;
+  --tm-h: 72px;
+
+  --tm-shadow-soft: 0 6px 16px rgba(15,23,42,0.06);
+  --tm-shadow: 0 10px 24px rgba(15,23,42,0.08);
+
+  --tm-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+/* =========================================================
+   Base / Helpers
+   ========================================================= */
+.tm-container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.tm-link{
+  text-decoration: none;
+  color: var(--tm-muted);
+  font-weight: 750;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background 160ms var(--tm-ease), color 160ms var(--tm-ease);
+}
+.tm-link:hover{
+  color: var(--tm-text);
+  background: rgba(15,23,42,0.06);
+}
+
+.tm-divider{
+  height: 1px;
+  background: var(--tm-border);
+  margin: 10px 6px;
+}
+
+/* Buttons (global wiederverwendbar) */
+.tm-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 850;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: transform 160ms var(--tm-ease), box-shadow 160ms var(--tm-ease), filter 160ms var(--tm-ease), background 160ms var(--tm-ease);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.tm-btn--primary{
+  color: #fff;
+  background: linear-gradient(135deg, var(--tm-accent), var(--tm-accent2));
+  border-color: rgba(255,59,48,0.22);
+  box-shadow: 0 10px 18px rgba(255,59,48,0.18);
+}
+.tm-btn--primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 22px rgba(255,59,48,0.22);
+  filter: saturate(1.05);
+}
+
+.tm-btn--ghost{
+  color: var(--tm-text);
+  background: rgba(15,23,42,0.06);
+  border-color: var(--tm-border);
+}
+.tm-btn--ghost:hover{
+  transform: translateY(-1px);
+  background: rgba(15,23,42,0.08);
+}
+
+.tm-btn--block{
+  width: 100%;
+}
+
+/* =========================================================
+   Header (BEM-like, alles in einem Block)
+   ========================================================= */
+.tm-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--tm-bg);
+  border-bottom: 1px solid transparent;
+}
+
+.tm-header.is-scrolled{
+  background: var(--tm-surface);
+  backdrop-filter: blur(10px);
+  border-bottom-color: var(--tm-border);
+  box-shadow: var(--tm-shadow-soft);
+}
+
+.tm-header__inner{
+  height: var(--tm-h);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Brand */
+.tm-brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--tm-text);
+  min-width: 220px;
+}
+
+.tm-brand__logo{
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, rgba(255,59,48,0.10), rgba(255,138,0,0.06));
+  border: 1px solid rgba(255,59,48,0.18);
+  transition: transform 180ms var(--tm-ease), box-shadow 180ms var(--tm-ease);
+}
+
+.tm-brand:hover .tm-brand__logo{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(255,59,48,0.12);
+}
+
+.tm-brand__name{
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Desktop Nav */
+.tm-nav{
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm-nav__link{
+  position: relative;
+  text-decoration: none;
+  color: var(--tm-muted);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 6px;
+  transition: color 160ms var(--tm-ease), transform 160ms var(--tm-ease);
+}
+
+.tm-nav__link:hover{
+  color: var(--tm-text);
+  transform: translateY(-1px);
+}
+
+.tm-nav__link::after{
+  content:"";
+  position:absolute;
+  left:6px;
+  right:6px;
+  bottom:4px;
+  height:2px;
+  border-radius:999px;
+  background: linear-gradient(90deg, rgba(255,59,48,0), rgba(255,59,48,0.75), rgba(255,138,0,0.55));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 180ms var(--tm-ease);
+  opacity: 0.9;
+}
+.tm-nav__link:hover::after{
+  transform: scaleX(1);
+}
+
+/* Actions */
+.tm-header__actions{
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Burger */
+.tm-burger{
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--tm-border);
+  background: rgba(15,23,42,0.04);
+  cursor: pointer;
+  transition: background 160ms var(--tm-ease), transform 160ms var(--tm-ease);
+}
+.tm-burger:hover{
+  background: rgba(15,23,42,0.06);
+  transform: translateY(-1px);
+}
+.tm-burger__lines{
+  width: 18px;
+  height: 2px;
+  background: var(--tm-text);
+  display:block;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 999px;
+}
+.tm-burger__lines::before,
+.tm-burger__lines::after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:18px;
+  height:2px;
+  background: var(--tm-text);
+  border-radius:999px;
+}
+.tm-burger__lines::before{ top:-6px; }
+.tm-burger__lines::after{ top: 6px; }
+
+/* =========================================================
+   Mobile Drawer
+   ========================================================= */
+.tm-drawer{
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms var(--tm-ease);
+}
+.tm-drawer.is-open{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tm-drawer__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(2,6,23,0.35);
+  border: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.tm-drawer__panel{
+  position: absolute;
+  top: calc(var(--tm-h) + 10px);
+  right: 14px;
+  left: 14px;
+  max-width: 520px;
+  margin-left: auto;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--tm-border);
+  border-radius: var(--tm-radius);
+  box-shadow: var(--tm-shadow);
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: transform 180ms var(--tm-ease);
+}
+.tm-drawer.is-open .tm-drawer__panel{
+  transform: translateY(0);
+}
+
+.tm-drawer__nav{
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tm-drawer__link{
+  text-decoration: none;
+  color: var(--tm-text);
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  transition: background 160ms var(--tm-ease);
+}
+.tm-drawer__link:hover{
+  background: rgba(15,23,42,0.06);
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 920px){
+  .tm-header__inner{ grid-template-columns: 1fr auto; }
+  .tm-nav{ display:none; }
+  .tm-burger{ display: inline-grid; place-items:center; }
+  .tm-header__actions .tm-link{ display:none; } /* Login verschwindet oben, ist im Drawer */
+}
+
+/* =========================================
+   Language Switch
+   ========================================= */
+.tm-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tm-lang__item {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 8px;
+  color: var(--tm-muted);
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.tm-lang__item:hover {
+  color: var(--tm-text);
+  background: rgba(15, 23, 42, 0.06);
+}
+
+.tm-lang__item.is-active {
+  color: #fff;
+  background: var(--tm-muted);
 }

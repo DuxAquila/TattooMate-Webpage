@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,31 +15,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TattooMate",
-  description:
-    "TattooMate – digitale Lösung für Tattoo- und Piercingstudios.",
-
+  description: "TattooMate – digitale Lösung für Tattoo- und Piercingstudios.",
   icons: {
     icon: [
       { url: "/favicons/favicon.ico" },
       { url: "/favicons/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicons/favicon-96x96.png", sizes: "96x96", type: "image/png" }
+      { url: "/favicons/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
-    apple: "/favicons/apple-touch-icon.png"
+    apple: "/favicons/apple-touch-icon.png",
   },
-
-  manifest: "/favicons/site.webmanifest"
+  manifest: "/favicons/site.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="de">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
