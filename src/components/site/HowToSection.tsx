@@ -25,24 +25,24 @@ export default function HowToSection({
   const safeItems = Array.isArray(items) ? items.slice(0, 3) : [];
 
   return (
-    <section className="tm-howto">
+    <section className="tm-section">
       <div className="tm-container">
-        <div className="tm-howto__head">
-          <h2 className="tm-howto__headline">{headline}</h2>
-          <p className="tm-howto__subtitle">{subtitle}</p>
+        <div className="tm-head">
+          <h2 className="tm-h2">{headline}</h2>
+          <p className="tm-lead">{subtitle}</p>
         </div>
 
-        <div className="tm-howto__grid">
+        <div className="tm-grid tm-grid--3">
           {safeItems.map((s, idx) => (
-            <div key={`${idx}-${s.title}`} className="tm-howto__card">
-              <div className="tm-howto__badge">{idx + 1}</div>
-              <h3 className="tm-howto__title">{s.title}</h3>
-              <p className="tm-howto__text">{s.text}</p>
+            <div key={`${idx}-${s.title}`} className="tm-card tm-card--hover tm-step">
+              <div className="tm-step__badge">{idx + 1}</div>
+              <h3 className="tm-h3">{s.title}</h3>
+              <p className="tm-text">{s.text}</p>
             </div>
           ))}
         </div>
 
-        <div className="tm-howto__actions">
+        <div className="tm-actions">
           <Link href={ctaPrimaryHref} className="tm-btn tm-btn--primary">
             {ctaPrimaryLabel}
           </Link>

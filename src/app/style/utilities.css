@@ -10,3 +10,11 @@
   line-height: 1.6;
 }
 
+.tm-actions{
+  display: flex;
+  gap: var(--tm-space-sm);
+  justify-content: center;
+  margin-top: var(--tm-space-xl);
+  flex-wrap: wrap;
+}
+

@@ -43,59 +43,59 @@ export default async function HomePage({
           <p className="tm-note">{t(dict, "home.hero.note")}</p>
         </div>
       </section>
-    <UseCasesSection
-      headline={t(dict, 'home.usecases.headline')}
-      subtitle={t(dict, 'home.usecases.subtitle')}
-      items={dict.home.usecases.items}
-      ctaEvent={t(dict, 'home.usecases.cta.event')}
-      ctaQr={t(dict, 'home.usecases.cta.tools')}
-      previewStudioTitle={t(dict, 'home.usecases.preview.studio.title')}
-      previewStudioText={t(dict, 'home.usecases.preview.studio.text')}
-      previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
-      previewEventText={t(dict, 'home.usecases.preview.event.text')}
-      previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
-      previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
-    />
-    <HowToSection
-      headline={t(dict, 'home.howto.headline')}
-      subtitle={t(dict, 'home.howto.subtitle')}
-      items={dict.home?.howto?.items ?? []}
-      ctaPrimaryLabel={t(dict, 'home.howto.cta.primary')}
-      ctaPrimaryHref={`/${lang}/demo`}
-      ctaSecondaryLabel={t(dict, 'home.howto.cta.secondary')}
-      ctaSecondaryHref={`/${lang}/funktionen`}
-    />
-    <section className="tm-features">
-      <div className="tm-container">
-        <h2 className="tm-features__headline">
-          {t(dict, 'home.features.headline')}
-        </h2>
+      <UseCasesSection
+        headline={t(dict, 'home.usecases.headline')}
+        subtitle={t(dict, 'home.usecases.subtitle')}
+        items={dict.home.usecases.items}
+        ctaEvent={t(dict, 'home.usecases.cta.event')}
+        ctaQr={t(dict, 'home.usecases.cta.tools')}
+        previewStudioTitle={t(dict, 'home.usecases.preview.studio.title')}
+        previewStudioText={t(dict, 'home.usecases.preview.studio.text')}
+        previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
+        previewEventText={t(dict, 'home.usecases.preview.event.text')}
+        previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
+        previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
+      />
+      <HowToSection
+        headline={t(dict, 'home.howto.headline')}
+        subtitle={t(dict, 'home.howto.subtitle')}
+        items={dict.home?.howto?.items ?? []}
+        ctaPrimaryLabel={t(dict, 'home.howto.cta.primary')}
+        ctaPrimaryHref={`/${lang}/demo`}
+        ctaSecondaryLabel={t(dict, 'home.howto.cta.secondary')}
+        ctaSecondaryHref={`/${lang}/funktionen`}
+      />
+      <section className="tm-section">
+        <div className="tm-container">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, 'home.features.headline')}</h2>
+          </div>
 
-        <div className="tm-features__grid">
-          {features.map((item: any, idx: number) => (
-            <div key={idx} className="tm-feature">
-              <h3 className="tm-feature__title">{item.title}</h3>
-              <p className="tm-feature__text">{item.text}</p>
-            </div>
-          ))}
+          <div className="tm-grid tm-grid--3">
+            {features.map((item: any, idx: number) => (
+              <div key={idx} className="tm-card tm-card--hover">
+                <h3 className="tm-h3">{item.title}</h3>
+                <p className="tm-text">{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-    <MiniFaqSection
-      headline={t(dict, 'home.minifaq.headline')}
-      subtitle={t(dict, 'home.minifaq.subtitle')}
-      items={dict.home?.minifaq?.items ?? []}
-      moreLabel={t(dict, 'home.minifaq.more')}
-      moreHref={`/${lang}/faq`}
-    />
-    <CtaSection
-      headline={t(dict, 'home.cta.headline')}
-      subtitle={t(dict, 'home.cta.subtitle')}
-      primaryLabel={t(dict, 'home.cta.primary')}
-      primaryHref={`/${lang}/demo`}
-      secondaryLabel={t(dict, 'home.cta.secondary')}
-      secondaryHref={`/${lang}/kontakt`}
-    />
+      </section>
+      <MiniFaqSection
+        headline={t(dict, 'home.minifaq.headline')}
+        subtitle={t(dict, 'home.minifaq.subtitle')}
+        items={dict.home?.minifaq?.items ?? []}
+        moreLabel={t(dict, 'home.minifaq.more')}
+        moreHref={`/${lang}/faq`}
+      />
+      <CtaSection
+        headline={t(dict, 'home.cta.headline')}
+        subtitle={t(dict, 'home.cta.subtitle')}
+        primaryLabel={t(dict, 'home.cta.primary')}
+        primaryHref={`/${lang}/demo`}
+        secondaryLabel={t(dict, 'home.cta.secondary')}
+        secondaryHref={`/${lang}/kontakt`}
+      />
     </>
   );
 }
