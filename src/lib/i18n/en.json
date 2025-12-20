@@ -14,7 +14,8 @@
     },
     "cta": {
       "demo": "View live demo",
-      "features": "Explore features"
+      "features": "Explore features",
+      "contact": "Contact"
     },
     "trust": {
       "dsgvo": "GDPR compliant",
@@ -134,6 +135,58 @@
       "subtitle": "Try TattooMate in the demo or get in touch if you have any questions.",
       "primary": "View demo",
       "secondary": "Contact"
+    }
+  },
+  "funktionen": {
+    "hero": {
+      "title": "Features that actually take work off your plate",
+      "lead": "Digital consent forms, clean workflows and solid documentation – built for tattoo & piercing studios.",
+      "note": "No fluff. No trackers. Focused on real studio workflows.",
+      "badge1": "Privacy-first",
+      "badge2": "Studio-focused",
+      "badge3": "No cloud lock-in"
+    },
+    "section": {
+      "headline": "What TattooMate covers",
+      "subline": "The stuff that matters in real studio work – not just nice-to-have."
+    },
+    "cards": {
+      "forms": {
+        "title": "Digital forms",
+        "lead": "Tattoo & piercing – digital, validated, with signatures.",
+        "b1": "Required fields & validation",
+        "b2": "Under-18 logic: guardian fields & signatures required",
+        "b3": "Signatures inside the form",
+        "b4": "PDF generated from stored data (reproducible)"
+      },
+      "admin": {
+        "title": "Admin view & search",
+        "lead": "Find forms fast – no binders, no chaos.",
+        "b1": "Overview with filters & search",
+        "b2": "Detail view per form",
+        "b3": "Generate PDFs anytime",
+        "b4": "Event/convention mode can be separated cleanly"
+      },
+      "events": {
+        "title": "Conventions & event mode",
+        "lead": "Built for days that must be fast – without problems later.",
+        "b1": "Event mode for convention workflows",
+        "b2": "QR codes for direct form links",
+        "b3": "Clean separation studio ↔ event",
+        "b4": "Review later in admin without digging"
+      },
+      "privacy": {
+        "title": "Privacy & control",
+        "lead": "Data stays where it belongs: with the studio.",
+        "b1": "No analytics trackers",
+        "b2": "No unnecessary third-party scripts",
+        "b3": "Self-hosting possible (no cloud lock-in)",
+        "b4": "Clean, traceable documentation"
+      }
+    },
+    "cta": {
+      "title": "Want to see how this works day-to-day?",
+      "text": "I’ll show you TattooMate quickly – no sales show. You get answers and a clear picture."
     }
   },
   "footer": {

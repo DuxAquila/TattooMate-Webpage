@@ -14,7 +14,8 @@
     },
     "cta": {
       "demo": "Live-Demo ansehen",
-      "features": "Funktionen entdecken"
+      "features": "Funktionen entdecken",
+      "contact": "Kontakt"
     },
     "trust": {
       "dsgvo": "DSGVO-konform",
@@ -122,6 +123,58 @@
       "subtitle": "Teste TattooMate in der Demo oder sprich kurz mit uns, wenn du Fragen hast.",
       "primary": "Demo ansehen",
       "secondary": "Kontakt"
+    }
+  },
+  "funktionen": {
+    "hero": {
+      "title": "Funktionen, die dein Studio wirklich entlasten",
+      "lead": "Digitale Einverständniserklärungen, strukturierte Abläufe und saubere Dokumentation – gebaut für Tattoo- & Piercing-Studios.",
+      "note": "Kein Schnickschnack. Keine Tracker. Fokus auf Alltag im Studio.",
+      "badge1": "DSGVO-bewusst",
+      "badge2": "Studio-fokussiert",
+      "badge3": "Kein Cloud-Zwang"
+    },
+    "section": {
+      "headline": "Was TattooMate abdeckt",
+      "subline": "Hier steht der Kram, der im Studio wirklich zählt – nicht „nice to have“."
+    },
+    "cards": {
+      "forms": {
+        "title": "Digitale Formulare",
+        "lead": "Tattoo & Piercing – sauber digital, mit Pflichtfeldern und Signaturen.",
+        "b1": "Pflichtfelder & Validierung",
+        "b2": "U18-Logik: Elternfelder & Unterschriften automatisch erforderlich",
+        "b3": "Signaturen direkt im Formular",
+        "b4": "PDF-Erzeugung aus dem Datensatz (reproduzierbar)"
+      },
+      "admin": {
+        "title": "Admin-Ansicht & Suche",
+        "lead": "Finde Formulare schnell wieder – ohne Ordner, ohne Chaos.",
+        "b1": "Übersicht mit Filtern & Suche",
+        "b2": "Detailansicht pro Formular",
+        "b3": "PDF jederzeit neu generieren",
+        "b4": "Event-/Convention-Modus sauber trennbar"
+      },
+      "events": {
+        "title": "Conventions & Event-Modus",
+        "lead": "Für Tage, an denen alles schnell gehen muss – ohne Stress danach.",
+        "b1": "Event-Modus für Convention-Workflow",
+        "b2": "QR-Codes für direkte Formular-Links",
+        "b3": "Saubere Trennung Studio ↔ Event",
+        "b4": "Nachbearbeitung im Admin ohne Suchkrampf"
+      },
+      "privacy": {
+        "title": "Datenschutz & Kontrolle",
+        "lead": "Daten bleiben dort, wo sie hingehören: beim Studio.",
+        "b1": "Keine Analytics-Tracker",
+        "b2": "Keine unnötigen Drittanbieter-Skripte",
+        "b3": "Self-hosted möglich (kein Cloud-Zwang)",
+        "b4": "Dokumentation nachvollziehbar & aufgeräumt"
+      }
+    },
+    "cta": {
+      "title": "Willst du sehen, wie das im Alltag aussieht?",
+      "text": "Dann zeig ich dir TattooMate einmal kurz – ohne Sales-Show. Du bekommst Antworten und ein klares Bild."
     }
   },
   "footer": {
