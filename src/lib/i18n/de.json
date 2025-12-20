@@ -7,13 +7,13 @@
       "pricing": "Preise",
       "faq": "FAQ",
       "login": "Login",
-      "demo": "Live-Demo ansehen",
+      "demo": "Live-Demo anfordern",
       "imprint": "Impressum",
       "privacy": "Datenschutz",
       "agb": "AGB"
     },
     "cta": {
-      "demo": "Live-Demo ansehen",
+      "demo": "Live-Demo anfordern",
       "features": "Funktionen entdecken",
       "contact": "Kontakt"
     },
@@ -103,7 +103,7 @@
         }
       ],
       "cta": {
-        "primary": "Demo ansehen",
+        "primary": "Live-Demo anfordern",
         "secondary": "Funktionen"
       }
     },
@@ -175,6 +175,175 @@
     "cta": {
       "title": "Willst du sehen, wie das im Alltag aussieht?",
       "text": "Dann zeig ich dir TattooMate einmal kurz – ohne Sales-Show. Du bekommst Antworten und ein klares Bild."
+    },
+    "overview": {
+      "o1": {
+        "title": "Formulare, die sich selbst absichern",
+        "text": "Pflichtfelder, Signaturen und U18-Logik verhindern die typischen „Ups…“-Fehler, bevor sie passieren."
+      },
+      "o2": {
+        "title": "Dokumentation, die du wiederfindest",
+        "text": "Suche, Filter, Detailansicht – und PDFs jederzeit neu erzeugen. Kein Ordnerchaos, kein Nachtragen."
+      },
+      "o3": {
+        "title": "Kontrolle statt Cloud-Zwang",
+        "text": "Self-hosted möglich. Keine Tracker. Rollen & Rechte. Daten bleiben beim Studio."
+      }
+    },
+
+    "blocks": {
+      "forms": {
+        "title": "Formulare & Studio-Sicherheit",
+        "lead": "TattooMate ist nicht „ein digitales Blatt Papier“, sondern ein Workflow, der Fehler verhindert.",
+
+        "card1": {
+          "title": "Tattoo- & Piercingformulare (digital, sauber, vollständig)",
+          "lead": "Kunden füllen es aus – du bekommst einen vollständigen Datensatz statt halber Angaben.",
+          "b1": "Pflichtfelder & Validierung: nichts wird „vergessen“",
+          "b2": "Signaturen direkt im Formular (Kunde/Erziehungsberechtigte)",
+          "b3": "Medizinische Angaben strukturiert statt Freitext-Chaos",
+          "b4": "Klarer Ablauf – weniger Diskussionen am Tresen"
+        },
+
+        "card2": {
+          "title": "U18-Absicherung, die wirklich dicht ist",
+          "lead": "Wenn unter Mindestalter: Elternfelder + Unterschriften + Uploads werden verpflichtend.",
+          "b1": "Automatische Alterslogik (inkl. Mindestalter aus Settings)",
+          "b2": "Eltern/Erziehungsberechtigte: Pflichtdaten + Signaturen",
+          "b3": "Upload-Sperre, wenn erforderliche Felder fehlen",
+          "b4": "Keine Übermittlung möglich, solange U18-Pflichten nicht erfüllt sind"
+        }
+      },
+
+      "pdf": {
+        "title": "Dokumentation & PDF-Ausgabe",
+        "lead": "Der entscheidende Punkt: PDFs sind aus dem Datensatz reproduzierbar – nicht „einmal erzeugt und weg“.",
+
+        "card1": {
+          "title": "PDF jederzeit neu erzeugen",
+          "lead": "Studio kann drucken/speichern, wann es nötig ist – ohne das Original nochmal zu brauchen.",
+          "b1": "PDF-Export aus gespeicherten Daten (reproduzierbar)",
+          "b2": "Unterschriften, Inhalte, Studio-Texte sauber im Dokument",
+          "b3": "Ideal für Ablage, Nachweis, interne Prozesse",
+          "b4": "Keine E-Mail-Versendung von Ausweisen/PII nötig"
+        },
+
+        "card2": {
+          "title": "Saubere Nachweisbarkeit statt Bauchgefühl",
+          "lead": "Wenn es hart auf hart kommt, zählt Dokumentation – nicht Erinnerung.",
+          "b1": "Datensatz + PDF = nachvollziehbarer Ablauf",
+          "b2": "Einheitliche Struktur über alle Formulare",
+          "b3": "Keine handschriftlichen Zettel, die unlesbar werden",
+          "b4": "Weniger Risiko durch Lücken in der Doku"
+        }
+      },
+
+      "admin": {
+        "title": "Admin-Bereich, Suche & Übersicht",
+        "lead": "Du willst nicht suchen. Du willst finden. Schnell.",
+
+        "card1": {
+          "title": "Formular-Übersicht mit Filtern",
+          "lead": "Für Alltag und Stress-Tage: du siehst sofort, was Sache ist.",
+          "b1": "Suche nach Kunde/Datum/Status (je nach View-Logik)",
+          "b2": "Detailansicht pro Formular statt Tabellen-Krieg",
+          "b3": "PDF-Download/Erzeugung direkt aus der Ansicht",
+          "b4": "Klare Trennung: Studio-Alltag ↔ Event-Formulare"
+        },
+
+        "card2": {
+          "title": "Ablehnung & Sonderfälle dokumentieren",
+          "lead": "Nicht jeder Kunde ist geeignet – wichtig ist, dass du es sauber festhältst.",
+          "b1": "„Verweigert“/Ablehnungsgrund erfassbar (z. B. Piercing)",
+          "b2": "Sichtbarer Hinweis im Formular-Datensatz",
+          "b3": "Kein „mündlich abgewiesen“ ohne Nachweis",
+          "b4": "Spart dir Diskussionen und schützt Studio & Artist"
+        }
+      },
+
+      "events": {
+        "title": "Conventions, Event-Modus & QR-Codes",
+        "lead": "Conventions sind schnell, laut, chaotisch. TattooMate macht daraus einen kontrollierten Ablauf.",
+
+        "card1": {
+          "title": "Event-Modus für Convention-Workflow",
+          "lead": "Schnell erfassen, später sauber nachbearbeiten – ohne Datenmüll.",
+          "b1": "Event-Modus aktivieren (Convention vs. Studio)",
+          "b2": "Formulare lassen sich getrennt auswerten/finden",
+          "b3": "Nachbearbeitung im Admin, ohne dass du alles zusammensuchen musst",
+          "b4": "Saubere Dokumentation auch bei hohem Durchsatz"
+        },
+
+        "card2": {
+          "title": "QR-Codes: Kunden scannen, Formular öffnen, fertig",
+          "lead": "Ein QR auf dem Tisch und der Kunde ist direkt im richtigen Formular.",
+          "b1": "QR-Codes für Tattoo/Piercing & mehr (Tools-Seite)",
+          "b2": "Ideal für Walk-Ins & Guest-Artists",
+          "b3": "Weniger Nachfragen, weniger Zettel, weniger Stress",
+          "b4": "Perfekt für Messen/Conventions"
+        }
+      },
+
+      "security": {
+        "title": "Datenschutz, Rollen & Betrieb",
+        "lead": "Du verkaufst Vertrauen. Also muss dein System auch vertrauenswürdig sein.",
+
+        "card1": {
+          "title": "Privacy-first, ohne Tracking-Bullshit",
+          "lead": "Du willst keine Analytics-Abos, keine Cookies und keine Fremdskripte? Gut so.",
+          "b1": "Keine unnötigen Drittanbieter-Tracker",
+          "b2": "Daten bleiben im Studio-Kontext",
+          "b3": "Prozesse statt „irgendein Google-Tool“",
+          "b4": "DSGVO-bewusst entwickelt (ohne leere Versprechen)"
+        },
+
+        "card2": {
+          "title": "Rollen & Rechte (nicht jeder sieht alles)",
+          "lead": "Im Studio arbeiten mehrere Leute – TattooMate kann Zugriff sauber trennen.",
+          "b1": "Rollenbasierte Rechte (z. B. nur ansehen vs. bearbeiten)",
+          "b2": "Admin-Bereich geschützt (Login/Session)",
+          "b3": "Weniger Risiko durch falsche Klicks",
+          "b4": "Skalierbar für größere Teams & Guest-Artists"
+        }
+      }
+    },
+
+    "fit": {
+      "title": "Für wen ist TattooMate gemacht?",
+      "lead": "Kurz und ehrlich – damit du keine Zeit verschwendest.",
+
+      "good": {
+        "title": "Passt gut, wenn …",
+        "b1": "du Papierkram im Studio loswerden willst",
+        "b2": "du Doku sauber und wiederauffindbar brauchst",
+        "b3": "du Conventions/Walk-Ins effizient abbilden willst",
+        "b4": "du Kontrolle willst statt Cloud-Zwang"
+      },
+
+      "bad": {
+        "title": "Passt nicht, wenn …",
+        "b1": "du nur ein einzelnes PDF „zum Ausdrucken“ suchst",
+        "b2": "du keine Validierung/U18-Absicherung willst",
+        "b3": "du willst, dass Kundendaten per Mail rumfliegen",
+        "b4": "du „irgendeine App“ ohne Studio-Workflow suchst"
+      }
+    },
+
+    "faq": {
+      "title": "Kurze Fragen, klare Antworten",
+      "lead": "Die Punkte, die Studios wirklich wissen wollen.",
+
+      "q1": "Kann ich TattooMate selbst hosten?",
+      "a1": "Ja. Self-hosting ist möglich – du bist nicht an eine Cloud gebunden. Das ist genau der Punkt: Kontrolle über Daten und Betrieb.",
+
+      "q2": "Wie läuft das mit U18 wirklich ab?",
+      "a2": "Wenn unter Mindestalter: Elternfelder, Unterschriften und erforderliche Uploads sind Pflicht. Ohne diese Pflichtfelder wird nichts übermittelt.",
+
+      "q3": "Wer kann später die PDFs erzeugen?",
+      "a3": "Das Studio jederzeit im Admin-Bereich. Kunden sollen nicht später per Mail nachfordern müssen – das wäre datenschutztechnisch oft problematisch.",
+
+      "q4": "Gibt es Newsletter / Opt-In?",
+      "a4": "Ja, optional. Nur wenn der Kunde aktiv zustimmt. Abmelden ist jederzeit möglich – und der Nachweis (Zeitpunkt/Quelle) ist nachvollziehbar."
     }
   },
   "footer": {

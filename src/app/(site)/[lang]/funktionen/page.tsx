@@ -2,148 +2,313 @@
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
 
-type PageProps = {
-  params: Promise<{ lang: string }>;
-};
-
-function tt(dict: any, key: string, fallback: string) {
-  const v = t(dict, key);
-  return (typeof v === "string" && v.trim().length > 0) ? v : fallback;
+function FeatureBlock({
+  title,
+  lead,
+  bullets,
+}: {
+  title: string;
+  lead?: string;
+  bullets: string[];
+}) {
+  return (
+    <div className="tm-card tm-card--hover">
+      <h3 className="tm-h3">{title}</h3>
+      {lead ? <p className="tm-text">{lead}</p> : null}
+      <ul className="tm-list">
+        {bullets.map((b, i) => (
+          <li key={i}>{b}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default async function FunktionenPage({ params }: PageProps) {
+function FaqItem({
+  q,
+  a,
+}: {
+  q: string;
+  a: string;
+}) {
+  return (
+    <div className="tm-card">
+      <h3 className="tm-h3">{q}</h3>
+      <p className="tm-text">{a}</p>
+    </div>
+  );
+}
+
+export default async function FunktionenPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
-  const dict = await getDict(lang);
-
-  // Fallbacks sind nur Sicherheitsnetz, damit nix kaputt geht wenn ein Key fehlt.
-  const heroTitle = tt(dict, "funktionen.hero.title", "Funktionen");
-  const heroLead = tt(
-    dict,
-    "funktionen.hero.lead",
-    "Alles, was du im Studio brauchst – ohne Papierkram."
-  );
-  const heroNote = tt(
-    dict,
-    "funktionen.hero.note",
-    "Keine Tracker. Kein Bullshit. Fokus auf Studio-Alltag."
-  );
-
-  const headline = tt(dict, "funktionen.section.headline", "Was TattooMate abdeckt");
-  const subline = tt(
-    dict,
-    "funktionen.section.subline",
-    "Funktionen, die im Alltag wirklich zählen."
-  );
-
-  const ctaTitle = tt(dict, "funktionen.cta.title", "Demo?");
-  const ctaText = tt(
-    dict,
-    "funktionen.cta.text",
-    "Kurz zeigen lassen, wie es im Alltag aussieht."
-  );
-
-  const demoLabel =
-    tt(dict, "common.cta.demo", "Demo anfragen");
-  const contactLabel =
-    tt(dict, "common.cta.contact", "Kontakt");
-
-  // Cards
-  const cards = [
-    {
-      title: tt(dict, "funktionen.cards.forms.title", "Digitale Formulare"),
-      lead: tt(dict, "funktionen.cards.forms.lead", "Tattoo & Piercing – sauber digital."),
-      bullets: [
-        tt(dict, "funktionen.cards.forms.b1", "Pflichtfelder & Validierung"),
-        tt(dict, "funktionen.cards.forms.b2", "U18-Logik mit Elterndaten & Unterschriften"),
-        tt(dict, "funktionen.cards.forms.b3", "Signaturen direkt im Formular"),
-        tt(dict, "funktionen.cards.forms.b4", "PDF reproduzierbar aus dem Datensatz"),
-      ],
-    },
-    {
-      title: tt(dict, "funktionen.cards.admin.title", "Admin-Ansicht & Suche"),
-      lead: tt(dict, "funktionen.cards.admin.lead", "Finden statt suchen."),
-      bullets: [
-        tt(dict, "funktionen.cards.admin.b1", "Übersicht mit Filtern & Suche"),
-        tt(dict, "funktionen.cards.admin.b2", "Detailansicht pro Formular"),
-        tt(dict, "funktionen.cards.admin.b3", "PDF jederzeit neu generieren"),
-        tt(dict, "funktionen.cards.admin.b4", "Event/Convention sauber trennbar"),
-      ],
-    },
-    {
-      title: tt(dict, "funktionen.cards.events.title", "Event-Modus & QR-Codes"),
-      lead: tt(dict, "funktionen.cards.events.lead", "Für Conventions gebaut."),
-      bullets: [
-        tt(dict, "funktionen.cards.events.b1", "Event-Modus für schnellen Ablauf"),
-        tt(dict, "funktionen.cards.events.b2", "QR-Codes für direkte Formular-Links"),
-        tt(dict, "funktionen.cards.events.b3", "Studio ↔ Event sauber getrennt"),
-        tt(dict, "funktionen.cards.events.b4", "Nachbearbeitung ohne Chaos"),
-      ],
-    },
-    {
-      title: tt(dict, "funktionen.cards.privacy.title", "Datenschutz & Kontrolle"),
-      lead: tt(dict, "funktionen.cards.privacy.lead", "Daten bleiben beim Studio."),
-      bullets: [
-        tt(dict, "funktionen.cards.privacy.b1", "Keine Analytics-Tracker"),
-        tt(dict, "funktionen.cards.privacy.b2", "Keine unnötigen Drittanbieter"),
-        tt(dict, "funktionen.cards.privacy.b3", "Self-hosted möglich"),
-        tt(dict, "funktionen.cards.privacy.b4", "Nachvollziehbare Dokumentation"),
-      ],
-    },
-  ];
+  const dict = await getDict(lang as "de" | "en");
 
   return (
     <>
       {/* HERO */}
       <section className="tm-section tm-section--soft tm-section--accent-top">
         <div className="tm-container tm-center tm-stack-md">
-          <h1 className="tm-h1">{heroTitle}</h1>
-          <p className="tm-lead">{heroLead}</p>
+          <h1 className="tm-h1">{t(dict, "funktionen.hero.title")}</h1>
+          <p className="tm-lead">{t(dict, "funktionen.hero.lead")}</p>
 
           <div className="tm-actions">
             <a href={`/${lang}/demo`} className="tm-btn tm-btn--primary">
-              {demoLabel}
+              {t(dict, "common.cta.demo")}
             </a>
             <a href={`/${lang}/kontakt`} className="tm-btn tm-btn--ghost">
-              {contactLabel}
+              {t(dict, "common.cta.contact")}
             </a>
           </div>
 
           <div className="tm-badges">
-            <span className="tm-pill">
-              {tt(dict, "funktionen.hero.badge1", "DSGVO-bewusst")}
-            </span>
-            <span className="tm-pill">
-              {tt(dict, "funktionen.hero.badge2", "Studio-fokussiert")}
-            </span>
-            <span className="tm-pill">
-              {tt(dict, "funktionen.hero.badge3", "Kein Cloud-Zwang")}
-            </span>
+            <span className="tm-pill">{t(dict, "funktionen.hero.badge1")}</span>
+            <span className="tm-pill">{t(dict, "funktionen.hero.badge2")}</span>
+            <span className="tm-pill">{t(dict, "funktionen.hero.badge3")}</span>
           </div>
 
-          <p className="tm-note">{heroNote}</p>
+          <p className="tm-note">{t(dict, "funktionen.hero.note")}</p>
         </div>
       </section>
 
-      {/* GRID */}
+      {/* QUICK OVERVIEW */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
           <div className="tm-head tm-center">
-            <h2 className="tm-h2">{headline}</h2>
-            <p className="tm-text">{subline}</p>
+            <h2 className="tm-h2">{t(dict, "funktionen.section.headline")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.section.subline")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--3">
+            <div className="tm-card">
+              <h3 className="tm-h3">{t(dict, "funktionen.overview.o1.title")}</h3>
+              <p className="tm-text">{t(dict, "funktionen.overview.o1.text")}</p>
+            </div>
+            <div className="tm-card">
+              <h3 className="tm-h3">{t(dict, "funktionen.overview.o2.title")}</h3>
+              <p className="tm-text">{t(dict, "funktionen.overview.o2.text")}</p>
+            </div>
+            <div className="tm-card">
+              <h3 className="tm-h3">{t(dict, "funktionen.overview.o3.title")}</h3>
+              <p className="tm-text">{t(dict, "funktionen.overview.o3.text")}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FORMS & SAFETY */}
+      <section className="tm-section tm-section--soft">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, "funktionen.blocks.forms.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.blocks.forms.lead")}</p>
           </div>
 
           <div className="tm-grid tm-grid--2">
-            {cards.map((c, idx) => (
-              <div key={idx} className="tm-card tm-card--hover">
-                <h3 className="tm-h3">{c.title}</h3>
-                <p className="tm-text">{c.lead}</p>
-                <ul className="tm-list">
-                  {c.bullets.map((b, i) => (
-                    <li key={i}>{b}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.forms.card1.title")}
+              lead={t(dict, "funktionen.blocks.forms.card1.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.forms.card1.b1"),
+                t(dict, "funktionen.blocks.forms.card1.b2"),
+                t(dict, "funktionen.blocks.forms.card1.b3"),
+                t(dict, "funktionen.blocks.forms.card1.b4"),
+              ]}
+            />
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.forms.card2.title")}
+              lead={t(dict, "funktionen.blocks.forms.card2.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.forms.card2.b1"),
+                t(dict, "funktionen.blocks.forms.card2.b2"),
+                t(dict, "funktionen.blocks.forms.card2.b3"),
+                t(dict, "funktionen.blocks.forms.card2.b4"),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* DOCUMENTATION & PDF */}
+      <section className="tm-section">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, "funktionen.blocks.pdf.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.blocks.pdf.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.pdf.card1.title")}
+              lead={t(dict, "funktionen.blocks.pdf.card1.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.pdf.card1.b1"),
+                t(dict, "funktionen.blocks.pdf.card1.b2"),
+                t(dict, "funktionen.blocks.pdf.card1.b3"),
+                t(dict, "funktionen.blocks.pdf.card1.b4"),
+              ]}
+            />
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.pdf.card2.title")}
+              lead={t(dict, "funktionen.blocks.pdf.card2.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.pdf.card2.b1"),
+                t(dict, "funktionen.blocks.pdf.card2.b2"),
+                t(dict, "funktionen.blocks.pdf.card2.b3"),
+                t(dict, "funktionen.blocks.pdf.card2.b4"),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ADMIN & SEARCH */}
+      <section className="tm-section tm-section--soft">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, "funktionen.blocks.admin.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.blocks.admin.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.admin.card1.title")}
+              lead={t(dict, "funktionen.blocks.admin.card1.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.admin.card1.b1"),
+                t(dict, "funktionen.blocks.admin.card1.b2"),
+                t(dict, "funktionen.blocks.admin.card1.b3"),
+                t(dict, "funktionen.blocks.admin.card1.b4"),
+              ]}
+            />
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.admin.card2.title")}
+              lead={t(dict, "funktionen.blocks.admin.card2.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.admin.card2.b1"),
+                t(dict, "funktionen.blocks.admin.card2.b2"),
+                t(dict, "funktionen.blocks.admin.card2.b3"),
+                t(dict, "funktionen.blocks.admin.card2.b4"),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* EVENTS */}
+      <section className="tm-section">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, "funktionen.blocks.events.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.blocks.events.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.events.card1.title")}
+              lead={t(dict, "funktionen.blocks.events.card1.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.events.card1.b1"),
+                t(dict, "funktionen.blocks.events.card1.b2"),
+                t(dict, "funktionen.blocks.events.card1.b3"),
+                t(dict, "funktionen.blocks.events.card1.b4"),
+              ]}
+            />
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.events.card2.title")}
+              lead={t(dict, "funktionen.blocks.events.card2.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.events.card2.b1"),
+                t(dict, "funktionen.blocks.events.card2.b2"),
+                t(dict, "funktionen.blocks.events.card2.b3"),
+                t(dict, "funktionen.blocks.events.card2.b4"),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* PRIVACY & ROLES */}
+      <section className="tm-section tm-section--soft">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head">
+            <h2 className="tm-h2">{t(dict, "funktionen.blocks.security.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.blocks.security.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.security.card1.title")}
+              lead={t(dict, "funktionen.blocks.security.card1.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.security.card1.b1"),
+                t(dict, "funktionen.blocks.security.card1.b2"),
+                t(dict, "funktionen.blocks.security.card1.b3"),
+                t(dict, "funktionen.blocks.security.card1.b4"),
+              ]}
+            />
+            <FeatureBlock
+              title={t(dict, "funktionen.blocks.security.card2.title")}
+              lead={t(dict, "funktionen.blocks.security.card2.lead")}
+              bullets={[
+                t(dict, "funktionen.blocks.security.card2.b1"),
+                t(dict, "funktionen.blocks.security.card2.b2"),
+                t(dict, "funktionen.blocks.security.card2.b3"),
+                t(dict, "funktionen.blocks.security.card2.b4"),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* WHO IT'S FOR */}
+      <section className="tm-section">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head tm-center">
+            <h2 className="tm-h2">{t(dict, "funktionen.fit.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.fit.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <div className="tm-card">
+              <h3 className="tm-h3">{t(dict, "funktionen.fit.good.title")}</h3>
+              <ul className="tm-list">
+                <li>{t(dict, "funktionen.fit.good.b1")}</li>
+                <li>{t(dict, "funktionen.fit.good.b2")}</li>
+                <li>{t(dict, "funktionen.fit.good.b3")}</li>
+                <li>{t(dict, "funktionen.fit.good.b4")}</li>
+              </ul>
+            </div>
+
+            <div className="tm-card">
+              <h3 className="tm-h3">{t(dict, "funktionen.fit.bad.title")}</h3>
+              <ul className="tm-list">
+                <li>{t(dict, "funktionen.fit.bad.b1")}</li>
+                <li>{t(dict, "funktionen.fit.bad.b2")}</li>
+                <li>{t(dict, "funktionen.fit.bad.b3")}</li>
+                <li>{t(dict, "funktionen.fit.bad.b4")}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ MINI */}
+      <section className="tm-section tm-section--soft">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head tm-center">
+            <h2 className="tm-h2">{t(dict, "funktionen.faq.title")}</h2>
+            <p className="tm-text">{t(dict, "funktionen.faq.lead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <FaqItem q={t(dict, "funktionen.faq.q1")} a={t(dict, "funktionen.faq.a1")} />
+            <FaqItem q={t(dict, "funktionen.faq.q2")} a={t(dict, "funktionen.faq.a2")} />
+            <FaqItem q={t(dict, "funktionen.faq.q3")} a={t(dict, "funktionen.faq.a3")} />
+            <FaqItem q={t(dict, "funktionen.faq.q4")} a={t(dict, "funktionen.faq.a4")} />
           </div>
         </div>
       </section>
@@ -151,15 +316,15 @@ export default async function FunktionenPage({ params }: PageProps) {
       {/* CTA */}
       <section className="tm-section">
         <div className="tm-container tm-center tm-stack-md">
-          <h2 className="tm-h2">{ctaTitle}</h2>
-          <p className="tm-lead">{ctaText}</p>
+          <h2 className="tm-h2">{t(dict, "funktionen.cta.title")}</h2>
+          <p className="tm-lead">{t(dict, "funktionen.cta.text")}</p>
 
           <div className="tm-actions">
             <a href={`/${lang}/demo`} className="tm-btn tm-btn--primary">
-              {demoLabel}
+              {t(dict, "common.cta.demo")}
             </a>
             <a href={`/${lang}/kontakt`} className="tm-btn tm-btn--ghost">
-              {contactLabel}
+              {t(dict, "common.cta.contact")}
             </a>
           </div>
         </div>

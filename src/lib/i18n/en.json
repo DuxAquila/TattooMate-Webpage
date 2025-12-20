@@ -7,15 +7,15 @@
       "pricing": "Pricing",
       "faq": "FAQ",
       "login": "Login",
-      "demo": "View live demo",
+      "demo": "Request a live demo",
       "imprint": "Imprint",
       "privacy": "Privacy policy",
       "agb": "Terms"
     },
     "cta": {
-      "demo": "View live demo",
+      "demo": "Request a live demo",
       "features": "Explore features",
-      "contact": "Contact"
+      "contact": "Contact us"
     },
     "trust": {
       "dsgvo": "GDPR compliant",
@@ -134,7 +134,7 @@
       "headline": "Ready for a clean studio workflow?",
       "subtitle": "Try TattooMate in the demo or get in touch if you have any questions.",
       "primary": "View demo",
-      "secondary": "Contact"
+      "secondary": "Contact us"
     }
   },
   "funktionen": {
@@ -187,6 +187,175 @@
     "cta": {
       "title": "Want to see how this works day-to-day?",
       "text": "I’ll show you TattooMate quickly – no sales show. You get answers and a clear picture."
+    },
+    "overview": {
+      "o1": {
+        "title": "Forms that protect you from mistakes",
+        "text": "Required fields, signatures and under-18 logic prevent the classic “oops…” moments before they happen."
+      },
+      "o2": {
+        "title": "Documentation you can actually find",
+        "text": "Search, filters, detail view – and PDFs generated anytime. No binders, no afterwork paperwork."
+      },
+      "o3": {
+        "title": "Control instead of cloud lock-in",
+        "text": "Self-hosting possible. No trackers. Roles & permissions. Data stays with the studio."
+      }
+    },
+
+    "blocks": {
+      "forms": {
+        "title": "Forms & studio safety",
+        "lead": "TattooMate is not “a digital sheet of paper” – it’s a workflow that prevents errors.",
+
+        "card1": {
+          "title": "Tattoo & piercing forms (digital, clean, complete)",
+          "lead": "Clients fill it out – you get a complete dataset instead of half-missing info.",
+          "b1": "Required fields & validation so nothing gets “forgotten”",
+          "b2": "Signatures directly inside the form (client/guardian)",
+          "b3": "Medical info structured instead of messy free-text",
+          "b4": "Clear process – fewer discussions at the counter"
+        },
+
+        "card2": {
+          "title": "Under-18 safety that’s actually tight",
+          "lead": "Below minimum age: guardian data + signatures + uploads become mandatory.",
+          "b1": "Automatic age logic (minimum age from settings)",
+          "b2": "Guardian: required fields + signatures",
+          "b3": "Upload blocking if required fields are missing",
+          "b4": "No submission possible until under-18 requirements are met"
+        }
+      },
+
+      "pdf": {
+        "title": "Documentation & PDF output",
+        "lead": "The key point: PDFs are reproducible from stored data – not “generated once and gone”.",
+
+        "card1": {
+          "title": "Generate PDFs anytime",
+          "lead": "Studios can print/store whenever needed – without asking the client again.",
+          "b1": "PDF export from stored data (reproducible)",
+          "b2": "Signatures, content and studio texts included cleanly",
+          "b3": "Ideal for filing, proof and internal processes",
+          "b4": "No need to email IDs/PII around"
+        },
+
+        "card2": {
+          "title": "Traceability instead of “I think we did…”",
+          "lead": "When it matters, documentation wins – not memory.",
+          "b1": "Dataset + PDF = a traceable process",
+          "b2": "Consistent structure across all forms",
+          "b3": "No handwritten notes that become unreadable",
+          "b4": "Less risk from gaps in documentation"
+        }
+      },
+
+      "admin": {
+        "title": "Admin area, search & overview",
+        "lead": "You don’t want to search. You want to find. Fast.",
+
+        "card1": {
+          "title": "Form overview with filters",
+          "lead": "For daily work and high-stress days: you instantly see what’s going on.",
+          "b1": "Search by client/date/status (depending on view logic)",
+          "b2": "Detail view per form instead of spreadsheet warfare",
+          "b3": "PDF download/generation right from the view",
+          "b4": "Clean separation: studio day-to-day ↔ event forms"
+        },
+
+        "card2": {
+          "title": "Document rejections & edge cases",
+          "lead": "Not every client is suitable – what matters is recording it properly.",
+          "b1": "Capture “rejected” + reason (e.g. piercing)",
+          "b2": "Visible marker inside the dataset",
+          "b3": "No “we said no verbally” without proof",
+          "b4": "Protects studio & artist and reduces arguments"
+        }
+      },
+
+      "events": {
+        "title": "Conventions, event mode & QR codes",
+        "lead": "Conventions are fast, loud, chaotic. TattooMate turns that into a controlled workflow.",
+
+        "card1": {
+          "title": "Event mode for convention workflows",
+          "lead": "Capture fast, review later – without creating data mess.",
+          "b1": "Enable event mode (convention vs studio)",
+          "b2": "Forms can be separated for searching/reporting",
+          "b3": "Review later in admin without digging",
+          "b4": "Clean documentation even with high throughput"
+        },
+
+        "card2": {
+          "title": "QR codes: scan, open the form, done",
+          "lead": "One QR on the table and the client is in the right form instantly.",
+          "b1": "QR codes for tattoo/piercing & more (tools page)",
+          "b2": "Perfect for walk-ins & guest artists",
+          "b3": "Less questions, less paper, less stress",
+          "b4": "Ideal for conventions and events"
+        }
+      },
+
+      "security": {
+        "title": "Privacy, roles & operations",
+        "lead": "You sell trust. Your system must be trustworthy too.",
+
+        "card1": {
+          "title": "Privacy-first, no tracking nonsense",
+          "lead": "No analytics subscriptions, no cookie circus, no third-party scripts? Good.",
+          "b1": "No unnecessary third-party trackers",
+          "b2": "Data stays in the studio context",
+          "b3": "Process-driven instead of random “Google tools”",
+          "b4": "Built with privacy in mind (no empty promises)"
+        },
+
+        "card2": {
+          "title": "Roles & permissions (not everyone sees everything)",
+          "lead": "Studios have teams – TattooMate can separate access properly.",
+          "b1": "Role-based permissions (view vs edit, etc.)",
+          "b2": "Protected admin area (login/session)",
+          "b3": "Less risk from wrong clicks",
+          "b4": "Scales for bigger teams & guest artists"
+        }
+      }
+    },
+
+    "fit": {
+      "title": "Who TattooMate is for",
+      "lead": "Short and honest – so you don’t waste time.",
+
+      "good": {
+        "title": "A good fit if …",
+        "b1": "you want to get rid of paperwork",
+        "b2": "you need documentation you can find later",
+        "b3": "you run conventions/walk-ins efficiently",
+        "b4": "you want control instead of cloud lock-in"
+      },
+
+      "bad": {
+        "title": "Not a fit if …",
+        "b1": "you only want a single PDF to print",
+        "b2": "you don’t want validation/under-18 safety",
+        "b3": "you want client data flying around via email",
+        "b4": "you just want “any app” without studio workflow"
+      }
+    },
+
+    "faq": {
+      "title": "Quick questions, clear answers",
+      "lead": "The points studios actually care about.",
+
+      "q1": "Can I self-host TattooMate?",
+      "a1": "Yes. Self-hosting is possible – you’re not forced into a cloud. That’s the point: control over data and operations.",
+
+      "q2": "How does under-18 handling work in practice?",
+      "a2": "Below minimum age: guardian data, signatures and required uploads become mandatory. Without them, the form cannot be submitted.",
+
+      "q3": "Who can generate PDFs later?",
+      "a3": "The studio anytime in the admin area. Clients shouldn’t have to request PDFs via email later – that can be a privacy problem.",
+
+      "q4": "Is there newsletter / opt-in?",
+      "a4": "Yes, optional. Only with explicit consent. Unsubscribe anytime – and proof (time/source) is traceable."
     }
   },
   "footer": {
