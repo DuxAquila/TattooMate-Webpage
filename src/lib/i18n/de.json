@@ -588,6 +588,80 @@
       "text": "In der Demo zeige ich dir TattooMate im echten Ablauf. Der Preis bleibt derselbe – die Demo ist für Fragen da."
     }
   },
+  "faq": {
+    "hero": {
+      "title": "Häufige Fragen",
+      "lead": "Kurz, ehrlich und praxisnah beantwortet."
+    },
+
+    "items": [
+      {
+        "q": "Was ist TattooMate überhaupt?",
+        "a": "TattooMate ist eine webbasierte Lösung für digitale Einverständniserklärungen, Gesundheitsangaben und Unterschriften in Tattoo- und Piercingstudios."
+      },
+      {
+        "q": "Läuft das auf Handy & Tablet?",
+        "a": "Ja. TattooMate ist komplett webbasiert und für Touch-Bedienung optimiert – ohne App-Zwang."
+      },
+      {
+        "q": "Gibt es eine Begrenzung der Artist-Anzahl?",
+        "a": "Nein. TattooMate wird pro Studio lizenziert. Du kannst beliebig viele Artists anlegen, ohne dass sich der Preis ändert."
+      },
+      {
+        "q": "Ist der Event- oder Convention-Modus extra?",
+        "a": "Nein. Der Event- und Convention-Modus ist immer enthalten und kann bei Bedarf aktiviert werden."
+      },
+      {
+        "q": "Kann ich Studio und Conventions trennen?",
+        "a": "Ja. Über den Event-/Convention-Modus mit eigener Erfassung und separater Übersicht."
+      },
+      {
+        "q": "Wie läuft das mit U18 wirklich ab?",
+        "a": "Wenn ein Kunde unter dem Mindestalter liegt, werden Elternfelder, Unterschriften und erforderliche Uploads verpflichtend. Ohne diese Pflichtfelder wird nichts übermittelt."
+      },
+      {
+        "q": "Kann ich PDFs später erneut erzeugen?",
+        "a": "Ja. Das Studio kann PDFs jederzeit im Admin erneut erzeugen, drucken oder speichern."
+      },
+      {
+        "q": "Wer hat Zugriff auf Kundendaten?",
+        "a": "Nur berechtigte Studio-Nutzer. TattooMate arbeitet mit Rollen und Rechten, sodass nicht jeder alles sehen oder bearbeiten kann."
+      },
+      {
+        "q": "Ist TattooMate rechtssicher?",
+        "a": "TattooMate unterstützt dich bei einer sauberen Dokumentation von Einwilligungen, Unterschriften und Gesundheitsangaben. Es ersetzt keine Rechtsberatung, sorgt aber für nachvollziehbare und reproduzierbare Abläufe im Studio."
+      },
+      {
+        "q": "Ist TattooMate DSGVO-konform?",
+        "a": "Ja. Keine Ausweise oder PDFs per E-Mail. Dokumente werden im Admin erzeugt und bleiben unter deiner Kontrolle."
+      },
+      {
+        "q": "Gibt es Newsletter / Opt-In?",
+        "a": "Ja, optional. Nur wenn der Kunde aktiv zustimmt. Eine Abmeldung ist jederzeit möglich und der Nachweis (Zeitpunkt und Quelle) ist dokumentiert."
+      },
+      {
+        "q": "Ist das Newsletter-System DSGVO-konform?",
+        "a": "Ja. Kunden entscheiden beim Ausfüllen selbst, ob sie per Newsletter informiert werden möchten. Ein Abmeldelink ist intern hinterlegt und muss mitgesendet werden."
+      },
+      {
+        "q": "Kann ich TattooMate selbst hosten?",
+        "a": "Ja. Du kannst TattooMate auf deinem eigenen Server betreiben oder das Hosting durch TattooMate nutzen. Beide Optionen sind klar geregelt und transparent bepreist."
+      },
+      {
+        "q": "Gibt es versteckte Kosten oder Zusatzgebühren?",
+        "a": "Nein. Alle Preise sind fest definiert. Es gibt keine nutzungsabhängigen Gebühren, keine versteckten Aufpreise und keine Verhandlungen."
+      },
+      {
+        "q": "Warum gibt es eine Demo, wenn die Preise fest sind?",
+        "a": "Die Demo ist nicht für Preisverhandlungen gedacht, sondern um den Ablauf zu zeigen, Fragen zu klären und sicherzustellen, dass TattooMate zu deinem Studio passt."
+      }
+    ],
+
+    "cta": {
+      "title": "Noch Fragen offen?",
+      "text": "Zögere nicht und schreib uns an."
+    }
+  },
   "footer": {
     "claim": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
     "meta": {

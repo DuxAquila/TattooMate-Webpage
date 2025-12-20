@@ -603,6 +603,80 @@
       "text": "In the demo, I’ll show you TattooMate in a real workflow. The price stays the same – the demo is for your questions."
     }
   },
+  "faq": {
+    "hero": {
+      "title": "Frequently asked questions",
+      "lead": "Answered clearly, honestly and based on real studio workflows."
+    },
+
+    "items": [
+      {
+        "q": "What is TattooMate?",
+        "a": "TattooMate is a web-based solution for digital consent forms, health information and signatures in tattoo and piercing studios."
+      },
+      {
+        "q": "Does it work on phones and tablets?",
+        "a": "Yes. TattooMate is fully web-based and optimized for touch devices – no app required."
+      },
+      {
+        "q": "Is there a limit on the number of artists?",
+        "a": "No. TattooMate is licensed per studio. You can add as many artists as you want without affecting the price."
+      },
+      {
+        "q": "Is the event or convention mode an extra?",
+        "a": "No. Event and convention mode are always included and can be enabled when needed."
+      },
+      {
+        "q": "Can I separate studio and convention workflows?",
+        "a": "Yes. The event/convention mode provides separate capture and a dedicated overview."
+      },
+      {
+        "q": "How does the U18 workflow actually work?",
+        "a": "If a customer is below the minimum age, parent data, signatures and required uploads become mandatory. Nothing can be submitted until all required fields are completed."
+      },
+      {
+        "q": "Can I generate PDFs again later?",
+        "a": "Yes. Studios can generate, print or save PDFs again at any time from the admin area."
+      },
+      {
+        "q": "Who has access to customer data?",
+        "a": "Only authorized studio users. TattooMate uses roles and permissions so not everyone can see or edit everything."
+      },
+      {
+        "q": "Is TattooMate legally compliant?",
+        "a": "TattooMate supports proper documentation of consents, signatures and health data. It does not replace legal advice, but ensures traceable and reproducible studio workflows."
+      },
+      {
+        "q": "Is TattooMate GDPR compliant?",
+        "a": "Yes. No IDs or PDFs are sent via email. Documents are generated in the admin area and remain under your control."
+      },
+      {
+        "q": "Is there a newsletter or opt-in feature?",
+        "a": "Yes, optionally. Only if the customer actively agrees. Unsubscribing is possible at any time and consent details are documented."
+      },
+      {
+        "q": "Is the newsletter system GDPR compliant?",
+        "a": "Yes. Customers choose during the consent process whether they want to receive newsletters. An unsubscribe link is internally managed and must be included."
+      },
+      {
+        "q": "Can I host TattooMate myself?",
+        "a": "Yes. You can run TattooMate on your own server or use hosting provided by TattooMate. Both options are clearly defined and transparently priced."
+      },
+      {
+        "q": "Are there any hidden costs or additional fees?",
+        "a": "No. All prices are fixed. There are no usage-based fees, no hidden charges and no negotiations."
+      },
+      {
+        "q": "Why is there a demo if prices are fixed?",
+        "a": "The demo is not for price negotiation. It is meant to show the workflow, answer questions and ensure TattooMate fits your studio."
+      }
+    ],
+
+    "cta": {
+      "title": "Still have questions?",
+      "text": "Feel free to get in touch with us."
+    }
+  },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",
     "meta": {
