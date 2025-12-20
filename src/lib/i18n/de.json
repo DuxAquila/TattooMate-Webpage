@@ -346,6 +346,92 @@
       "a4": "Ja, optional. Nur wenn der Kunde aktiv zustimmt. Abmelden ist jederzeit möglich – und der Nachweis (Zeitpunkt/Quelle) ist nachvollziehbar."
     }
   },
+  "formulare": {
+    "hero": {
+      "title": "Formulare, die mehr können als Papier",
+      "lead": "Digitale Tattoo- und Piercingformulare mit Pflichtlogik, U18-Absicherung, Signaturen und sauberer Dokumentation.",
+      "note": "Kein „PDF zum Ausdrucken“. Sondern ein Ablauf, der Fehler verhindert und Nachweise schafft."
+    },
+
+    "overview": {
+      "title": "Was die Formulare in TattooMate auszeichnet",
+      "lead": "Die meisten Probleme entstehen nicht beim Tätowieren – sondern bei fehlenden Angaben, falschen Abläufen oder schlechter Doku.",
+      "o1": {
+        "title": "Pflichtlogik statt Glück",
+        "text": "Validierung und Pflichtfelder sorgen dafür, dass nichts vergessen wird – bevor es gespeichert wird."
+      },
+      "o2": {
+        "title": "U18 richtig abgesichert",
+        "text": "Unter Volljährigkeit werden Elternfelder, Unterschriften und erforderliche Uploads automatisch verpflichtend."
+      },
+      "o3": {
+        "title": "PDF jederzeit reproduzierbar",
+        "text": "Das Studio kann aus dem Datensatz jederzeit wieder ein PDF erzeugen – ohne dass der Kunde nachliefern muss."
+      }
+    },
+
+    "types": {
+      "title": "Welche Formulare du bekommst",
+      "lead": "Tattoo- und Piercing-Formulare sind im Basispaket enthalten. Zusätzliche Formulare wie Zahnschmuck können optional ergänzt werden. Der Ablauf bleibt immer gleich: sauber, nachvollziehbar, sicher.",
+
+      "tattoo": {
+        "title": "Tattoo-Formular",
+        "lead": "Einverständnis + Gesundheitsangaben + Unterschriften – strukturiert und vollständig.",
+        "b1": "Kundendaten, Kontaktdaten, Geburtsdatum",
+        "b2": "Gesundheitsfragen und relevante Risiken",
+        "b3": "Einverständnisse und Studio-texte (dynamisch aus Settings)",
+        "b4": "Event-Modus tauglich (Conventions/Walk-ins)",
+        "b5": "Motiv-, Stencil- und Referenzbilder pro Einverständnis speicherbar",
+        "b6": "Unterschrift(en) direkt im Formular",
+        "b7": "Nachstiche mit separater Unterschrift und Datum (rechtlich sauber getrennt)"
+      },
+
+      "piercing": {
+        "title": "Piercing-Formular",
+        "lead": "Piercing-spezifische Abfragen inkl. Sonderfälle – ohne dass du was vergisst.",
+        "b1": "Piercingstelle, Vorpiercings, Komplikationen",
+        "b2": "Relevante medizinische Angaben (z. B. Blutdruck, Allergien etc.)",
+        "b3": "Event-Modus tauglich (Conventions/Walk-ins)",
+        "b4": "Option zur Ablehnung mit dokumentiertem Grund"
+      },
+      "tooth": {
+        "title": "Zahnschmuck-Formular",
+        "lead": "Zahnschmuck-spezifische Abfragen mit klarer Risikoaufklärung und sauberer Dokumentation.",
+        "b1": "Zahnstatus (z. B. Karies, Zahnfleischprobleme, Zahnersatz)",
+        "b2": "Relevante medizinische Angaben und Allergien (z. B. Kleber, Latex, Nickel)",
+        "b3": "Aufklärung über Risiken wie Zahnschmelzschäden oder Ablösungen",
+        "b4": "Einverständnis und Unterschrift speziell für Zahnschmuck"
+      }
+    },
+
+    "safety": {
+      "title": "Absicherung im Ablauf",
+      "lead": "Die Stärke ist nicht „digital“. Die Stärke ist: TattooMate lässt dich keine gefährlichen Lücken bauen.",
+
+      "card1": {
+        "title": "Validierung & Pflichtfelder",
+        "lead": "Wenn wichtige Angaben fehlen, wird nicht „trotzdem gespeichert“ – sondern sauber geführt.",
+        "b1": "Pflichtfelder: Name, Geburtsdatum, Einverständnisse etc.",
+        "b2": "Bedingte Felder: Details nur wenn nötig (z. B. bei Allergien)",
+        "b3": "Saubere Struktur statt endloser Freitexte",
+        "b4": "Weniger Fehler im Stress (Walk-ins, Events)"
+      },
+
+      "card2": {
+        "title": "U18-Workflow mit Sperre",
+        "lead": "Unter Volljährigkeit wird nichts „durchgewunken“. Das System erzwingt den korrekten Ablauf.",
+        "b1": "Leistungsabhängiges Mindestalter (z. B. Piercing ab 12, Tattoo ab 18) Die Altersgrenze wird je Formular festgelegt und entscheidet, was überhaupt erlaubt ist.",
+        "b2": "Eltern-/Erziehungsberechtigte-Daten verpflichtend",
+        "b3": "Unterschriften + Uploads verpflichtend",
+        "b4": "Übermittlung blockiert, solange Pflichtteile fehlen"
+      }
+    },
+
+    "cta": {
+      "title": "Willst du sehen, wie schnell das im Studio läuft?",
+      "text": "Dann zeig ich dir den Ablauf einmal live. Demo gibt’s nur auf Anfrage – kein öffentlicher Zugang."
+    }
+  },
   "footer": {
     "claim": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
     "meta": {

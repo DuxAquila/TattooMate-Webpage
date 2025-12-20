@@ -358,6 +358,93 @@
       "a4": "Yes, optional. Only with explicit consent. Unsubscribe anytime – and proof (time/source) is traceable."
     }
   },
+  "formulare": {
+    "hero": {
+      "title": "Forms that do more than paper",
+      "lead": "Digital tattoo and piercing forms with required-field logic, under-18 protection, signatures and clean documentation.",
+      "note": "Not “a PDF to print”. A workflow that prevents mistakes and creates proper records."
+    },
+
+    "overview": {
+      "title": "What makes TattooMate forms stand out",
+      "lead": "Most problems don’t happen during tattooing – they happen because information is missing, workflows are wrong, or documentation is weak.",
+      "o1": {
+        "title": "Required logic instead of luck",
+        "text": "Validation and required fields ensure nothing is missing before the form can be submitted."
+      },
+      "o2": {
+        "title": "Under-18 handled properly",
+        "text": "For minors, guardian fields, signatures and required uploads become mandatory automatically."
+      },
+      "o3": {
+        "title": "PDFs reproducible at any time",
+        "text": "The studio can generate a PDF from the stored data at any time – without asking the client again."
+      }
+    },
+
+    "types": {
+      "title": "Which forms are included",
+      "lead": "Tattoo and piercing forms are included in the base package. Additional forms such as tooth jewelry can be added optionally. The workflow always stays the same: clean, traceable and safe.",
+
+      "tattoo": {
+        "title": "Tattoo form",
+        "lead": "Consent, medical information and signatures – structured and complete.",
+        "b1": "Client data, contact details, date of birth",
+        "b2": "Medical questions and relevant risks",
+        "b3": "Consents and studio texts (loaded dynamically from settings)",
+        "b4": "Event-mode ready (conventions / walk-ins)",
+        "b5": "Design, stencil and reference images stored per consent",
+        "b6": "Signature(s) captured directly in the form",
+        "b7": "Touch-ups documented with a separate signature and date (legally separated)"
+      },
+
+      "piercing": {
+        "title": "Piercing form",
+        "lead": "Piercing-specific questions including special cases – without forgetting anything.",
+        "b1": "Piercing location, previous piercings, complications",
+        "b2": "Relevant medical information (e.g. blood pressure, allergies, etc.)",
+        "b3": "Event-mode ready (conventions / walk-ins)",
+        "b4": "Option to record a rejection with documented reason"
+      },
+
+      "tooth": {
+        "title": "Tooth jewelry form",
+        "lead": "Tooth-jewelry-specific questions with clear risk disclosure and clean documentation.",
+        "b1": "Dental status (e.g. cavities, gum issues, dental restorations)",
+        "b2": "Relevant medical information and allergies (e.g. adhesive, latex, nickel)",
+        "b3": "Risk information such as enamel damage or detachment",
+        "b4": "Consent and signature specifically for tooth jewelry"
+      }
+    },
+
+    "safety": {
+      "title": "Protection built into the workflow",
+      "lead": "The strength is not “digital”. The strength is that TattooMate does not allow risky gaps.",
+
+      "card1": {
+        "title": "Validation & required fields",
+        "lead": "If important information is missing, it won’t be “saved anyway” – the workflow guides the user correctly.",
+        "b1": "Required fields: name, date of birth, consents, etc.",
+        "b2": "Conditional fields: details only when needed (e.g. allergies)",
+        "b3": "Clean structure instead of endless free text",
+        "b4": "Fewer mistakes under pressure (walk-ins, events)"
+      },
+
+      "card2": {
+        "title": "Under-18 workflow with blocking",
+        "lead": "For minors, nothing is waved through. The system enforces the correct process.",
+        "b1": "Service-specific minimum age (e.g. piercing from 12, tattoo from 18). The age limit is defined per form and determines what is allowed.",
+        "b2": "Guardian / parent details are mandatory",
+        "b3": "Signatures and uploads are mandatory",
+        "b4": "Submission is blocked until all required elements are complete"
+      }
+    },
+
+    "cta": {
+      "title": "Want to see how fast this works in a real studio?",
+      "text": "I’ll walk you through the workflow live. Demos are provided on request only – no public access."
+    }
+  },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",
     "meta": {
