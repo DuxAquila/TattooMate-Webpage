@@ -80,15 +80,13 @@ export default function Header() {
           <Link className="tm-nav__link" href={href('/sicherheit')}>{tt('common.nav.security', 'Sicherheit')}</Link>
           <Link className="tm-nav__link" href={href('/preise')}>{tt('common.nav.pricing', 'Preise')}</Link>
           <Link className="tm-nav__link" href={href('/faq')}>{tt('common.nav.faq', 'FAQ')}</Link>
-        </nav>
-
-        <div className="tm-header__actions">
-          <Link className="tm-link" href={href('/login')}>{tt('common.nav.login', 'Login')}</Link>
-
-          {/* Entscheide: intern oder extern. Hier intern: */}
+          <Link className="tm-nav__link" href={href('/login')}>{tt('common.nav.login', 'Login')}</Link>
           <Link className="tm-btn tm-btn--primary" href={href('/demo')}>
             {tt('common.nav.demo', 'Live-Demo ansehen')}
           </Link>
+      </nav>
+
+        <div className="tm-header__actions">
           <LangSwitch lang={lang} />
           <button
             type="button"

@@ -456,6 +456,7 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  z-index: 0;
 }
 
 .tm-drawer__panel{
@@ -473,6 +474,7 @@
   overflow: hidden;
   transform: translateY(-6px);
   transition: transform 180ms var(--tm-ease);
+  z-index: 1;
 }
 
 .tm-drawer.is-open .tm-drawer__panel{
@@ -483,6 +485,8 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .tm-drawer__link{
