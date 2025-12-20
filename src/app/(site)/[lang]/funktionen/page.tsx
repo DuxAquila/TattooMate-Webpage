@@ -1,10 +1,6 @@
-// File: /src/app/(site)/[lang]/page.tsx
+// File: /src/app/(site)/[lang]/funktionen/page.tsx
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
-import UseCasesSection from '@/components/site/UseCasesSection';
-import HowToSection from '@/components/site/HowToSection';
-import MiniFaqSection from '@/components/site/MiniFaqSection';
-import CtaSection from '@/components/site/CtaSection';
 
 export default async function HomePage({
   params,
@@ -21,81 +17,8 @@ export default async function HomePage({
     <>
       <section className="tm-section tm-section--soft tm-section--accent-top">
         <div className="tm-container tm-center tm-stack-md">
-          <h1 className="tm-h1">{t(dict, "home.hero.title")}</h1>
-
-          <p className="tm-lead">{t(dict, "home.hero.subtitle")}</p>
-
-          <div className="tm-actions">
-            <a href={`/${lang}/demo`} className="tm-btn tm-btn--primary">
-              {t(dict, "common.cta.demo")}
-            </a>
-            <a href={`/${lang}/funktionen`} className="tm-btn tm-btn--ghost">
-              {t(dict, "common.cta.features")}
-            </a>
-          </div>
-
-          <div className="tm-badges">
-            <span className="tm-pill">{t(dict, "common.trust.dsgvo")}</span>
-            <span className="tm-pill">{t(dict, "common.trust.studio")}</span>
-            <span className="tm-pill">{t(dict, "common.trust.nocloud")}</span>
-          </div>
-
-          <p className="tm-note">{t(dict, "home.hero.note")}</p>
         </div>
       </section>
-      <UseCasesSection
-        headline={t(dict, 'home.usecases.headline')}
-        subtitle={t(dict, 'home.usecases.subtitle')}
-        items={dict.home.usecases.items}
-        ctaEvent={t(dict, 'home.usecases.cta.event')}
-        ctaQr={t(dict, 'home.usecases.cta.tools')}
-        previewStudioTitle={t(dict, 'home.usecases.preview.studio.title')}
-        previewStudioText={t(dict, 'home.usecases.preview.studio.text')}
-        previewEventTitle={t(dict, 'home.usecases.preview.event.title')}
-        previewEventText={t(dict, 'home.usecases.preview.event.text')}
-        previewQrTitle={t(dict, 'home.usecases.preview.qrcode.title')}
-        previewQrText={t(dict, 'home.usecases.preview.qrcode.text')}
-      />
-      <HowToSection
-        headline={t(dict, 'home.howto.headline')}
-        subtitle={t(dict, 'home.howto.subtitle')}
-        items={dict.home?.howto?.items ?? []}
-        ctaPrimaryLabel={t(dict, 'home.howto.cta.primary')}
-        ctaPrimaryHref={`/${lang}/demo`}
-        ctaSecondaryLabel={t(dict, 'home.howto.cta.secondary')}
-        ctaSecondaryHref={`/${lang}/funktionen`}
-      />
-      <section className="tm-section">
-        <div className="tm-container">
-          <div className="tm-head">
-            <h2 className="tm-h2">{t(dict, 'home.features.headline')}</h2>
-          </div>
-
-          <div className="tm-grid tm-grid--3">
-            {features.map((item: any, idx: number) => (
-              <div key={idx} className="tm-card tm-card--hover">
-                <h3 className="tm-h3">{item.title}</h3>
-                <p className="tm-text">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <MiniFaqSection
-        headline={t(dict, 'home.minifaq.headline')}
-        subtitle={t(dict, 'home.minifaq.subtitle')}
-        items={dict.home?.minifaq?.items ?? []}
-        moreLabel={t(dict, 'home.minifaq.more')}
-        moreHref={`/${lang}/faq`}
-      />
-      <CtaSection
-        headline={t(dict, 'home.cta.headline')}
-        subtitle={t(dict, 'home.cta.subtitle')}
-        primaryLabel={t(dict, 'home.cta.primary')}
-        primaryHref={`/${lang}/demo`}
-        secondaryLabel={t(dict, 'home.cta.secondary')}
-        secondaryHref={`/${lang}/kontakt`}
-      />
     </>
   );
 }
