@@ -432,6 +432,89 @@
       "text": "Dann zeig ich dir den Ablauf einmal live. Demo gibt’s nur auf Anfrage – kein öffentlicher Zugang."
     }
   },
+  "sicherheit": {
+    "hero": {
+      "title": "Sicherheit und Kontrolle",
+      "lead": "TattooMate ist so gebaut, dass Daten geschützt sind, Abläufe nachvollziehbar bleiben und Fehler vermieden werden.",
+      "note": "Keine leeren Versprechen. Sondern klare technische und organisatorische Maßnahmen."
+    },
+
+    "overview": {
+      "title": "Worum es bei Sicherheit wirklich geht",
+      "lead": "Sicherheit heißt nicht nur Verschlüsselung. Sicherheit heißt Kontrolle, klare Zuständigkeiten und saubere Abläufe.",
+      "o1": {
+        "title": "Daten bleiben unter Kontrolle",
+        "text": "Du weißt, wo deine Daten liegen, wer darauf zugreifen darf und was damit passiert."
+      },
+      "o2": {
+        "title": "Zugriffe sind klar geregelt",
+        "text": "Nicht jeder sieht alles. Rollen und Rechte verhindern unnötige oder falsche Zugriffe."
+      },
+      "o3": {
+        "title": "Fehler werden abgefangen",
+        "text": "Pflichtlogiken, Sperren und Validierungen verhindern riskante Lücken im Alltag."
+      }
+    },
+
+    "data": {
+      "title": "Datenhaltung & Hosting",
+      "lead": "TattooMate zwingt dich nicht in eine fremde Cloud. Du entscheidest, wie und wo deine Daten betrieben werden.",
+
+      "card1": {
+        "title": "Self-Hosting ohne Cloud-Zwang",
+        "lead": "Volle Kontrolle über Infrastruktur und Daten – kein Vendor-Lock-in.",
+        "b1": "Betrieb auf eigenem Server oder eigener Umgebung möglich",
+        "b2": "Keine Abhängigkeit von externen Cloud-Anbietern",
+        "b3": "Klare Trennung zwischen Anwendung und Marketing-Webseite",
+        "b4": "Geeignet für Studios mit erhöhten Datenschutzanforderungen"
+      },
+
+      "card2": {
+        "title": "Bewusster Umgang mit Daten",
+        "lead": "Nur das, was wirklich gebraucht wird, wird gespeichert.",
+        "b1": "Keine unnötigen Tracking- oder Analyse-Skripte",
+        "b2": "Keine Weitergabe von Daten an Drittanbieter",
+        "b3": "Personenbezogene Daten bleiben im Studio-Kontext",
+        "b4": "PDFs und Bilder sind geschützt abrufbar, nicht öffentlich"
+      },
+      "card3": {
+        "title": "Betrieb als SaaS (Hosting durch TattooMate)",
+        "lead": "Auf Wunsch betreiben wir TattooMate für dein Studio – ohne die Kontrolle über deine Daten aus der Hand zu geben.",
+        "b1": "Getrennte Instanzen pro Studio (keine gemeinsame Datenhaltung)",
+        "b2": "Kein Zugriff Dritter auf Kundendaten oder Formulare",
+        "b3": "Zugriffe ausschließlich über gesicherte Verbindungen",
+        "b4": "Geeignet für Studios, die keinen eigenen Server betreiben möchten"
+      }
+    },
+
+    "access": {
+      "title": "Zugriff, Rollen & Schutz",
+      "lead": "Im Studio arbeiten mehrere Personen. TattooMate trennt Zugriffe sauber.",
+
+      "card1": {
+        "title": "Rollen- und Rechtesystem",
+        "lead": "Nicht jeder Mitarbeiter braucht Zugriff auf alle Funktionen oder Daten.",
+        "b1": "Rollenbasierte Rechte (z. B. ansehen vs. bearbeiten)",
+        "b2": "Admin-Bereich nur für berechtigte Nutzer",
+        "b3": "Weniger Risiko durch Fehlbedienung",
+        "b4": "Geeignet für Teams und Guest-Artists"
+      },
+
+      "card2": {
+        "title": "Geschützte Inhalte & Bilder",
+        "lead": "Bilder, PDFs und sensible Daten sind nicht frei zugänglich.",
+        "b1": "Geschützte API-Endpunkte für Dateien",
+        "b2": "Zugriff nur mit aktiver Session und Berechtigung",
+        "b3": "Keine öffentlichen Dateipfade",
+        "b4": "Besonders wichtig für Ausweise, Tattoo- und Nachstichbilder"
+      }
+    },
+
+    "cta": {
+      "title": "Fragen zur Sicherheit oder zum Betrieb?",
+      "text": "Ich erkläre dir gerne, wie TattooMate betrieben wird und welche Optionen es für dein Studio gibt. Demos erfolgen bewusst nur auf Anfrage."
+    }
+  },
   "footer": {
     "claim": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
     "meta": {

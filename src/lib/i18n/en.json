@@ -445,6 +445,90 @@
       "text": "I’ll walk you through the workflow live. Demos are provided on request only – no public access."
     }
   },
+  "sicherheit": {
+    "hero": {
+      "title": "Security and control",
+      "lead": "TattooMate is built to protect data, keep workflows traceable and prevent mistakes.",
+      "note": "No empty promises. Clear technical and organizational measures."
+    },
+
+    "overview": {
+      "title": "What security really means",
+      "lead": "Security is more than encryption. Security means control, clear responsibilities and clean workflows.",
+      "o1": {
+        "title": "Data stays under control",
+        "text": "You know where your data is stored, who can access it and what happens to it."
+      },
+      "o2": {
+        "title": "Access is clearly regulated",
+        "text": "Not everyone sees everything. Roles and permissions prevent unnecessary or incorrect access."
+      },
+      "o3": {
+        "title": "Errors are prevented",
+        "text": "Required logic, blocking rules and validation prevent risky gaps in everyday workflows."
+      }
+    },
+
+    "data": {
+      "title": "Data storage & hosting",
+      "lead": "TattooMate does not force you into someone else’s cloud. You decide how and where your data is operated.",
+
+      "card1": {
+        "title": "Self-hosting without cloud lock-in",
+        "lead": "Full control over infrastructure and data – no vendor lock-in.",
+        "b1": "Operation on your own server or environment is possible",
+        "b2": "No dependency on external cloud providers",
+        "b3": "Clear separation between application and marketing website",
+        "b4": "Suitable for studios with increased data protection requirements"
+      },
+
+      "card2": {
+        "title": "Responsible data handling",
+        "lead": "Only what is actually required is stored.",
+        "b1": "No unnecessary tracking or analytics scripts",
+        "b2": "No data sharing with third parties",
+        "b3": "Personal data remains within the studio context",
+        "b4": "PDFs and images are protected and not publicly accessible"
+      },
+
+      "card3": {
+        "title": "SaaS operation (hosted by TattooMate)",
+        "lead": "If desired, we operate TattooMate for your studio – without you losing control over your data.",
+        "b1": "Separate instances per studio (no shared data storage)",
+        "b2": "No access by third parties to client data or forms",
+        "b3": "Access exclusively via secured connections",
+        "b4": "Suitable for studios that do not want to operate their own server"
+      }
+    },
+
+    "access": {
+      "title": "Access, roles & protection",
+      "lead": "Studios work with multiple people. TattooMate cleanly separates access.",
+
+      "card1": {
+        "title": "Role and permission system",
+        "lead": "Not every staff member needs access to all functions or data.",
+        "b1": "Role-based permissions (e.g. view vs edit)",
+        "b2": "Admin area restricted to authorized users",
+        "b3": "Reduced risk of incorrect operation",
+        "b4": "Suitable for teams and guest artists"
+      },
+
+      "card2": {
+        "title": "Protected content & images",
+        "lead": "Images, PDFs and sensitive data are not freely accessible.",
+        "b1": "Protected API endpoints for files",
+        "b2": "Access only with an active session and proper authorization",
+        "b3": "No public file paths",
+        "b4": "Especially important for IDs, tattoo and touch-up images"
+      }
+    },
+
+    "cta": {
+      "title": "Questions about security or operation?",
+      "text": "I’m happy to explain how TattooMate is operated and which options are available for your studio. Demos are intentionally provided on request only."
+    }
+  },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",
     "meta": {
