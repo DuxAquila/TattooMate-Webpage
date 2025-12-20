@@ -286,17 +286,16 @@
 
       "security": {
         "title": "Datenschutz, Rollen & Betrieb",
-        "lead": "Du verkaufst Vertrauen. Also muss dein System auch vertrauenswürdig sein.",
+        "lead": "Man verkauft Vertrauen. Also muss das System auch vertrauenswürdig sein.",
 
         "card1": {
-          "title": "Privacy-first, ohne Tracking-Bullshit",
-          "lead": "Du willst keine Analytics-Abos, keine Cookies und keine Fremdskripte? Gut so.",
+          "title": "Privacy-first, ohne unnötiges Tracking",
+          "lead": "Keine Analytics-Abos, keine Cookies und keine Fremdskripte – genau so ist es gedacht.",
           "b1": "Keine unnötigen Drittanbieter-Tracker",
           "b2": "Daten bleiben im Studio-Kontext",
-          "b3": "Prozesse statt „irgendein Google-Tool“",
-          "b4": "DSGVO-bewusst entwickelt (ohne leere Versprechen)"
+          "b3": "Klare Prozesse statt externer Tracking-Tools",
+          "b4": "DSGVO-bewusst entwickelt – ohne leere Versprechen"
         },
-
         "card2": {
           "title": "Rollen & Rechte (nicht jeder sieht alles)",
           "lead": "Im Studio arbeiten mehrere Leute – TattooMate kann Zugriff sauber trennen.",
