@@ -55,6 +55,9 @@ export default function Footer() {
             <Link href={href('/agb')}>
               {tt('common.nav.agb', 'AGB')}
             </Link>
+            <Link href={href('/avv')}>
+              {tt('common.nav.avv', 'AVV')}
+            </Link>
           </nav>
         </div>
 

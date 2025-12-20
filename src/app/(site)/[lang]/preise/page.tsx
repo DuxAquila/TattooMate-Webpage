@@ -9,6 +9,7 @@ function PriceCard({
   lead,
   bullets,
   highlight,
+  note,
 }: {
   title: string;
   price: string;
@@ -16,6 +17,7 @@ function PriceCard({
   lead?: string;
   bullets: string[];
   highlight?: boolean;
+  note?: React.ReactNode;
 }) {
   return (
     <div className="tm-card tm-card--hover">
@@ -29,6 +31,7 @@ function PriceCard({
         {bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}
+        {note ? <div className="tm-note">{note}</div> : null}
       </ul>
     </div>
   );
@@ -111,6 +114,14 @@ export default async function Preise({
                 t(dict, "preise.hosting.b2"),
                 t(dict, "preise.hosting.b3"),
               ]}
+              note={
+                <>
+                  {t(dict, "preise.hosting.avvNote")}{" "}
+                  <a href={`/${lang}/avv`} className="tm-link">
+                    {t(dict, "common.nav.avv")}
+                  </a>
+                </>
+              }
             />
 			
             <PriceCard

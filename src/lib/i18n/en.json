@@ -10,7 +10,8 @@
       "demo": "Request a live demo",
       "imprint": "Imprint",
       "privacy": "Privacy policy",
-      "agb": "Terms"
+      "agb": "Terms",
+      "avv": "DPA"
     },
     "cta": {
       "demo": "Request a live demo",
@@ -570,7 +571,8 @@
       "lead": "We take care of operation, updates and backups.",
       "b1": "Separate instance per studio",
       "b2": "Updates, maintenance and backups included",
-      "b3": "No own server required"
+      "b3": "No own server required",
+      "avvNote": "When used as SaaS, data processing is based on a"
     },
 
     "setup": {
@@ -676,6 +678,210 @@
       "title": "Still have questions?",
       "text": "Feel free to get in touch with us."
     }
+  },
+  "impressum": {
+    "hero": {
+      "title": "Legal notice",
+      "lead": "Information according to § 5 TMG"
+    },
+
+    "provider": {
+      "title": "Service provider",
+      "name": "TattooMate",
+      "address": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nGermany"
+    },
+
+    "contact": {
+      "title": "Contact",
+      "email": "Email: info@tattoomate.de"
+    },
+
+    "legal": {
+      "title": "Legal information",
+      "text": "TattooMate is a software solution designed to support studio workflows. The content of this website is provided for informational purposes only and does not constitute legal advice."
+    },
+
+    "liability": {
+      "title": "Liability for content",
+      "text": "As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 (1) TMG."
+    },
+
+    "copyright": {
+      "title": "Copyright",
+      "text": "The content and works created by the site operators on these pages are subject to German copyright law."
+    }
+  },
+  "datenschutz": {
+    "hero": {
+      "title": "Privacy policy",
+      "lead": "Clear, understandable and without marketing fluff.",
+      "note": "This page describes data processing on the TattooMate website. The TattooMate app itself is operated separately by the studio (self-hosted or SaaS)."
+    },
+
+    "controller": {
+      "title": "Controller",
+      "text": "The controller under GDPR is the provider listed in the legal notice."
+    },
+
+    "general": {
+      "title": "General information",
+      "text": "We only process personal data when required to operate this website or when you actively provide data (e.g. via contact or demo request)."
+    },
+
+    "hosting": {
+      "title": "Website hosting",
+      "text": "When you access this website, technically necessary data is processed to deliver and secure the service."
+    },
+
+    "cloudflare": {
+      "title": "Cloudflare (CDN, DNS, protection against abuse)",
+      "text": "This website uses Cloudflare as a content delivery network (CDN) and security service (e.g. DDoS protection). Requests may be processed via Cloudflare. Depending on configuration, IP address, device/browser information and technical metadata may be processed to ensure delivery and security."
+    },
+
+    "logs": {
+      "title": "Server and security logs",
+      "text": "When accessing the website, server and security logs may be generated (e.g. IP address, timestamp, requested page, referrer, user agent, status code). This data is used for technical operation, troubleshooting and abuse prevention. We do not combine this with other data or perform profiling."
+    },
+
+    "cookies": {
+      "title": "Cookies and tracking",
+      "text": "We do not use unnecessary tracking or analytics cookies on this website. If technically necessary cookies are used (e.g. for language settings), they are strictly used for website functionality."
+    },
+
+    "contact": {
+      "title": "Contact / demo request",
+      "text": "If you contact us (e.g. via email or a form), we process the data you provide to handle your request. We do not share this data with third parties unless it is technically required to process your request."
+    },
+
+    "rights": {
+      "title": "Your rights",
+      "text": "You have the right to access, rectification, erasure, restriction of processing, data portability and to object. You also have the right to lodge a complaint with a data protection authority."
+    },
+
+    "changes": {
+      "title": "Changes",
+      "text": "We may update this privacy policy when necessary, e.g. if technical processes change."
+    }
+  },
+  "agb": {
+    "hero": {
+      "title": "Terms and Conditions",
+      "lead": "General terms and conditions for TattooMate.",
+      "note": "Note: These terms provide a general framework. A legal review is recommended before commercial use."
+    },
+
+    "items": [
+      {
+        "title": "1. Scope",
+        "text": "These Terms and Conditions apply to all contracts for the use of the software “TattooMate” as well as related services (e.g. hosting, setup, training) concluded between the provider and the customer (studio).\n\nDeviating terms of the customer shall only apply if expressly agreed in writing by the provider."
+      },
+      {
+        "title": "2. Subject of the service",
+        "text": "TattooMate is a software solution designed to support studio workflows, in particular the digital capture and documentation of consents, health information, signatures and related documents.\n\nThe provider owes the provision of the software within the agreed scope of services. Legal advice is not part of the service."
+      },
+      {
+        "title": "3. Conclusion of contract",
+        "text": "A contract is concluded as soon as the customer accepts an offer from the provider or the provider activates or delivers the service.\n\nThe provider may make the conclusion of the contract dependent on verification of the information provided or advance payment."
+      },
+      {
+        "title": "4. Prices and payment terms",
+        "text": "The prices agreed at the time of conclusion of the contract shall apply. Unless otherwise stated, all prices are exclusive of statutory VAT.\n\nOne-time services (e.g. license, setup, modules) are due before service provision unless otherwise agreed. Ongoing services (e.g. hosting) are billed monthly in advance unless otherwise agreed."
+      },
+      {
+        "title": "5. License and rights of use (self-hosting)",
+        "text": "In the case of self-hosting, the customer is granted a non-exclusive, non-transferable right to use the software for their own studio operations.\n\nPassing on, renting, selling or making the software publicly available is not permitted without the provider’s express consent.\n\nThe customer is responsible for the proper operation of their infrastructure (servers, updates, backups, security) unless additional services have been agreed."
+      },
+      {
+        "title": "6. Hosting (SaaS)",
+        "text": "If hosting by the provider is agreed, the provider shall make TattooMate available as a hosted service.\n\nThe provider strives for high availability. Maintenance windows, updates or disruptions may lead to temporary restrictions.\n\nThe customer is responsible for proper use, their access credentials and the authorization of their users."
+      },
+      {
+        "title": "7. Obligations of the customer",
+        "text": "The customer is obliged to use the software only in accordance with applicable law and to instruct their users accordingly.\n\nThe customer is the controller within the meaning of the GDPR for personal data collected in the studio, unless an alternative model is expressly agreed.\n\nThe customer must ensure that access is granted only to authorized persons (e.g. via roles/permissions and secure passwords)."
+      },
+      {
+        "title": "8. Data protection and data processing",
+        "text": "In the case of self-hosting, data generally remains under the responsibility and infrastructure of the customer.\n\nIn the case of hosting (SaaS), a data processing agreement (DPA) may be required. Details are regulated within the contract.\n\nFurther information can be found in the privacy policy."
+      },
+      {
+        "title": "9. Updates and further development",
+        "text": "TattooMate is continuously developed. The provider may improve, modify or extend functions provided that the agreed scope of services is not materially impaired.\n\nIn the case of self-hosting, the customer may install updates as they become available. In the case of hosting (SaaS), updates are usually installed by the provider."
+      },
+      {
+        "title": "10. Support and training",
+        "text": "The scope of support and response times depend on the agreed package or offer.\n\nTraining or onboarding services, if booked, are charged at the agreed hourly rate."
+      },
+      {
+        "title": "11. Defects and liability",
+        "text": "The provider shall be liable without limitation in cases of intent and gross negligence.\n\nIn cases of slight negligence, the provider shall only be liable for breaches of essential contractual obligations (cardinal obligations) and limited to the typically foreseeable damage.\n\nLiability for lost profits, indirect damages or consequential damages is excluded to the extent permitted by law.\n\nThe provider is not liable for the substantive correctness of studio texts, consents or legal wording defined by the customer."
+      },
+      {
+        "title": "12. Term and termination (SaaS)",
+        "text": "For ongoing services (e.g. hosting), the terms and notice periods agreed in the offer or contract shall apply.\n\nAfter termination, the customer may, where technically possible and agreed, export their data. Details are regulated within the contract."
+      },
+      {
+        "title": "13. Final provisions",
+        "text": "The law of the Federal Republic of Germany shall apply.\n\nIf individual provisions are or become invalid, the validity of the remaining provisions shall remain unaffected.\n\nThe place of jurisdiction is, insofar as legally permissible, the provider’s place of business."
+      }
+    ]
+  },
+  "avv": {
+    "hero": {
+      "title": "Data Processing Agreement (DPA)",
+      "lead": "Agreement on the processing of personal data pursuant to Art. 28 GDPR.",
+      "note": "This DPA applies only when TattooMate is used as a hosted SaaS solution."
+    },
+
+    "items": [
+      {
+        "title": "1. Subject and duration",
+        "text": "This Data Processing Agreement governs the processing of personal data by the processor on behalf of the controller in connection with the use of TattooMate as a SaaS solution.\n\nThe duration of processing corresponds to the term of the underlying contract."
+      },
+      {
+        "title": "2. Nature and purpose of processing",
+        "text": "Processing is carried out for the purpose of providing and operating the TattooMate software.\n\nThis includes in particular the storage, organization, display and processing of customer data, consents, health information, signatures, images and documents recorded by the studio."
+      },
+      {
+        "title": "3. Categories of data subjects",
+        "text": "Data subjects include in particular:\n- Customers of the studio\n- Legal guardians (for underage cases)\n- Employees and artists of the studio"
+      },
+      {
+        "title": "4. Categories of personal data",
+        "text": "The following categories of personal data are processed in particular:\n- Master data (e.g. name, date of birth)\n- Contact data\n- Health-related data\n- Consents and signatures\n- Image and document data (e.g. IDs, tattoo and touch-up images)"
+      },
+      {
+        "title": "5. Responsibility",
+        "text": "The controller is responsible for the lawfulness of data collection and processing.\n\nThe processor processes personal data exclusively on documented instructions from the controller."
+      },
+      {
+        "title": "6. Obligations of the processor",
+        "text": "The processor undertakes to:\n- treat personal data confidentially\n- implement appropriate technical and organizational measures (TOMs)\n- ensure that only authorized personnel process personal data\n- support the controller in responding to data protection requests"
+      },
+      {
+        "title": "7. Technical and organizational measures",
+        "text": "Measures include in particular:\n- access restrictions and role/permission systems\n- encrypted connections (TLS)\n- separate instances per studio\n- protection against unauthorized access\n\nA detailed overview of the TOMs can be provided upon request."
+      },
+      {
+        "title": "8. Sub-processors",
+        "text": "The use of sub-processors (e.g. hosting or infrastructure providers) takes place only if they are contractually bound to comply with GDPR requirements.\n\nThe controller will be informed of material changes."
+      },
+      {
+        "title": "9. Rights of data subjects",
+        "text": "The processor supports the controller in fulfilling data subjects’ rights (e.g. access, erasure, rectification), insofar as this is technically feasible."
+      },
+      {
+        "title": "10. Termination of processing",
+        "text": "Upon termination of the contract, personal data will be deleted or made available for return at the controller’s choice, unless statutory retention obligations apply."
+      },
+      {
+        "title": "11. Liability",
+        "text": "The liability provisions of the main contract apply. Liability is governed by the applicable provisions of the GDPR."
+      },
+      {
+        "title": "12. Final provisions",
+        "text": "The law of the Federal Republic of Germany shall apply.\n\nIf individual provisions of this DPA are or become invalid, the validity of the remaining provisions shall remain unaffected."
+      }
+    ]
   },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",

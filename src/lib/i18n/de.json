@@ -10,7 +10,8 @@
       "demo": "Live-Demo anfordern",
       "imprint": "Impressum",
       "privacy": "Datenschutz",
-      "agb": "AGB"
+      "agb": "AGB",
+      "avv": "AVV"
     },
     "cta": {
       "demo": "Live-Demo anfordern",
@@ -555,7 +556,8 @@
       "lead": "Wir kümmern uns um Betrieb, Updates und Backups.",
       "b1": "Getrennte Instanz pro Studio",
       "b2": "Updates, Wartung und Backups inklusive",
-      "b3": "Kein eigener Server notwendig"
+      "b3": "Kein eigener Server notwendig",
+      "avvNote": "Bei Nutzung als SaaS erfolgt die Datenverarbeitung auf Grundlage eines"
     },
 
     "setup": {
@@ -661,6 +663,210 @@
       "title": "Noch Fragen offen?",
       "text": "Zögere nicht und schreib uns an."
     }
+  },
+  "impressum": {
+    "hero": {
+      "title": "Impressum",
+      "lead": "Angaben gemäß § 5 TMG"
+    },
+
+    "provider": {
+      "title": "Diensteanbieter",
+      "name": "TattooMate",
+      "address": "Andy Nikodem\nGrüne Twiete 70\n25469 Halstenbek\nDeutschland"
+    },
+
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail: info@tattoomate.de"
+    },
+
+    "legal": {
+      "title": "Rechtliche Hinweise",
+      "text": "TattooMate ist eine Softwarelösung zur Unterstützung von Studioabläufen. Die Inhalte dieser Website dienen der Information und stellen keine rechtliche Beratung dar."
+    },
+
+    "liability": {
+      "title": "Haftung für Inhalte",
+      "text": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+    },
+
+    "copyright": {
+      "title": "Urheberrecht",
+      "text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht."
+    }
+  },
+  "datenschutz": {
+    "hero": {
+      "title": "Datenschutzerklärung",
+      "lead": "Kurz, verständlich und ohne Marketing-Blabla.",
+      "note": "Diese Seite beschreibt die Verarbeitung von Daten auf der TattooMate-Website. Die TattooMate-App selbst wird separat im Studio betrieben (Self-Hosting oder SaaS)."
+    },
+
+    "controller": {
+      "title": "Verantwortlicher",
+      "text": "Verantwortlicher im Sinne der DSGVO ist der im Impressum genannte Anbieter."
+    },
+
+    "general": {
+      "title": "Grundsätzliches",
+      "text": "Wir verarbeiten personenbezogene Daten nur, wenn es für den Betrieb dieser Website erforderlich ist oder wenn du uns Daten aktiv übermittelst (z. B. per Kontakt/Demo-Anfrage)."
+    },
+
+    "hosting": {
+      "title": "Hosting dieser Website",
+      "text": "Beim Aufruf der Website werden technisch notwendige Daten verarbeitet, damit die Seite ausgeliefert und abgesichert werden kann."
+    },
+
+    "cloudflare": {
+      "title": "Cloudflare (CDN, DNS, Schutz vor Missbrauch)",
+      "text": "Diese Website nutzt Cloudflare als Content Delivery Network (CDN) und Sicherheitsdienst (z. B. DDoS-Schutz). Dabei werden Anfragen über Cloudflare verarbeitet. Je nach Konfiguration können dabei IP-Adresse, Geräte- und Browserinformationen sowie technische Metadaten verarbeitet werden, um die Auslieferung und Sicherheit zu gewährleisten."
+    },
+
+    "logs": {
+      "title": "Server- und Sicherheitslogs",
+      "text": "Beim Zugriff auf die Website können Server- und Sicherheitslogs anfallen (z. B. IP-Adresse, Zeitpunkt, aufgerufene Seite, Referrer, User-Agent, Statuscode). Diese Daten dienen der technischen Bereitstellung, Fehleranalyse und Abwehr von Missbrauch. Eine Zusammenführung mit anderen Daten oder ein Profiling findet nicht statt."
+    },
+
+    "cookies": {
+      "title": "Cookies und Tracking",
+      "text": "Wir setzen auf dieser Website keine unnötigen Tracking- oder Analyse-Cookies ein. Sofern technisch notwendige Cookies verwendet werden (z. B. für Spracheinstellungen), dienen sie ausschließlich der Funktion der Website."
+    },
+
+    "contact": {
+      "title": "Kontakt / Demo-Anfrage",
+      "text": "Wenn du uns kontaktierst (z. B. per E-Mail oder Formular), verarbeiten wir die von dir angegebenen Daten zur Bearbeitung deiner Anfrage. Diese Daten geben wir nicht an Dritte weiter, außer es ist zur Bearbeitung technisch erforderlich."
+    },
+
+    "rights": {
+      "title": "Deine Rechte",
+      "text": "Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Außerdem kannst du dich bei einer Datenschutzaufsichtsbehörde beschweren."
+    },
+
+    "changes": {
+      "title": "Änderungen",
+      "text": "Wir können diese Datenschutzerklärung bei Bedarf anpassen, z. B. wenn sich technische Prozesse ändern."
+    }
+  },
+  "agb": {
+    "hero": {
+      "title": "AGB",
+      "lead": "Allgemeine Geschäftsbedingungen für TattooMate.",
+      "note": "Hinweis: Diese AGB sind eine Basis. Vor finalem Verkauf sollte eine rechtliche Prüfung erfolgen."
+    },
+
+    "items": [
+      {
+        "title": "1. Geltungsbereich",
+        "text": "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über die Nutzung der Software „TattooMate“ sowie für damit verbundene Dienstleistungen (z. B. Hosting, Einrichtung, Schulung), die zwischen dem Anbieter und dem Kunden (Studio) geschlossen werden.\n\nAbweichende Bedingungen des Kunden gelten nur, wenn der Anbieter diesen ausdrücklich schriftlich zustimmt."
+      },
+      {
+        "title": "2. Leistungsgegenstand",
+        "text": "TattooMate ist eine Software zur Unterstützung von Studioabläufen, insbesondere zur digitalen Erfassung und Dokumentation von Einwilligungen, Gesundheitsangaben, Unterschriften und zugehörigen Dokumenten.\n\nDer Anbieter schuldet die Bereitstellung der Software gemäß vereinbartem Leistungsumfang. Eine rechtliche Beratung ist nicht Gegenstand der Leistung."
+      },
+      {
+        "title": "3. Vertragsschluss",
+        "text": "Ein Vertrag kommt zustande, sobald der Kunde ein Angebot des Anbieters annimmt oder der Anbieter die Leistung freischaltet bzw. bereitstellt.\n\nDer Anbieter kann den Vertragsschluss von einer Prüfung der Angaben oder einer Vorabzahlung abhängig machen."
+      },
+      {
+        "title": "4. Preise und Zahlungsbedingungen",
+        "text": "Es gelten die zum Zeitpunkt des Vertragsschlusses vereinbarten Preise. Alle Preise verstehen sich, soweit nicht anders angegeben, zuzüglich gesetzlicher Umsatzsteuer.\n\nEinmalige Leistungen (z. B. Lizenz, Einrichtung, Module) sind vor Leistungserbringung fällig, sofern nichts anderes vereinbart ist. Laufende Leistungen (z. B. Hosting) werden monatlich im Voraus abgerechnet, sofern nichts anderes vereinbart ist."
+      },
+      {
+        "title": "5. Lizenz und Nutzungsrechte (Self-Hosting)",
+        "text": "Bei Self-Hosting erhält der Kunde ein nicht ausschließliches, nicht übertragbares Nutzungsrecht zur Verwendung der Software für den eigenen Studio-Betrieb.\n\nEine Weitergabe, Vermietung, Veräußerung oder öffentliche Bereitstellung der Software ist ohne ausdrückliche Zustimmung des Anbieters nicht gestattet.\n\nDer Kunde ist für den ordnungsgemäßen Betrieb seiner Infrastruktur (Server, Updates, Backups, Sicherheit) verantwortlich, sofern keine zusätzlichen Leistungen vereinbart wurden."
+      },
+      {
+        "title": "6. Hosting (SaaS)",
+        "text": "Sofern Hosting durch den Anbieter vereinbart ist, stellt der Anbieter TattooMate als gehosteten Dienst zur Verfügung.\n\nDer Anbieter bemüht sich um eine hohe Verfügbarkeit. Wartungsfenster, Updates oder Störungen können zu temporären Einschränkungen führen.\n\nDer Kunde ist verantwortlich für die korrekte Nutzung, seine Zugangsdaten und die Berechtigung seiner Nutzer."
+      },
+      {
+        "title": "7. Pflichten des Kunden",
+        "text": "Der Kunde ist verpflichtet, die Software nur im Rahmen der geltenden Gesetze zu nutzen und seine Nutzer entsprechend zu unterweisen.\n\nDer Kunde ist Verantwortlicher im Sinne der DSGVO für die im Studio erfassten personenbezogenen Daten, soweit nicht ausdrücklich ein anderes Modell vereinbart ist.\n\nDer Kunde trägt dafür Sorge, dass nur berechtigte Personen Zugriff erhalten (z. B. durch Rollen/Rechte und sichere Passwörter)."
+      },
+      {
+        "title": "8. Datenschutz und Auftragsverarbeitung",
+        "text": "Beim Self-Hosting verbleiben die Daten grundsätzlich in der Verantwortung und Infrastruktur des Kunden.\n\nBeim Hosting (SaaS) kann eine Vereinbarung zur Auftragsverarbeitung (AVV) erforderlich sein. Details werden im Rahmen des Vertrags geregelt.\n\nWeitere Informationen finden sich in der Datenschutzerklärung."
+      },
+      {
+        "title": "9. Updates und Weiterentwicklung",
+        "text": "TattooMate wird laufend weiterentwickelt. Der Anbieter kann Funktionen verbessern, ändern oder ergänzen, soweit dies den vereinbarten Leistungsumfang nicht wesentlich beeinträchtigt.\n\nBei Self-Hosting kann der Kunde Updates nach Verfügbarkeit einspielen. Beim Hosting (SaaS) werden Updates in der Regel durch den Anbieter eingespielt."
+      },
+      {
+        "title": "10. Support und Schulung",
+        "text": "Support-Umfang und Reaktionszeiten richten sich nach dem vereinbarten Paket oder Angebot.\n\nSchulungen oder Einführungen, sofern gebucht, werden nach vereinbartem Stundensatz abgerechnet."
+      },
+      {
+        "title": "11. Mängel und Haftung",
+        "text": "Der Anbieter haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit.\n\nBei einfacher Fahrlässigkeit haftet der Anbieter nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) und begrenzt auf den typischerweise vorhersehbaren Schaden.\n\nEine Haftung für entgangenen Gewinn, indirekte Schäden oder Folgeschäden ist im Rahmen des gesetzlich Zulässigen ausgeschlossen.\n\nDer Anbieter haftet nicht für die inhaltliche Richtigkeit von Studio-Texten, Einwilligungen oder rechtlichen Formulierungen, die der Kunde selbst festlegt."
+      },
+      {
+        "title": "12. Vertragslaufzeit und Kündigung (SaaS)",
+        "text": "Bei laufenden Leistungen (z. B. Hosting) gelten die im Angebot oder Vertrag vereinbarten Laufzeiten und Kündigungsfristen.\n\nNach Vertragsende kann der Kunde, soweit technisch möglich und vereinbart, seine Daten exportieren. Details werden im Rahmen des Auftragsverarbeitungsvertrag geregelt."
+      },
+      {
+        "title": "13. Schlussbestimmungen",
+        "text": "Es gilt das Recht der Bundesrepublik Deutschland.\n\nSollten einzelne Bestimmungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.\n\nGerichtsstand ist, soweit zulässig, der Sitz des Anbieters."
+      }
+    ]
+  },
+  "avv": {
+    "hero": {
+      "title": "Auftragsverarbeitungsvertrag (AVV)",
+      "lead": "Vereinbarung zur Verarbeitung personenbezogener Daten gemäß Art. 28 DSGVO.",
+      "note": "Dieser AVV gilt nur bei Nutzung von TattooMate als gehostete SaaS-Lösung."
+    },
+
+    "items": [
+      {
+        "title": "1. Gegenstand und Dauer",
+        "text": "Dieser Auftragsverarbeitungsvertrag regelt die Verarbeitung personenbezogener Daten durch den Auftragsverarbeiter im Auftrag des Verantwortlichen im Rahmen der Nutzung von TattooMate als SaaS-Lösung.\n\nDie Dauer der Verarbeitung richtet sich nach der Laufzeit des zugrunde liegenden Vertrags."
+      },
+      {
+        "title": "2. Art und Zweck der Verarbeitung",
+        "text": "Die Verarbeitung erfolgt zum Zweck der Bereitstellung und Nutzung der TattooMate-Software.\n\nDies umfasst insbesondere die Speicherung, Organisation, Anzeige und Verarbeitung von Kundendaten, Einwilligungen, Gesundheitsangaben, Unterschriften, Bildern und Dokumenten, die vom Studio erfasst werden."
+      },
+      {
+        "title": "3. Kategorien betroffener Personen",
+        "text": "Betroffene Personen sind insbesondere:\n- Kunden des Studios\n- Erziehungsberechtigte (bei U18-Vorgängen)\n- Mitarbeiter und Artists des Studios"
+      },
+      {
+        "title": "4. Arten personenbezogener Daten",
+        "text": "Verarbeitet werden insbesondere:\n- Stammdaten (z. B. Name, Geburtsdatum)\n- Kontaktdaten\n- Gesundheitsangaben\n- Einwilligungen und Unterschriften\n- Bild- und Dokumentendaten (z. B. Ausweise, Tattoo-/Nachstichbilder)"
+      },
+      {
+        "title": "5. Verantwortlichkeit",
+        "text": "Der Verantwortliche ist für die Rechtmäßigkeit der Datenerhebung und -verarbeitung verantwortlich.\n\nDer Auftragsverarbeiter verarbeitet die Daten ausschließlich auf dokumentierte Weisung des Verantwortlichen."
+      },
+      {
+        "title": "6. Pflichten des Auftragsverarbeiters",
+        "text": "Der Auftragsverarbeiter verpflichtet sich:\n- personenbezogene Daten vertraulich zu behandeln\n- geeignete technische und organisatorische Maßnahmen (TOM) umzusetzen\n- nur berechtigtes Personal mit der Verarbeitung zu betrauen\n- den Verantwortlichen bei Datenschutzanfragen zu unterstützen"
+      },
+      {
+        "title": "7. Technische und organisatorische Maßnahmen",
+        "text": "Zu den Maßnahmen gehören insbesondere:\n- Zugriffsbeschränkungen und Rollen-/Rechtesysteme\n- Verschlüsselte Verbindungen (TLS)\n- Getrennte Instanzen pro Studio\n- Schutz vor unbefugtem Zugriff\n\nEine detaillierte Übersicht der TOM kann auf Anfrage bereitgestellt werden."
+      },
+      {
+        "title": "8. Unterauftragsverarbeiter",
+        "text": "Der Einsatz von Unterauftragsverarbeitern (z. B. Hosting- oder Infrastruktur-Dienstleister) erfolgt nur, sofern diese vertraglich zur Einhaltung der DSGVO verpflichtet sind.\n\nDer Verantwortliche wird über wesentliche Änderungen informiert."
+      },
+      {
+        "title": "9. Rechte der betroffenen Personen",
+        "text": "Der Auftragsverarbeiter unterstützt den Verantwortlichen bei der Wahrung der Rechte betroffener Personen (z. B. Auskunft, Löschung, Berichtigung), soweit dies technisch möglich ist."
+      },
+      {
+        "title": "10. Beendigung der Verarbeitung",
+        "text": "Nach Beendigung des Vertrags werden personenbezogene Daten nach Wahl des Verantwortlichen gelöscht oder zur Herausgabe bereitgestellt, sofern keine gesetzliche Aufbewahrungspflicht besteht."
+      },
+      {
+        "title": "11. Haftung",
+        "text": "Es gelten die Haftungsregelungen des Hauptvertrags. Die Haftung richtet sich nach den gesetzlichen Bestimmungen der DSGVO."
+      },
+      {
+        "title": "12. Schlussbestimmungen",
+        "text": "Es gilt das Recht der Bundesrepublik Deutschland.\n\nSollten einzelne Bestimmungen dieses AVV unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt."
+      }
+    ]
   },
   "footer": {
     "claim": "Digitale Einwilligungen für Tattoo- & Piercingstudios",
