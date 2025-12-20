@@ -529,6 +529,80 @@
       "text": "I’m happy to explain how TattooMate is operated and which options are available for your studio. Demos are intentionally provided on request only."
     }
   },
+  "preise": {
+    "hero": {
+      "title": "Clear pricing. No negotiation.",
+      "lead": "TattooMate has fixed prices – transparent, predictable and the same for every studio.",
+      "note": "No hidden discounts. No “final price” discussions. Exactly how it should be."
+    },
+
+    "packages": {
+      "title": "Pricing & packages",
+      "lead": "TattooMate is licensed per studio. Number of artists, event usage or daily operation make no difference."
+    },
+
+    "base": {
+      "title": "TattooMate base package",
+      "price": "€499",
+      "period": " one-time",
+      "lead": "Everything a tattoo or piercing studio needs for daily operation.",
+      "b1": "Tattoo and piercing consent forms included",
+      "b2": "U18 workflow with mandatory fields and blocking logic",
+      "b3": "Signatures, PDFs and clean documentation",
+      "b4": "Event & convention mode included",
+      "b5": "No limitation on number of artists"
+    },
+
+    "tooth": {
+      "title": "Tooth jewelry module",
+      "price": "+ €59",
+      "period": " one-time",
+      "lead": "Optional add-on for cosmetic tooth jewelry.",
+      "b1": "Dedicated tooth jewelry consent form",
+      "b2": "Risk information and separate consent",
+      "b3": "Clean documentation within the studio workflow"
+    },
+
+    "hosting": {
+      "title": "Hosting by TattooMate (SaaS)",
+      "price": "+ €59",
+      "period": " per month",
+      "lead": "We take care of operation, updates and backups.",
+      "b1": "Separate instance per studio",
+      "b2": "Updates, maintenance and backups included",
+      "b3": "No own server required"
+    },
+
+    "setup": {
+      "title": "Setup on your own server",
+      "price": "+ €249",
+      "period": " one-time",
+      "lead": "We install TattooMate on your existing server (e.g. Hetzner, Ionos, Strato or a root server).",
+      "b1": "Installation and configuration",
+      "b2": "Let’s Encrypt SSL certificate",
+      "b3": "Database setup"
+    },
+
+    "training": {
+      "title": "Onboarding & training",
+      "price": "+ €79",
+      "period": " per hour",
+      "lead": "We get you and your team up to speed with TattooMate.",
+      "b1": "Live online training via video call",
+      "b2": "Explanation of all features and workflows",
+      "b3": "Individual questions and real-world examples"
+    },
+
+    "addon": {
+      "title": "Optional services",
+      "lead": "Optional services such as hosting or setup are charged per studio. All optional services have fixed pricing and are independent of usage or team size."
+    },
+
+    "cta": {
+      "title": "Want to see how it works in a real studio?",
+      "text": "In the demo, I’ll show you TattooMate in a real workflow. The price stays the same – the demo is for your questions."
+    }
+  },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",
     "meta": {
