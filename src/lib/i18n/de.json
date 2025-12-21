@@ -26,6 +26,15 @@
     },
     "note": {
       "germanOnly": "Die App ist aktuell bewusst auf Deutsch – Gesetze und Abläufe unterscheiden sich je Land."
+    },
+    "news": {
+      "title": "News",
+      "lead": "Updates und Änderungen rund um TattooMate.",
+      "empty": "Noch keine News vorhanden.",
+      "back": "Zurück zur Übersicht",
+      "published": "Veröffentlicht",
+      "backToList": "Zurück zu allen News",
+      "by": "Von"
     }
   },
   "home": {

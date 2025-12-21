@@ -26,6 +26,15 @@
     },
     "note": {
       "germanOnly": "The app is currently German-only on purpose — legal requirements differ by country."
+    },
+    "news": {
+      "title": "News",
+      "lead": "Updates and changes around TattooMate.",
+      "empty": "No news available yet.",
+      "back": "Back to overview",
+      "published": "Published",
+      "backToList": "Back to all news",
+      "by": "by"
     }
   },
   "home": {

@@ -80,6 +80,7 @@ export default function Header() {
           <Link className="tm-nav__link" href={href('/sicherheit')}>{tt('common.nav.security', 'Sicherheit')}</Link>
           <Link className="tm-nav__link" href={href('/preise')}>{tt('common.nav.pricing', 'Preise')}</Link>
           <Link className="tm-nav__link" href={href('/faq')}>{tt('common.nav.faq', 'FAQ')}</Link>
+          <Link className="tm-nav__link" href={href('/news')}>{tt('common.nav.news', 'FAQ')}</Link>
       </nav>
 
         <div className="tm-header__actions">

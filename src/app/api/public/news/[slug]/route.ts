@@ -1,32 +1,13 @@
-export const runtime = "nodejs";
-
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { getPublicNewsBySlug } from "@/lib/news/public";
 
-type Ctx = { params: Promise<{ slug: string }> };
-
-export async function GET(_req: Request, ctx: Ctx) {
+export async function GET(req: Request, ctx: { params: Promise<{ slug: string }> }) {
   const { slug } = await ctx.params;
+  const url = new URL(req.url);
+  const lang = url.searchParams.get("lang") ?? undefined;
 
-  const post = await prisma.newsPost.findUnique({
-    where: { slug },
-    select: {
-      id: true,
-      lang: true,
-      title: true,
-      slug: true,
-      excerpt: true,
-      content: true,
-      publishedAt: true,
-      createdAt: true,
-      updatedAt: true,
-      status: true,
-    },
-  });
-
-  if (!post || post.status !== "PUBLISHED" || !post.publishedAt) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
-  }
+  const post = await getPublicNewsBySlug(slug, lang ?? undefined);
+  if (!post) return NextResponse.json({ error: "NOT_FOUND" }, { status: 404 });
 
   return NextResponse.json({ post });
 }

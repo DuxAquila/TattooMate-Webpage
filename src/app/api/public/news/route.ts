@@ -1,31 +1,10 @@
-export const runtime = "nodejs";
-
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { getPublicNewsList } from "@/lib/news/public";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
-  const lang = (url.searchParams.get("lang") ?? "de").toLowerCase();
-  const take = Math.min(Number(url.searchParams.get("take") ?? "20"), 50);
+  const lang = url.searchParams.get("lang") ?? undefined;
 
-  const items = await prisma.newsPost.findMany({
-    where: {
-      lang,
-      status: "PUBLISHED",
-      publishedAt: { not: null },
-    },
-    orderBy: { publishedAt: "desc" },
-    take,
-    select: {
-      id: true,
-      lang: true,
-      title: true,
-      slug: true,
-      excerpt: true,
-      publishedAt: true,
-    },
-  });
-
+  const items = await getPublicNewsList(lang ?? undefined);
   return NextResponse.json({ items });
 }
-
