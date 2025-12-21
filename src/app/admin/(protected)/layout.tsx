@@ -3,6 +3,7 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { getAdminCookieName, verifyAdminSession, getAdminSessionFromHeaders } from "@/lib/admin-auth";
 import "../../style/index.css";
+import { requireAdminRsc } from "@/lib/admin-permissions";
 
 export default async function AdminLayout({
   children,
@@ -11,6 +12,7 @@ export default async function AdminLayout({
 }) {
   const session = await getAdminSessionFromHeaders();
   const username = session?.sub ?? "Admin";
+  const ctx = await requireAdminRsc("/admin");
 
   return (
     <main className="tm-container tm-section">
@@ -18,7 +20,7 @@ export default async function AdminLayout({
         <div className="tm-card" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <strong>Admin</strong>
-            <span className="tm-muted">eingeloggt als {username}</span>
+            <span className="tm-muted">eingeloggt als {ctx.username}</span>
           </div>
 
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
@@ -42,18 +44,17 @@ export default async function AdminLayout({
           }}
         >
           <aside className="tm-card" style={{ padding: 14 }}>
-            <nav className="tm-stack" style={{ gap: 8 }}>
-              <Link className="tm-btn tm-btn--ghost" href="/admin">
-                Dashboard
-              </Link>
-
-              <Link className="tm-btn tm-btn--ghost" href="/admin/news">
-                News & Updates
-              </Link>
-
-              <Link className="tm-btn tm-btn--ghost" href="/admin/inbox">
-                Anfragen (Kontakt/Demo)
-              </Link>
+            {/* Nav kann abhängig von ctx.permissions gerendert werden */}
+            <nav>
+              {ctx.permissions.has("canReadNewsAdmin") && (
+                <a href="/admin/news">News</a>
+              )}
+              {ctx.permissions.has("canReadInbox") && (
+                <a href="/admin/inbox">Inbox</a>
+              )}
+              {ctx.permissions.has("canManageAdmins") && (
+                <a href="/admin/users">Admins</a>
+              )}
             </nav>
 
             <div className="tm-muted" style={{ marginTop: 14, fontSize: 12 }}>
