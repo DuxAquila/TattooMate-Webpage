@@ -11,6 +11,13 @@ enum PermissionEffect {
   DENY
 }
 
+enum NewsStatus {
+  DRAFT
+  PUBLISHED
+  SCHEDULED
+  ARCHIVED
+}
+
 model AdminRole {
   id          Int              @id @default(autoincrement())
   key         String           @unique // ROOT, EDITOR, SUPPORT, VIEWER
@@ -22,42 +29,44 @@ model AdminRole {
 }
 
 model AdminUser {
-  id           Int                      @id @default(autoincrement())
-  username     String                   @unique
+  id           Int     @id @default(autoincrement())
+  username     String  @unique
   passwordHash String
-  active       Boolean                  @default(true)
+  active       Boolean @default(true)
 
-  roleId       Int
-  role         AdminRole                @relation(fields: [roleId], references: [id])
+  roleId Int
+  role   AdminRole @relation(fields: [roleId], references: [id])
 
-  overrides    UserPermissionOverride[]
-  lastLoginAt  DateTime?
-  createdAt    DateTime                 @default(now())
-  updatedAt    DateTime                 @updatedAt
+  overrides   UserPermissionOverride[]
+  lastLoginAt DateTime?
+  createdAt   DateTime                 @default(now())
+  updatedAt   DateTime                 @updatedAt
+  newsCreated NewsPost[]               @relation("NewsCreatedBy")
+  newsUpdated NewsPost[]               @relation("NewsUpdatedBy")
 }
 
 model Permission {
-  id          Int                      @id @default(autoincrement())
-  key         String                   @unique
+  id          Int    @id @default(autoincrement())
+  key         String @unique
   label       String
-  description String                   @default("")
-  category    String                   @default("General")
-  sort        Int                      @default(100)
+  description String @default("")
+  category    String @default("General")
+  sort        Int    @default(100)
 
-  roles       RolePermission[]
-  overrides   UserPermissionOverride[]
-  createdAt   DateTime                 @default(now())
-  updatedAt   DateTime                 @updatedAt
+  roles     RolePermission[]
+  overrides UserPermissionOverride[]
+  createdAt DateTime                 @default(now())
+  updatedAt DateTime                 @updatedAt
 }
 
 model RolePermission {
-  id           Int        @id @default(autoincrement())
+  id           Int     @id @default(autoincrement())
   roleId       Int
   permissionId Int
-  allowed      Boolean    @default(false)
+  allowed      Boolean @default(false)
 
-  role         AdminRole  @relation(fields: [roleId], references: [id], onDelete: Cascade)
-  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+  role       AdminRole  @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
 
   @@unique([roleId, permissionId])
   @@index([roleId])
@@ -70,10 +79,35 @@ model UserPermissionOverride {
   permissionId Int
   effect       PermissionEffect
 
-  user         AdminUser        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  permission   Permission       @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+  user       AdminUser  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
 
   @@unique([userId, permissionId])
   @@index([userId])
   @@index([permissionId])
+}
+
+model NewsPost {
+  id      Int    @id @default(autoincrement())
+  lang    String @default("de") // de | en
+  title   String
+  slug    String @unique
+  excerpt String @default("")
+  content String @db.LongText
+
+  status      NewsStatus @default(DRAFT)
+  publishedAt DateTime?
+  scheduledAt DateTime?
+
+  createdById Int?
+  createdBy   AdminUser? @relation("NewsCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+
+  updatedById Int?
+  updatedBy   AdminUser? @relation("NewsUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([lang, status])
 }
