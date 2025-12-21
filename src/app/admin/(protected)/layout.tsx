@@ -19,7 +19,7 @@ export default async function AdminLayout({
       <div className="tm-stack" style={{ gap: 16 }}>
         <div className="tm-card" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <strong>Admin</strong>
+            <strong>Admin Interface</strong>
             <span className="tm-muted">eingeloggt als {ctx.username}</span>
           </div>
 
@@ -28,7 +28,7 @@ export default async function AdminLayout({
               Zur Website
             </Link>
             <form action="/api/admin/logout" method="post">
-              <button type="submit" className="tm-btn tm-btn--ghost">
+              <button type="submit" className="tm-btn tm-btn--primary">
                 Logout
               </button>
             </form>
@@ -45,15 +45,24 @@ export default async function AdminLayout({
         >
           <aside className="tm-card" style={{ padding: 14 }}>
             {/* Nav kann abhängig von ctx.permissions gerendert werden */}
-            <nav>
+            <nav className="tm-stack" style={{ gap: 8 }}>
+                <Link className="tm-btn tm-btn--ghost" href="/admin">
+                  Dashboard
+                </Link>
               {ctx.permissions.has("canReadNewsAdmin") && (
-                <a href="/admin/news">News</a>
+                <Link className="tm-btn tm-btn--ghost" href="/admin/news">
+                  News & Updates
+                </Link>
               )}
               {ctx.permissions.has("canReadInbox") && (
-                <a href="/admin/inbox">Inbox</a>
+                <Link className="tm-btn tm-btn--ghost" href="/admin/inbox">
+                  Anfragen (Kontakt/Demo)
+                </Link>
               )}
               {ctx.permissions.has("canManageAdmins") && (
-                <a href="/admin/users">Admins</a>
+                <Link className="tm-btn tm-btn--ghost" href="/admin/users">
+                  Admins
+                </Link>
               )}
             </nav>
 
