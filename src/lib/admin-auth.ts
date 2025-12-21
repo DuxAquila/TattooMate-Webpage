@@ -96,13 +96,6 @@ export function getAdminCookieName() {
   return COOKIE_NAME;
 }
 
-// ✅ Next.js 16: cookies() ist async → diese Funktion muss async sein
-export async function isAdminLoggedIn(): Promise<boolean> {
-  const jar = await cookies();
-  const token = jar.get(COOKIE_NAME)?.value;
-  return !!verifyAdminSession(token);
-}
-
 // ✅ Robust (Server Components): Cookie über Header lesen
 export async function getAdminSessionFromHeaders(): Promise<SessionPayload | null> {
   const h = await headers();
