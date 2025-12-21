@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum PermissionEffect {
+  ALLOW
+  DENY
+}
+
+model AdminRole {
+  id          Int              @id @default(autoincrement())
+  key         String           @unique // ROOT, EDITOR, SUPPORT, VIEWER
+  label       String
+  users       AdminUser[]
+  permissions RolePermission[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model AdminUser {
+  id           Int                      @id @default(autoincrement())
+  username     String                   @unique
+  passwordHash String
+  active       Boolean                  @default(true)
+
+  roleId       Int
+  role         AdminRole                @relation(fields: [roleId], references: [id])
+
+  overrides    UserPermissionOverride[]
+  lastLoginAt  DateTime?
+  createdAt    DateTime                 @default(now())
+  updatedAt    DateTime                 @updatedAt
+}
+
+model Permission {
+  id          Int                      @id @default(autoincrement())
+  key         String                   @unique
+  label       String
+  description String                   @default("")
+  category    String                   @default("General")
+  sort        Int                      @default(100)
+
+  roles       RolePermission[]
+  overrides   UserPermissionOverride[]
+  createdAt   DateTime                 @default(now())
+  updatedAt   DateTime                 @updatedAt
+}
+
+model RolePermission {
+  id           Int        @id @default(autoincrement())
+  roleId       Int
+  permissionId Int
+  allowed      Boolean    @default(false)
+
+  role         AdminRole  @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+  @@index([roleId])
+  @@index([permissionId])
+}
+
+model UserPermissionOverride {
+  id           Int              @id @default(autoincrement())
+  userId       Int
+  permissionId Int
+  effect       PermissionEffect
+
+  user         AdminUser        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  permission   Permission       @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, permissionId])
+  @@index([userId])
+  @@index([permissionId])
+}
