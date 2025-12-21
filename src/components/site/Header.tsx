@@ -80,7 +80,6 @@ export default function Header() {
           <Link className="tm-nav__link" href={href('/sicherheit')}>{tt('common.nav.security', 'Sicherheit')}</Link>
           <Link className="tm-nav__link" href={href('/preise')}>{tt('common.nav.pricing', 'Preise')}</Link>
           <Link className="tm-nav__link" href={href('/faq')}>{tt('common.nav.faq', 'FAQ')}</Link>
-          <Link className="tm-nav__link" href={href('/login')}>{tt('common.nav.login', 'Login')}</Link>
       </nav>
 
         <div className="tm-header__actions">
@@ -114,9 +113,6 @@ export default function Header() {
               {tt('common.nav.demo', 'Live-Demo ansehen')}
             </Link>
             <LangSwitch lang={lang} />
-            <Link className="tm-btn tm-btn--ghost tm-btn--block" href={href('/login')} onClick={() => setOpen(false)}>
-              {tt('common.nav.login', 'Login')}
-            </Link>
           </nav>
         </div>
 
