@@ -80,7 +80,7 @@ export default function Header() {
           <Link className="tm-nav__link" href={href('/sicherheit')}>{tt('common.nav.security', 'Sicherheit')}</Link>
           <Link className="tm-nav__link" href={href('/preise')}>{tt('common.nav.pricing', 'Preise')}</Link>
           <Link className="tm-nav__link" href={href('/faq')}>{tt('common.nav.faq', 'FAQ')}</Link>
-          <Link className="tm-nav__link" href={href('/news')}>{tt('common.nav.news', 'FAQ')}</Link>
+          <Link className="tm-nav__link" href={href('/news')}>{tt('common.nav.news', 'News')}</Link>
       </nav>
 
         <div className="tm-header__actions">
@@ -107,6 +107,7 @@ export default function Header() {
             <Link className="tm-drawer__link" href={href('/sicherheit')} onClick={() => setOpen(false)}>{tt('common.nav.security', 'Sicherheit')}</Link>
             <Link className="tm-drawer__link" href={href('/preise')} onClick={() => setOpen(false)}>{tt('common.nav.pricing', 'Preise')}</Link>
             <Link className="tm-drawer__link" href={href('/faq')} onClick={() => setOpen(false)}>{tt('common.nav.faq', 'FAQ')}</Link>
+            <Link className="tm-drawer__link" href={href('/news')} onClick={() => setOpen(false)}>{tt('common.nav.news', 'News')}</Link>
 
             <div className="tm-divider" />
 
