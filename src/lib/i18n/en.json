@@ -39,13 +39,13 @@
     },
     "contact": {
       "title": "Contact",
-      "lead": "Tell me what you need — I’ll get back to you as soon as possible.",
+      "lead": "Briefly tell me what you would like to know – I will get back to you as soon as possible.",
       "fields": {
         "name": "Name *",
         "email": "Email *",
         "company": "Studio / Company",
         "phone": "Phone",
-        "message": "Message * (be specific)"
+        "message": "Message * (preferably in 1-2 sentences)"
       },
       "submit": "Send",
       "hint": "Note: We will receive a notification via email and will get back to you.",
@@ -57,13 +57,13 @@
     },
     "demo": {
       "title": "Request a demo",
-      "lead": "Tell me what you need — I’ll show TattooMate in a way that fits your studio.",
+      "lead": "Request a demo. See TattooMate live. Decide.",
       "fields": {
         "name": "Name *",
         "email": "Email *",
         "company": "Studio / Company",
         "phone": "Phone",
-        "message": "Message * (e.g. setup, number of artists, hosting, questions)"
+        "message": "Tell us a little about your studio or what you expect from TattooMate."
       },
       "submit": "Request demo",
       "hint": "Note: We will receive a notification via email and will get back to you.",

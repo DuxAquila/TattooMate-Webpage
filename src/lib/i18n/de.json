@@ -39,13 +39,13 @@
     },
     "contact": {
       "title": "Kontakt",
-      "lead": "Schreib mir kurz, worum es geht – ich melde mich schnellstmöglich.",
+      "lead": "Schreib mir kurz, was du wissen möchtest – ich melde mich schnellstmöglich bei dir.",
       "fields": {
         "name": "Name *",
         "email": "E-Mail *",
         "company": "Studio / Firma",
         "phone": "Telefon",
-        "message": "Nachricht * (bitte konkret)"
+        "message": "Nachricht * (gern in 1–2 Sätzen)"
       },
       "hint": "Hinweis: Wir erhalten eine Benachrichtigung per E-Mail und melden uns bei dir.",
       "submit": "Absenden",
@@ -57,13 +57,13 @@
     },
     "demo": {
       "title": "Demo anfragen",
-      "lead": "Sag mir kurz, was du brauchst – dann zeige ich dir TattooMate passend zu deinem Studio.",
+      "lead": "Demo anfragen. TattooMate live sehen. Entscheiden.",
       "fields": {
         "name": "Name *",
         "email": "E-Mail *",
         "company": "Studio / Firma",
         "phone": "Telefon",
-        "message": "Nachricht * (z. B. Setup, Anzahl Artists, Hosting, Fragen)"
+        "message": "Erzähl uns kurz etwas über dein Studio oder was du dir von TattooMate erwartest."
       },
       "hint": "Hinweis: Wir erhalten eine Benachrichtigung per E-Mail und melden uns bei dir.",
       "submit": "Demo anfragen",
