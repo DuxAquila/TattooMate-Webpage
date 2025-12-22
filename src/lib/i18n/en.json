@@ -12,7 +12,8 @@
       "agb": "Terms",
       "wieso": "Why TattooMate",
       "news": "News",
-      "avv": "DPA"
+      "avv": "DPA",
+      "home": "Home"
     },
     "cta": {
       "demo": "Request a live demo",
@@ -35,6 +36,42 @@
       "published": "Published",
       "backToList": "Back to all news",
       "by": "by"
+    },
+    "contact": {
+      "title": "Contact",
+      "lead": "Tell me what you need — I’ll get back to you as soon as possible.",
+      "fields": {
+        "name": "Name *",
+        "email": "Email *",
+        "company": "Studio / Company",
+        "phone": "Phone",
+        "message": "Message * (be specific)"
+      },
+      "submit": "Send",
+      "hint": "Note: We will receive a notification via email and will get back to you.",
+      "success": {
+        "title": "Thanks! Your Message sent.",
+        "text": "I’ll get back to you as soon as possible."
+      },
+      "error": "Please check your input (name, email, message)."
+    },
+    "demo": {
+      "title": "Request a demo",
+      "lead": "Tell me what you need — I’ll show TattooMate in a way that fits your studio.",
+      "fields": {
+        "name": "Name *",
+        "email": "Email *",
+        "company": "Studio / Company",
+        "phone": "Phone",
+        "message": "Message * (e.g. setup, number of artists, hosting, questions)"
+      },
+      "submit": "Request demo",
+      "hint": "Note: We will receive a notification via email and will get back to you.",
+      "success": {
+        "title": "Thanks! Your Demo request sent.",
+        "text": "I will get back to you soon."
+      },
+      "error": "Please check your input (name, email, message)."
     }
   },
   "home": {

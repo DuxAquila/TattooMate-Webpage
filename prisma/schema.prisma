@@ -18,6 +18,18 @@ enum NewsStatus {
   ARCHIVED
 }
 
+enum InboundRequestType {
+  CONTACT
+  DEMO
+}
+
+enum InboundRequestStatus {
+  NEW
+  IN_PROGRESS
+  DONE
+  SPAM
+}
+
 model AdminRole {
   id          Int              @id @default(autoincrement())
   key         String           @unique // ROOT, EDITOR, SUPPORT, VIEWER
@@ -110,4 +122,31 @@ model NewsPost {
 
   @@index([status, publishedAt])
   @@index([lang, status])
+}
+
+model InboundRequest {
+  id          String              @id @default(cuid())
+  type        InboundRequestType
+  status      InboundRequestStatus @default(NEW)
+
+  lang        String
+
+  name        String
+  email       String
+  company     String?
+  phone       String?
+  message     String
+
+  // Spam/Rate-Limit (minimal, aber effektiv)
+  ipHash      String?
+  userAgent   String?
+
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  handledAt   DateTime?
+  adminNotes  String?
+
+  @@index([type, status, createdAt])
+  @@index([email, createdAt])
+  @@index([ipHash, createdAt])
 }

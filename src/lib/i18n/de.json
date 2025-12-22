@@ -12,7 +12,8 @@
       "agb": "AGB",
       "wieso": "Wieso TattooMate",
       "news": "Neues",
-      "avv": "AVV"
+      "avv": "AVV",
+      "home": "Zur Startseite"
     },
     "cta": {
       "demo": "Live-Demo anfordern",
@@ -35,6 +36,42 @@
       "published": "Veröffentlicht",
       "backToList": "Zurück zu allen News",
       "by": "Von"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "lead": "Schreib mir kurz, worum es geht – ich melde mich schnellstmöglich.",
+      "fields": {
+        "name": "Name *",
+        "email": "E-Mail *",
+        "company": "Studio / Firma",
+        "phone": "Telefon",
+        "message": "Nachricht * (bitte konkret)"
+      },
+      "hint": "Hinweis: Wir erhalten eine Benachrichtigung per E-Mail und melden uns bei dir.",
+      "submit": "Absenden",
+      "success": {
+        "title": "Danke! Deine Nachricht ist raus.",
+        "text": "Ich melde mich so schnell wie möglich bei dir."
+      },
+      "error": "Bitte prüfe deine Eingaben (Name, E-Mail, Nachricht)."
+    },
+    "demo": {
+      "title": "Demo anfragen",
+      "lead": "Sag mir kurz, was du brauchst – dann zeige ich dir TattooMate passend zu deinem Studio.",
+      "fields": {
+        "name": "Name *",
+        "email": "E-Mail *",
+        "company": "Studio / Firma",
+        "phone": "Telefon",
+        "message": "Nachricht * (z. B. Setup, Anzahl Artists, Hosting, Fragen)"
+      },
+      "hint": "Hinweis: Wir erhalten eine Benachrichtigung per E-Mail und melden uns bei dir.",
+      "submit": "Demo anfragen",
+      "success": {
+        "title": "Danke! Deine Demo-Anfrage ist raus.",
+        "text": "Ich melde mich zeitnah mit bei dir."
+      },
+      "error": "Bitte prüfe deine Eingaben (Name, E-Mail, Nachricht)."
     }
   },
   "home": {
