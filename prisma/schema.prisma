@@ -104,7 +104,7 @@ model NewsPost {
   lang    String @default("de") // de | en
   title   String
   slug    String @unique
-  excerpt String @default("")
+  excerpt String? @db.Text
   content String @db.LongText
 
   status      NewsStatus @default(DRAFT)
