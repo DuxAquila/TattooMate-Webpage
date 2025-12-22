@@ -60,12 +60,6 @@ export default async function NewsDetail({
           ) : null}
 
           <div className="tm-card__body">
-            {/* Back */}
-            <div style={{ marginBottom: 14 }}>
-              <Link href={`/${lang}/news`} className="tm-btn tm-btn--ghost">
-                ← {t(dict, "common.news.back") ?? "Zurück zur Übersicht"}
-              </Link>
-            </div>
 
             {/* Head */}
             <h1 className="tm-h2" style={{ marginBottom: 6 }}>
