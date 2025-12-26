@@ -651,7 +651,15 @@
       },
       {
         "q": "Läuft das auf Handy & Tablet?",
-        "a": "Ja. TattooMate ist komplett webbasiert und für Touch-Bedienung optimiert – ohne App-Zwang."
+        "a": "Ja. TattooMate ist komplett webbasiert und für die Touch-Bedienung optimiert. Kundinnen und Kunden müssen keine App installieren. Ein aktueller Browser und die Kamera des Smartphones reichen aus."
+      },
+      {
+        "q": "Wie kommen Kundinnen und Kunden zu den Formularen?",
+        "a": "Ganz einfach per QR-Code. Der Code wird im Adminbereich erzeugt und kann im Studio ausgehängt oder auf einem Tablet angezeigt werden. Kundinnen und Kunden scannen ihn mit dem Smartphone und gelangen direkt zum richtigen Formular."
+      },
+      {
+        "q": "Brauchen wir zusätzliche Geräte?",
+        "a": "Nein, zusätzliche Geräte sind nicht zwingend erforderlich. Wir empfehlen jedoch ein bis zwei Tablets (auch günstige Modelle reichen), die mit dem Studio-WLAN verbunden sind. So können Kundinnen und Kunden Formulare ohne eigenes Datenvolumen ausfüllen. Das ist besonders praktisch, wenn beim Nachstich eines Tattoos eine zusätzliche Unterschrift benötigt wird."
       },
       {
         "q": "Gibt es eine Begrenzung der Artist-Anzahl?",
@@ -659,7 +667,7 @@
       },
       {
         "q": "Ist der Event- oder Convention-Modus extra?",
-        "a": "Nein. Der Event- und Convention-Modus ist immer enthalten und kann bei Bedarf aktiviert werden."
+        "a": "Nein. Der Event- und Convention-Modus ist immer enthalten und kann bei Bedarf genutzt werden."
       },
       {
         "q": "Kann ich Studio und Conventions trennen?",
@@ -683,23 +691,30 @@
       },
       {
         "q": "Ist TattooMate DSGVO-konform?",
-        "a": "Ja. Keine Ausweise oder PDFs per E-Mail. Dokumente werden im Admin erzeugt und bleiben unter deiner Kontrolle."
+        "a": "Ja. Es werden keine Ausweise oder PDFs per E-Mail versendet. Dokumente werden im Adminbereich erzeugt und gespeichert. Ausweisbilder werden technisch getrennt von den Formularen abgelegt und sind nicht direkt zuordenbar. Die Daten bleiben vollständig unter deiner Kontrolle."
       },
       {
         "q": "Gibt es Newsletter / Opt-In?",
-        "a": "Ja, optional. Nur wenn der Kunde aktiv zustimmt. Eine Abmeldung ist jederzeit möglich und der Nachweis (Zeitpunkt und Quelle) ist dokumentiert."
+        "a": "Ja, optional. Der Newsletter wird nur aktiviert, wenn der Kunde im Formular ausdrücklich zustimmt (Checkbox) und die Einwilligung unterschreibt. Abmeldung ist jederzeit möglich; Zeitpunkt und Quelle der Einwilligung werden dokumentiert."
       },
       {
         "q": "Ist das Newsletter-System DSGVO-konform?",
-        "a": "Ja. Kunden entscheiden beim Ausfüllen selbst, ob sie per Newsletter informiert werden möchten. Ein Abmeldelink ist intern hinterlegt und muss mitgesendet werden."
-      },
+        "a": "Ja. Kundinnen und Kunden entscheiden beim Ausfüllen selbst, ob sie per Newsletter informiert werden möchten. Ein Abmeldelink kann im Newsletter hinterlegt werden und sollte bei Versand mitgesendet werden."      },
       {
         "q": "Kann ich TattooMate selbst hosten?",
         "a": "Ja. Du kannst TattooMate auf deinem eigenen Server betreiben oder das Hosting durch TattooMate nutzen. Beide Optionen sind klar geregelt und transparent bepreist."
       },
       {
+        "q": "Was bedeutet SaaS?",
+        "a": "SaaS steht für Software as a Service. Das bedeutet: Die Software wird über das Internet genutzt, ohne dass sie selbst installiert oder betrieben werden muss. Wartung und Updates übernimmt der Anbieter."
+      },
+      {
         "q": "Gibt es versteckte Kosten oder Zusatzgebühren?",
         "a": "Nein. Alle Preise sind fest definiert. Es gibt keine nutzungsabhängigen Gebühren, keine versteckten Aufpreise und keine Verhandlungen."
+      },
+      {
+        "q": "Warum TattooMate – und warum vielleicht nicht?",
+        "a": "Du solltest TattooMate nicht verwenden, wenn du nur irgendein Formular suchst. Es ist für Studios gedacht, die ihre Dokumentation einfach, sauber und DSGVO-konform lösen wollen – und damit am Ende oft sogar Zeit und Kosten sparen."
       },
       {
         "q": "Warum gibt es eine Demo, wenn die Preise fest sind?",
