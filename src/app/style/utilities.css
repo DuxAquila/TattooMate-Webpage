@@ -18,3 +18,24 @@
   flex-wrap: wrap;
 }
 
+.tm-prose{
+  color: var(--tm-text);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.tm-prose p{
+  margin: 0;
+}
+
+.tm-prose p + p{
+  margin-top: var(--tm-space-sm);
+}
+
+.tm-prose .tm-text-muted{
+  color: var(--tm-muted);
+}
+
+.tm-prose p.is-tight {
+  margin-top: var(--tm-space-xs);
+}

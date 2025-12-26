@@ -75,6 +75,7 @@ export default function Header() {
         </Link>
 
         <nav className="tm-nav" aria-label="Hauptnavigation">
+          <Link className="tm-nav__link" href={href('/warum')}>{tt('common.nav.why', 'Warum TattooMate')}</Link>
           <Link className="tm-nav__link" href={href('/funktionen')}>{tt('common.nav.features', 'Funktionen')}</Link>
           <Link className="tm-nav__link" href={href('/formulare')}>{tt('common.nav.forms', 'Formulare')}</Link>
           <Link className="tm-nav__link" href={href('/sicherheit')}>{tt('common.nav.security', 'Sicherheit')}</Link>
@@ -102,6 +103,7 @@ export default function Header() {
       <div className={`tm-drawer ${open ? 'is-open' : ''}`}>
         <div className="tm-drawer__panel">
           <nav className="tm-drawer__nav" aria-label="Mobile Navigation">
+            <Link className="tm-drawer__link" href={href('/warum')} onClick={() => setOpen(false)}>{tt('common.nav.why', 'Warum TattooMate')}</Link>
             <Link className="tm-drawer__link" href={href('/funktionen')} onClick={() => setOpen(false)}>{tt('common.nav.features', 'Funktionen')}</Link>
             <Link className="tm-drawer__link" href={href('/formulare')} onClick={() => setOpen(false)}>{tt('common.nav.forms', 'Formulare')}</Link>
             <Link className="tm-drawer__link" href={href('/sicherheit')} onClick={() => setOpen(false)}>{tt('common.nav.security', 'Sicherheit')}</Link>

@@ -13,7 +13,8 @@
       "wieso": "Why TattooMate",
       "news": "News",
       "avv": "DPA",
-      "home": "Home"
+      "home": "Home",
+      "why": "The idea behind TattooMate"
     },
     "cta": {
       "demo": "Request a live demo",
@@ -929,6 +930,35 @@
         "text": "The law of the Federal Republic of Germany shall apply.\n\nIf individual provisions of this DPA are or become invalid, the validity of the remaining provisions shall remain unaffected."
       }
     ]
+  },
+  "warum": {
+    "title": "Why TattooMate exists",
+    "lead": "TattooMate wasn’t created because I wanted to build “just another piece of software”. It was created because I saw how much studio life is tied to paper, stress, and unnecessary work.",
+    "p1": "The personal trigger was quite simple — and exactly because of that, very clear: my wife works in a tattoo and piercing studio.",
+    "p2": "And I saw what that means in everyday life. Printing consent forms over and over again. Stapling. Punching holes. Having clients fill them out. Filing everything away. Not once a day, but constantly. Always when there are actually more important things to do.",
+    "p3": "It was immediately clear to me: this is not.",
+    "callout": "“just a bit of office work. It’s a process that eats up time every single day — for something that can technically be solved cleanly and reliably.”",
+    "h2_1": "What really bothered me about it",
+    "p4": "First, it’s unnecessary work. Not in the sense of “people are lazy”, but in the sense of: this is manual labor simply because it has always been done that way.",
+    "p5": "Second, it creates paper waste for years. Many of these documents have to be stored for a long time — which means stacks, folders, storage space. All for something that really just needs to be documented safely.",
+    "p6": "Third, things get uncomfortable when liability questions come up. If at some point a request comes in and you need exactly that one consent form, it often turns into a search nobody enjoys — and one that can easily go wrong under pressure. You’re not looking for “a document”, you’re looking for a tiny sheet of paper in years of archives.",
+    "h2_2": "Why existing solutions didn’t work for me",
+    "p7": "Of course there are digital alternatives. Some of them are technically solid and visually modern.",
+    "p8": "What bothered me wasn’t the technology, but the direction: many solutions are built as platforms. Data is stored externally, processes are predefined, and studios have to adapt — not the other way around.",
+    "p9": "On top of that, feature bundles are often included that may be useful for some studios, but not for others. Calendars, customer management or marketing features are frequently built in, even if they aren’t actually needed in daily work.",
+    "p10": "What I was missing was a real option to run the system yourself and keep full control over your data. Especially when dealing with sensitive information and GDPR-relevant data, that’s not a side note for me — it’s essential.",
+    "h2_3": "What TattooMate was actually built for",
+    "p11": "TattooMate did not start as a business. That’s important to me. I didn’t build it to “enter the market” or to create a SaaS product.",
+    "p12": "I built it to take this work off my wife’s shoulders. And as a small bonus goal: less paper waste. More sustainability, without studios having to fight for it.",
+    "p13": "Only when other studios started asking if they could use it as well did it slowly turn into a product. Not planned. Not the focus. More like: “Okay — if this helps multiple studios, then let’s do it properly.”",
+    "h2_4": "The mindset behind it",
+    "p14": "TattooMate is meant to be a tool. Not a data collector. No forced calendar. No system that pushes studios into a platform.",
+    "p15": "It’s about clean documentation, less daily stress, and real control over your own data. If that sounds like you, TattooMate fits.",
+    "p16": "That applies here as well — no cookie banner needed.",
+    "outro": "If you’re just looking for any online form, TattooMate is probably not the right tool.",
+    "outro2": "But if you want a solution that takes real studio life seriously and doesn’t follow Silicon Valley logic, TattooMate fits.",
+    "ctaDemo": "Request a demo",
+    "ctaContact": "Or contact me directly"
   },
   "footer": {
     "claim": "Digital consent forms for tattoo & piercing studios",

@@ -692,6 +692,20 @@
   text-decoration: underline;
 }
 
+.tm-callout{
+  border: 1px solid var(--tm-border);
+  border-left: 4px solid var(--tm-accent);
+  border-radius: var(--tm-radius-md);
+  padding: var(--tm-space-md);
+  background: var(--tm-bg);
+  box-shadow: var(--tm-shadow-soft);
+}
+
+.tm-callout p{
+  margin: 0;
+  color: var(--tm-text);
+  line-height: 1.7;
+}
 
 /* Responsive Header */
 @media (max-width: 920px){
