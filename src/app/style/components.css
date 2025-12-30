@@ -707,6 +707,91 @@
   line-height: 1.7;
 }
 
+/* ======================================================
+   FAQ Accordion (details/summary) – clean
+   ====================================================== */
+
+.tm-faq{
+  display: grid;
+  gap: var(--tm-space-md);
+}
+
+.tm-faq__item{
+  /* nutzt tm-card für Rahmen/Background/Padding */
+}
+
+.tm-faq__item > summary{
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--tm-space-md);
+}
+
+.tm-faq__item > summary::-webkit-details-marker{
+  display: none;
+}
+
+.tm-faq__q{
+  margin: 0;
+}
+
+.tm-faq__chev{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--tm-border);
+  background: rgba(15,23,42,0.04);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  opacity: .75;
+  transition: transform 160ms var(--tm-ease), opacity 160ms var(--tm-ease);
+  flex: 0 0 auto;
+}
+
+.tm-faq__item[open] .tm-faq__chev{
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.tm-faq__a{
+  margin-top: var(--tm-space-sm);
+}
+
+.tm-faq__item > summary:focus-visible{
+  outline: 2px solid rgba(255,59,48,0.35);
+  outline-offset: 4px;
+  border-radius: var(--tm-radius-lg);
+}
+
+/* Smooth open/close (ohne height-messen) */
+.tm-faq__panel{
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 220ms var(--tm-ease), opacity 180ms var(--tm-ease);
+}
+
+.tm-faq__panel > div{
+  overflow: hidden;
+}
+
+.tm-faq__item[open] .tm-faq__panel{
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.tm-faq [data-faq-panel]{
+  overflow: hidden;
+}
+
+.tm-faq__a{
+  padding-top: var(--tm-space-sm);
+}
+
 /* Responsive Header */
 @media (max-width: 920px){
   .tm-nav{ display: none; }

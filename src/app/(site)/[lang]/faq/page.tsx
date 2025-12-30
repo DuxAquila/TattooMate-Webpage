@@ -1,13 +1,22 @@
 // File: /src/app/(site)/[lang]/faq/page.tsx
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
+import FaqAccordion from './FaqAccordion';
 
 function FaqItem({ q, a }: { q: string; a: string }) {
   return (
-    <div className="tm-card">
-      <h3 className="tm-h3">{q}</h3>
-      <p className="tm-text">{a}</p>
-    </div>
+    <details className="tm-card tm-faq__item">
+      <summary>
+        <h3 className="tm-h3 tm-faq__q">{q}</h3>
+        <span className="tm-faq__chev" aria-hidden="true">▾</span>
+      </summary>
+
+      <div data-faq-panel>
+        <div className="tm-faq__a">
+          <p className="tm-text">{a}</p>
+        </div>
+      </div>
+    </details>
   );
 }
 
@@ -32,10 +41,12 @@ export default async function FAQ({
       </section>
 
       <section className="tm-section">
-        <div className="tm-container tm-stack-lg">
-          {items.map((it: any, i: number) => (
-            <FaqItem key={i} q={it.q} a={it.a} />
-          ))}
+        <div className="tm-container">
+          <FaqAccordion>
+            {items.map((it: any, i: number) => (
+              <FaqItem key={i} q={it.q} a={it.a} open={i === 0} />
+            ))}
+          </FaqAccordion>
         </div>
       </section>
 
