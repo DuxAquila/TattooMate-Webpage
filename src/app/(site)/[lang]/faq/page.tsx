@@ -3,9 +3,9 @@
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import FaqAccordion from './FaqAccordion';
 
-function FaqItem({ q, a }: { q: string; a: string }) {
+function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
   return (
-    <details className="tm-card tm-faq__item">
+    <details className="tm-card tm-faq__item" open={defaultOpen}>
       <summary>
         <h3 className="tm-h3 tm-faq__q">{q}</h3>
         <span className="tm-faq__chev" aria-hidden="true">▾</span>
@@ -44,7 +44,7 @@ export default async function FAQ({
         <div className="tm-container">
           <FaqAccordion>
             {items.map((it: any, i: number) => (
-              <FaqItem key={i} q={it.q} a={it.a} open={i === 0} />
+              <FaqItem key={i} q={it.q} a={it.a} defaultOpen={i === 0} />
             ))}
           </FaqAccordion>
         </div>
