@@ -9,18 +9,19 @@
     "lint": "eslint"
   },
   "overrides": {
-    "hono": ">=4.11.4",
-    "lodash": ">=4.17.23"
+    "hono": ">=4.11.7",
+    "lodash": ">=4.17.23",
+    "fast-xml-parser": "5.3.4"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.2.0",
     "@prisma/client": "^7.2.0",
     "bcryptjs": "^3.0.3",
     "mariadb": "^3.4.5",
-    "next": "16.0.10",
+    "next": "^16.1.6",
     "nodemailer": "^7.0.11",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-markdown": "^10.1.0",
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1"
