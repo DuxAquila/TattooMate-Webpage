@@ -571,8 +571,29 @@
     },
 
     "packages": {
-      "title": "Preise & Pakete",
+      "title": "Preis für TattooMate",
       "lead": "TattooMate wird pro Studio lizenziert. Anzahl der Artists, Event-Nutzung oder Alltag machen keinen Unterschied."
+    },
+
+    "addon": {
+      "title": "Optionale Dienstleistungen",
+      "lead": "Optionale Dienstleistungen wie Hosting oder Einrichtung werden studioübergreifend berechnet. Optionale Dienstleistungen sind fest pro Studio bepreist und unabhängig von Nutzung oder Teamgröße."
+    },
+
+    "modul": {
+      "title": "Zusatzmodule für TattooMate",
+      "lead": "Erweitert das TattooMate Basispaket.",
+      "secondlead": "Weitere Module für zusätzliche Anwendungsbereiche sind geplant."
+    },
+
+    "premium": {
+      "title": "Premium Module",
+      "lead": "Für Studios mit besonderen Anforderungen an Hygiene, Haftung und Dokumentation."
+    },
+
+    "otherIndustries": {
+      "title": "TattooMate für andere Branchen",
+      "lead": "Für Studios ohne Tattoo oder Piercing – z. B. Kosmetik oder Zahnschmuck."
     },
 
     "base": {
@@ -589,12 +610,23 @@
 
     "tooth": {
       "title": "Zahnschmuck-Modul",
-      "price": "+ 59 €",
+      "price": "+ 75 €",
       "period": " einmalig",
-      "lead": "Optionales Zusatzmodul für kosmetischen Zahnschmuck.",
+      "lead": "Optionales Zusatzmodul für Zahnschmuck.",
       "b1": "Eigenes Zahnschmuck-Formular",
       "b2": "Risikoaufklärung und separate Einwilligung",
       "b3": "Saubere Dokumentation im Studio-Workflow"
+    },
+
+    "cosmetic": {
+      "title": "Kosmetik-Modul",
+      "price": "+ 75 €",
+      "period": " einmalig",
+      "lead": "Optionales Zusatzmodul für kosmetische Anwendungen.",
+      "b1": "Eigenes Kosmetik-Formular",
+      "b2": "Getrennte Aufklärungstexte für PMU, Microblading & Lashes",
+      "b3": "Risikoaufklärung und separate Einwilligung",
+      "b4": "Saubere Dokumentation im Studio-Workflow"
     },
 
     "hosting": {
@@ -628,11 +660,7 @@
       "b3": "Individuelle Fragen & Praxisbeispiele"
     },
 
-    "addon": {
-      "title": "Optionale Dienstleistungen",
-      "lead": "Optionale Dienstleistungen wie Hosting oder Einrichtung werden studioübergreifend berechnet. Optionale Dienstleistungen sind fest pro Studio bepreist und unabhängig von Nutzung oder Teamgröße."
-    },
-	
+
     "cta": {
       "title": "Live sehen, wie es im Studio läuft?",
       "text": "In der Demo zeige ich dir TattooMate im echten Ablauf. Der Preis bleibt derselbe – die Demo ist für Fragen da."

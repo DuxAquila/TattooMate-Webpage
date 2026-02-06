@@ -56,7 +56,7 @@ export default async function Preise({
         </div>
       </section>
 
-      {/* PRICES */}
+      {/* BASE */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
           <div className="tm-head tm-center">
@@ -64,7 +64,7 @@ export default async function Preise({
             <p className="tm-text">{t(dict, "preise.packages.lead")}</p>
           </div>
 
-          <div className="tm-grid tm-grid--3">
+          <div className="tm-grid tm-grid--2">
             <PriceCard
               title={t(dict, "preise.base.title")}
               price={t(dict, "preise.base.price")}
@@ -78,7 +78,21 @@ export default async function Preise({
                 t(dict, "preise.base.b5"),
               ]}
             />
+          </div>
+        </div>
+      </section>
 
+
+      {/* MODUL */}
+      <section className="tm-section">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head tm-center">
+            <h2 className="tm-h2">{t(dict, "preise.modul.title")}</h2>
+            <p className="tm-h3">{t(dict, "preise.modul.lead")}</p>
+            <p className="tm-text">{t(dict, "preise.modul.secondlead")}</p>
+          </div>
+
+          <div className="tm-grid tm-grid--3">
             <PriceCard
               title={t(dict, "preise.tooth.title")}
               price={t(dict, "preise.tooth.price")}
@@ -88,6 +102,19 @@ export default async function Preise({
                 t(dict, "preise.tooth.b1"),
                 t(dict, "preise.tooth.b2"),
                 t(dict, "preise.tooth.b3"),
+              ]}
+            />
+
+            <PriceCard
+              title={t(dict, "preise.cosmetic.title")}
+              price={t(dict, "preise.cosmetic.price")}
+              period={t(dict, "preise.cosmetic.period")}
+              lead={t(dict, "preise.cosmetic.lead")}
+              bullets={[
+                t(dict, "preise.cosmetic.b1"),
+                t(dict, "preise.cosmetic.b2"),
+                t(dict, "preise.cosmetic.b3"),
+                t(dict, "preise.cosmetic.b4"),
               ]}
             />
 
