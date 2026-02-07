@@ -6,55 +6,55 @@
       "security": "Security",
       "pricing": "Pricing",
       "faq": "FAQ",
-      "demo": "Request a live demo",
+      "demo": "Request live demo",
       "imprint": "Imprint",
-      "privacy": "Privacy policy",
+      "privacy": "Privacy",
       "agb": "Terms",
       "wieso": "Why TattooMate",
       "news": "News",
       "avv": "DPA",
-      "home": "Home",
+      "home": "Back to home",
       "why": "The idea behind TattooMate"
     },
     "cta": {
-      "demo": "Request a live demo",
+      "demo": "Request live demo",
       "features": "Explore features",
-      "contact": "Contact us"
+      "contact": "Contact"
     },
     "trust": {
-      "dsgvo": "GDPR compliant",
+      "dsgvo": "GDPR-compliant",
       "studio": "Built for studios",
-      "nocloud": "No forced cloud"
+      "nocloud": "No cloud lock-in"
     },
     "note": {
-      "germanOnly": "The app is currently German-only on purpose — legal requirements differ by country."
+      "germanOnly": "The app is currently deliberately German-only — laws and processes differ by country."
     },
     "news": {
       "title": "News",
       "lead": "Updates and changes around TattooMate.",
-      "empty": "No news available yet.",
+      "empty": "No news yet.",
       "back": "Back to overview",
       "published": "Published",
       "backToList": "Back to all news",
-      "by": "by"
+      "by": "By"
     },
     "contact": {
       "title": "Contact",
-      "lead": "Briefly tell me what you would like to know – I will get back to you as soon as possible.",
+      "lead": "Send me a quick message — I’ll get back to you as soon as possible.",
       "fields": {
         "name": "Name *",
         "email": "Email *",
         "company": "Studio / Company",
         "phone": "Phone",
-        "message": "Message * (preferably in 1-2 sentences)"
+        "message": "Message * (feel free to keep it to 1–2 sentences)"
       },
+      "hint": "Note: We’ll receive an email notification and get back to you.",
       "submit": "Send",
-      "hint": "Note: We will receive a notification via email and will get back to you.",
       "success": {
-        "title": "Thanks! Your Message sent.",
-        "text": "I’ll get back to you as soon as possible."
+        "title": "Thanks! Your message has been sent.",
+        "text": "I’ll get back to you as quickly as possible."
       },
-      "error": "Please check your input (name, email, message)."
+      "error": "Please check your inputs (name, email, message)."
     },
     "demo": {
       "title": "Request a demo",
@@ -64,21 +64,21 @@
         "email": "Email *",
         "company": "Studio / Company",
         "phone": "Phone",
-        "message": "Tell us a little about your studio or what you expect from TattooMate."
+        "message": "Tell us a bit about your studio or what you expect from TattooMate."
       },
+      "hint": "Note: We’ll receive an email notification and get back to you.",
       "submit": "Request demo",
-      "hint": "Note: We will receive a notification via email and will get back to you.",
       "success": {
-        "title": "Thanks! Your Demo request sent.",
-        "text": "I will get back to you soon."
+        "title": "Thanks! Your demo request has been sent.",
+        "text": "I’ll get back to you shortly."
       },
-      "error": "Please check your input (name, email, message)."
+      "error": "Please check your inputs (name, email, message)."
     }
   },
   "home": {
     "hero": {
       "title": "Digital consent forms for tattoo & piercing studios",
-      "subtitle": "Compliant. Digital. Simple.",
+      "subtitle": "Legally sound. Digital. Simple.",
       "note": "@common.note.germanOnly"
     },
     "features": {
@@ -86,33 +86,33 @@
       "items": [
         {
           "title": "Digital forms",
-          "text": "Tattoo, piercing and other consent forms filled out directly on tablet or smartphone – no paper clutter."
+          "text": "Fill out tattoo, piercing and additional consents directly on a tablet or smartphone — no paper chaos."
         },
         {
-          "title": "Legally compliant documentation",
-          "text": "Signatures, PDFs and supporting documents are stored cleanly and securely and can be retrieved at any time in a traceable manner."
+          "title": "Legally solid documentation",
+          "text": "Signatures, PDFs and proof are stored cleanly and securely and can be retrieved anytime."
         },
         {
           "title": "Admin & overview",
-          "text": "All consents, events and customers clearly organized in the admin area – suitable for conventions as well."
+          "text": "All consents, events and customers clearly organized in the admin area — also suitable for conventions."
         }
       ]
     },
     "usecases": {
-      "headline": "Built for studio days and conventions",
-      "subtitle": "TattooMate adapts to your workflow — whether it’s scheduled appointments or a hectic event day.",
+      "headline": "Made for studio life and conventions",
+      "subtitle": "TattooMate adapts to your setup — whether it’s an appointment in the studio or a hectic expo day.",
       "items": [
         {
           "title": "Studio mode",
-          "text": "Clean workflows with complete details, checklists and clear documentation — perfect for appointments."
+          "text": "Clean processes with complete details, checklists and clear documentation — perfect for studio appointments."
         },
         {
           "title": "Event/Convention mode",
-          "text": "Fast walk-in flow: reduced inputs, clear overview and separate capture for events."
+          "text": "Fast workflow for walk-ins: reduced inputs, clear overview and separate capture for events."
         },
         {
           "title": "QR codes for forms",
-          "text": "Generate form links as QR codes — ideal for printouts at your booth or at the studio front desk."
+          "text": "Provide form links as QR codes — ideal to print for your booth or reception area."
         }
       ],
       "cta": {
@@ -121,771 +121,768 @@
       },
       "preview": {
         "event": {
-          "title": "Event / convention mode",
-          "text": "Fast walk-in flow with reduced inputs and clean separation for events."
+          "title": "Event / Convention mode",
+          "text": "Fast walk-in workflow with reduced inputs and clean separation for events."
         },
         "studio": {
-          "title": "Studio Mode – Overview",
-          "text": "Classic studio procedure: complete information, clear documentation."
+          "title": "Studio mode — overview",
+          "text": "Classic studio workflow: complete details, clear documentation."
         },
         "qrcode": {
           "title": "QR codes for forms",
-          "text": "Form links as QR codes for studios and conventions — perfect for printing."
+          "text": "Form links as QR codes for studio & conventions — ideal for printing."
         }
       }
     },
     "howto": {
       "headline": "How it works in the studio",
-      "subtitle": "In 3 steps – simple, fast, and properly documented.",
+      "subtitle": "In 3 steps — simple, fast, cleanly documented.",
       "items": [
         {
-          "title": "Display the QR code",
-          "text": "The client scans it and is taken directly to the form (studio or event)."
+          "title": "Put up a QR code",
+          "text": "Customer scans it and lands directly in the form (studio or event)."
         },
         {
-          "title": "Fill out and sign the form",
-          "text": "Everything on smartphone or tablet – including required fields, information texts, and signature."
+          "title": "Fill out the form & sign",
+          "text": "Everything on phone/tablet — incl. required fields, disclosure texts, signature."
         },
         {
-          "title": "PDF available in the admin panel",
-          "text": "The studio can generate the PDF at any time, print it, or save it."
+          "title": "PDF available in admin",
+          "text": "The studio can generate, print or save the PDF anytime."
         }
       ],
       "cta": {
-        "primary": "View demo",
+        "primary": "Request live demo",
         "secondary": "Features"
       }
     },
     "minifaq": {
       "headline": "Quick answers",
-      "subtitle": "The most important questions – answered clearly and honestly.",
+      "subtitle": "The most important questions — short and honest.",
       "items": [
         {
-          "q": "Is TattooMate GDPR compliant?",
-          "a": "Yes. No ID documents or PDFs are sent by email. All documents are generated in the admin panel and remain under your control."
+          "q": "Is TattooMate GDPR-compliant?",
+          "a": "Yes. No IDs or PDFs by email. Documents are generated in the admin and stay under your control."
         },
         {
-          "q": "Can I separate studio work and conventions?",
-          "a": "Yes. Using the event/convention mode with its own data capture and separate overview."
+          "q": "Can I separate studio and conventions?",
+          "a": "Yes. Via the event/convention mode with its own capture flow and separate overview."
         },
         {
-          "q": "Does it work on smartphones and tablets?",
-          "a": "Yes. Fully web-based and optimized for touch devices – no app installation required."
+          "q": "Does it run on phone & tablet?",
+          "a": "Yes. Fully web-based and optimized for touch — no app required."
         },
         {
           "q": "Can I generate PDFs again later?",
-          "a": "Yes. The studio can generate, print, or save PDFs at any time from the admin panel."
+          "a": "Yes. The studio can generate, print or save PDFs anytime in the admin."
         }
       ],
       "more": "View all questions"
     },
     "cta": {
       "headline": "Ready for a clean studio workflow?",
-      "subtitle": "Try TattooMate in the demo or get in touch if you have any questions.",
-      "primary": "View demo",
-      "secondary": "Contact us"
+      "subtitle": "Try TattooMate in the demo or reach out if you have questions.",
+      "primary": "Request live demo",
+      "secondary": "Contact"
     }
   },
   "funktionen": {
     "hero": {
       "title": "Features that actually take work off your plate",
-      "lead": "Digital consent forms, clean workflows and solid documentation – built for tattoo & piercing studios.",
-      "note": "No fluff. No trackers. Focused on real studio workflows.",
-      "badge1": "Privacy-first",
+      "lead": "Digital consent forms, structured workflows and clean documentation — built for tattoo & piercing studios.",
+      "note": "No gimmicks. No trackers. Focused on real studio life.",
+      "badge1": "GDPR-aware",
       "badge2": "Studio-focused",
       "badge3": "No cloud lock-in"
     },
     "section": {
       "headline": "What TattooMate covers",
-      "subline": "The stuff that matters in real studio work – not just nice-to-have."
+      "subline": "This is the stuff that matters in the studio — not “nice to have”."
     },
     "cards": {
       "forms": {
         "title": "Digital forms",
-        "lead": "Tattoo & piercing – digital, validated, with signatures.",
+        "lead": "Tattoo & piercing — cleanly digital, with required fields and signatures.",
         "b1": "Required fields & validation",
-        "b2": "Under-18 logic: guardian fields & signatures required",
-        "b3": "Signatures inside the form",
-        "b4": "PDF generated from stored data (reproducible)"
+        "b2": "Under-18 logic: parent fields & signatures automatically required",
+        "b3": "Signatures directly in the form",
+        "b4": "PDF generation from the record (reproducible)"
       },
       "admin": {
         "title": "Admin view & search",
-        "lead": "Find forms fast – no binders, no chaos.",
+        "lead": "Find forms again fast — no folders, no chaos.",
         "b1": "Overview with filters & search",
         "b2": "Detail view per form",
-        "b3": "Generate PDFs anytime",
-        "b4": "Event/convention mode can be separated cleanly"
+        "b3": "Regenerate PDFs anytime",
+        "b4": "Event/convention mode cleanly separable"
       },
       "events": {
         "title": "Conventions & event mode",
-        "lead": "Built for days that must be fast – without problems later.",
-        "b1": "Event mode for convention workflows",
+        "lead": "For days when everything has to be fast — without the stress afterwards.",
+        "b1": "Event mode for convention workflow",
         "b2": "QR codes for direct form links",
         "b3": "Clean separation studio ↔ event",
-        "b4": "Review later in admin without digging"
+        "b4": "Admin follow-up without hunting things down"
       },
       "privacy": {
         "title": "Privacy & control",
         "lead": "Data stays where it belongs: with the studio.",
         "b1": "No analytics trackers",
         "b2": "No unnecessary third-party scripts",
-        "b3": "Self-hosting possible (no cloud lock-in)",
-        "b4": "Clean, traceable documentation"
+        "b3": "Self-hosted possible (no cloud lock-in)",
+        "b4": "Documentation that’s tidy & traceable"
       }
     },
     "cta": {
-      "title": "Want to see how this works day-to-day?",
-      "text": "I’ll show you TattooMate quickly – no sales show. You get answers and a clear picture."
+      "title": "Want to see what this looks like in real life?",
+      "text": "Then I’ll show you TattooMate briefly — no sales show. You’ll get answers and a clear picture."
     },
     "overview": {
       "o1": {
-        "title": "Forms that protect you from mistakes",
-        "text": "Required fields, signatures and under-18 logic prevent the classic “oops…” moments before they happen."
+        "title": "Forms that protect themselves",
+        "text": "Required fields, signatures and under-18 logic prevent the typical “oops…” mistakes before they happen."
       },
       "o2": {
-        "title": "Documentation you can actually find",
-        "text": "Search, filters, detail view – and PDFs generated anytime. No binders, no afterwork paperwork."
+        "title": "Documentation you can actually find again",
+        "text": "Search, filters, detail view — and regenerate PDFs anytime. No folder chaos, no backfilling."
       },
       "o3": {
         "title": "Control instead of cloud lock-in",
-        "text": "Self-hosting possible. No trackers. Roles & permissions. Data stays with the studio."
+        "text": "Self-hosted possible. No trackers. Roles & permissions. Data stays with the studio."
       }
     },
-
     "blocks": {
       "forms": {
         "title": "Forms & studio safety",
-        "lead": "TattooMate is not “a digital sheet of paper” – it’s a workflow that prevents errors.",
-
+        "lead": "TattooMate isn’t “a digital sheet of paper” — it’s a workflow that prevents mistakes.",
         "card1": {
           "title": "Tattoo & piercing forms (digital, clean, complete)",
-          "lead": "Clients fill it out – you get a complete dataset instead of half-missing info.",
-          "b1": "Required fields & validation so nothing gets “forgotten”",
-          "b2": "Signatures directly inside the form (client/guardian)",
-          "b3": "Medical info structured instead of messy free-text",
-          "b4": "Clear process – fewer discussions at the counter"
+          "lead": "Customers fill it out — you get a complete record instead of half the info.",
+          "b1": "Required fields & validation: nothing gets “forgotten”",
+          "b2": "Signatures directly in the form (customer/guardian)",
+          "b3": "Medical info structured instead of free-text chaos",
+          "b4": "Clear flow — fewer discussions at the front desk"
         },
-
         "card2": {
-          "title": "Under-18 safety that’s actually tight",
-          "lead": "Below minimum age: guardian data + signatures + uploads become mandatory.",
-          "b1": "Automatic age logic (minimum age from settings)",
-          "b2": "Guardian: required fields + signatures",
-          "b3": "Upload blocking if required fields are missing",
+          "title": "Under-18 protection that actually holds up",
+          "lead": "If under minimum age: parent fields + signatures + uploads become mandatory.",
+          "b1": "Automatic age logic (incl. minimum age from settings)",
+          "b2": "Parent/guardian: required details + signatures",
+          "b3": "Upload lock if required fields are missing",
           "b4": "No submission possible until under-18 requirements are met"
         }
       },
-
       "pdf": {
         "title": "Documentation & PDF output",
-        "lead": "The key point: PDFs are reproducible from stored data – not “generated once and gone”.",
-
+        "lead": "The key point: PDFs are reproducible from the record — not “generated once and gone”.",
         "card1": {
-          "title": "Generate PDFs anytime",
-          "lead": "Studios can print/store whenever needed – without asking the client again.",
+          "title": "Regenerate PDFs anytime",
+          "lead": "The studio can print/save whenever needed — without needing the original again.",
           "b1": "PDF export from stored data (reproducible)",
-          "b2": "Signatures, content and studio texts included cleanly",
-          "b3": "Ideal for filing, proof and internal processes",
-          "b4": "No need to email IDs/PII around"
+          "b2": "Signatures, content, studio texts cleanly in the document",
+          "b3": "Ideal for filing, proof, internal processes",
+          "b4": "No need to email IDs/PII"
         },
-
         "card2": {
-          "title": "Traceability instead of “I think we did…”",
-          "lead": "When it matters, documentation wins – not memory.",
-          "b1": "Dataset + PDF = a traceable process",
+          "title": "Traceability instead of gut feeling",
+          "lead": "When it comes down to it, documentation counts — not memory.",
+          "b1": "Record + PDF = traceable process",
           "b2": "Consistent structure across all forms",
           "b3": "No handwritten notes that become unreadable",
           "b4": "Less risk from gaps in documentation"
         }
       },
-
       "admin": {
         "title": "Admin area, search & overview",
         "lead": "You don’t want to search. You want to find. Fast.",
-
         "card1": {
           "title": "Form overview with filters",
-          "lead": "For daily work and high-stress days: you instantly see what’s going on.",
-          "b1": "Search by client/date/status (depending on view logic)",
+          "lead": "For normal days and stress days: you instantly see what’s up.",
+          "b1": "Search by customer/date/status (depending on view logic)",
           "b2": "Detail view per form instead of spreadsheet warfare",
-          "b3": "PDF download/generation right from the view",
-          "b4": "Clean separation: studio day-to-day ↔ event forms"
+          "b3": "PDF download/generation directly from the view",
+          "b4": "Clear separation: studio daily work ↔ event forms"
         },
-
         "card2": {
           "title": "Document rejections & edge cases",
-          "lead": "Not every client is suitable – what matters is recording it properly.",
-          "b1": "Capture “rejected” + reason (e.g. piercing)",
-          "b2": "Visible marker inside the dataset",
-          "b3": "No “we said no verbally” without proof",
-          "b4": "Protects studio & artist and reduces arguments"
+          "lead": "Not every customer is suitable — what matters is documenting it cleanly.",
+          "b1": "“Rejected”/reason can be recorded (e.g., piercing)",
+          "b2": "Visible notice in the form record",
+          "b3": "No “verbally turned away” without proof",
+          "b4": "Saves you arguments and protects studio & artist"
         }
       },
-
       "events": {
         "title": "Conventions, event mode & QR codes",
         "lead": "Conventions are fast, loud, chaotic. TattooMate turns that into a controlled workflow.",
-
         "card1": {
-          "title": "Event mode for convention workflows",
-          "lead": "Capture fast, review later – without creating data mess.",
+          "title": "Event mode for convention workflow",
+          "lead": "Capture fast, tidy up later — without data junk.",
           "b1": "Enable event mode (convention vs studio)",
-          "b2": "Forms can be separated for searching/reporting",
-          "b3": "Review later in admin without digging",
-          "b4": "Clean documentation even with high throughput"
+          "b2": "Forms can be evaluated/found separately",
+          "b3": "Admin follow-up without having to piece everything together",
+          "b4": "Clean documentation even at high throughput"
         },
-
         "card2": {
-          "title": "QR codes: scan, open the form, done",
-          "lead": "One QR on the table and the client is in the right form instantly.",
+          "title": "QR codes: scan, open form, done",
+          "lead": "One QR on the table and the customer is in the right form.",
           "b1": "QR codes for tattoo/piercing & more (tools page)",
-          "b2": "Perfect for walk-ins & guest artists",
-          "b3": "Less questions, less paper, less stress",
-          "b4": "Ideal for conventions and events"
+          "b2": "Ideal for walk-ins & guest artists",
+          "b3": "Fewer questions, fewer papers, less stress",
+          "b4": "Perfect for expos/conventions"
         }
       },
-
       "security": {
-        "title": "Privacy, roles & operations",
-        "lead": "You sell trust. Your system must be trustworthy too.",
-
+        "title": "Privacy, roles & operation",
+        "lead": "You sell trust — so the system needs to be trustworthy.",
         "card1": {
-          "title": "Privacy-first, no tracking nonsense",
-          "lead": "No analytics subscriptions, no cookie circus, no third-party scripts? Good.",
+          "title": "Privacy-first, no unnecessary tracking",
+          "lead": "No analytics subscriptions, no cookie circus, no third-party scripts — by design.",
           "b1": "No unnecessary third-party trackers",
           "b2": "Data stays in the studio context",
-          "b3": "Process-driven instead of random “Google tools”",
-          "b4": "Built with privacy in mind (no empty promises)"
+          "b3": "Clear processes instead of external tracking tools",
+          "b4": "Built with GDPR in mind — no empty promises"
         },
-
         "card2": {
           "title": "Roles & permissions (not everyone sees everything)",
-          "lead": "Studios have teams – TattooMate can separate access properly.",
-          "b1": "Role-based permissions (view vs edit, etc.)",
-          "b2": "Protected admin area (login/session)",
+          "lead": "Studios have multiple people — TattooMate can separate access cleanly.",
+          "b1": "Role-based permissions (e.g., view vs edit)",
+          "b2": "Admin area protected (login/session)",
           "b3": "Less risk from wrong clicks",
-          "b4": "Scales for bigger teams & guest artists"
+          "b4": "Scales for larger teams & guest artists"
         }
       }
     },
-
     "fit": {
-      "title": "Who TattooMate is for",
-      "lead": "Short and honest – so you don’t waste time.",
-
+      "title": "Who is TattooMate for?",
+      "lead": "Short and honest — so you don’t waste time.",
       "good": {
         "title": "A good fit if …",
-        "b1": "you want to get rid of paperwork",
-        "b2": "you need documentation you can find later",
-        "b3": "you run conventions/walk-ins efficiently",
+        "b1": "you want to get rid of paperwork in the studio",
+        "b2": "you need clean, findable documentation",
+        "b3": "you want to handle conventions/walk-ins efficiently",
         "b4": "you want control instead of cloud lock-in"
       },
-
       "bad": {
         "title": "Not a fit if …",
-        "b1": "you only want a single PDF to print",
-        "b2": "you don’t want validation/under-18 safety",
-        "b3": "you want client data flying around via email",
-        "b4": "you just want “any app” without studio workflow"
+        "b1": "you’re only looking for a single PDF to print",
+        "b2": "you don’t want validation/under-18 safeguards",
+        "b3": "you want customer data flying around by email",
+        "b4": "you want “any app” without a studio workflow"
       }
     },
-
     "faq": {
-      "title": "Quick questions, clear answers",
-      "lead": "The points studios actually care about.",
-
-      "q1": "Can I self-host TattooMate?",
-      "a1": "Yes. Self-hosting is possible – you’re not forced into a cloud. That’s the point: control over data and operations.",
-
-      "q2": "How does under-18 handling work in practice?",
-      "a2": "Below minimum age: guardian data, signatures and required uploads become mandatory. Without them, the form cannot be submitted.",
-
-      "q3": "Who can generate PDFs later?",
-      "a3": "The studio anytime in the admin area. Clients shouldn’t have to request PDFs via email later – that can be a privacy problem.",
-
+      "title": "Short questions, clear answers",
+      "lead": "The points studios actually want to know.",
+      "q1": "Can I host TattooMate myself?",
+      "a1": "Yes. Self-hosting is possible — you’re not bound to a cloud. That’s the point: control over data and operation.",
+      "q2": "How does under-18 really work?",
+      "a2": "If under the minimum age: parent fields, signatures and required uploads are mandatory. Nothing is submitted without them.",
+      "q3": "Who can generate the PDFs later?",
+      "a3": "The studio can, anytime in the admin area. Customers shouldn’t have to request later by email — that’s often problematic for privacy.",
       "q4": "Is there newsletter / opt-in?",
-      "a4": "Yes, optional. Only with explicit consent. Unsubscribe anytime – and proof (time/source) is traceable."
+      "a4": "Yes, optional. Only if the customer actively consents. Unsubscribe is always possible — and proof (timestamp/source) is traceable."
     }
   },
   "formulare": {
     "hero": {
       "title": "Forms that do more than paper",
-      "lead": "Digital tattoo and piercing forms with required-field logic, under-18 protection, signatures and clean documentation.",
-      "note": "Not “a PDF to print”. A workflow that prevents mistakes and creates proper records."
+      "lead": "Digital tattoo and piercing forms with required logic, under-18 safeguards, signatures and clean documentation.",
+      "note": "Not “a PDF to print”. A workflow that prevents mistakes and creates proof."
     },
-
     "overview": {
-      "title": "What makes TattooMate forms stand out",
-      "lead": "Most problems don’t happen during tattooing – they happen because information is missing, workflows are wrong, or documentation is weak.",
+      "title": "What makes TattooMate forms different",
+      "lead": "Most problems don’t happen while tattooing — they happen because of missing details, wrong processes, or poor documentation.",
       "o1": {
         "title": "Required logic instead of luck",
-        "text": "Validation and required fields ensure nothing is missing before the form can be submitted."
+        "text": "Validation and required fields ensure nothing is missing — before it gets saved."
       },
       "o2": {
-        "title": "Under-18 handled properly",
-        "text": "For minors, guardian fields, signatures and required uploads become mandatory automatically."
+        "title": "Under-18 done properly",
+        "text": "If not of legal age, parent fields, signatures and required uploads become mandatory automatically."
       },
       "o3": {
-        "title": "PDFs reproducible at any time",
-        "text": "The studio can generate a PDF from the stored data at any time – without asking the client again."
+        "title": "PDF reproducible anytime",
+        "text": "The studio can generate a PDF from the record at any time — without the customer having to provide anything again."
       }
     },
-
     "types": {
-      "title": "Which forms are included",
-      "lead": "Tattoo and piercing forms are included in the base package. Additional forms such as tooth jewelry can be added optionally. The workflow always stays the same: clean, traceable and safe.",
-
+      "title": "Which forms you get",
+      "lead": "Tattoo and piercing forms are included in the base package. Additional forms like tooth jewelry can be added optionally. The workflow stays the same: clean, traceable, safe.",
       "tattoo": {
         "title": "Tattoo form",
-        "lead": "Consent, medical information and signatures – structured and complete.",
-        "b1": "Client data, contact details, date of birth",
-        "b2": "Medical questions and relevant risks",
-        "b3": "Consents and studio texts (loaded dynamically from settings)",
-        "b4": "Event-mode ready (conventions / walk-ins)",
-        "b5": "Design, stencil and reference images stored per consent",
-        "b6": "Signature(s) captured directly in the form",
-        "b7": "Touch-ups documented with a separate signature and date (legally separated)"
+        "lead": "Consent + health information + signatures — structured and complete.",
+        "b1": "Customer details, contact details, date of birth",
+        "b2": "Health questions and relevant risks",
+        "b3": "Consents and studio texts (dynamic from settings)",
+        "b4": "Event-mode ready (conventions/walk-ins)",
+        "b5": "Motif, stencil and reference images can be saved per consent",
+        "b6": "Signature(s) directly in the form",
+        "b7": "Touch-ups with separate signature and date (clean legal separation)"
       },
-
       "piercing": {
         "title": "Piercing form",
-        "lead": "Piercing-specific questions including special cases – without forgetting anything.",
+        "lead": "Piercing-specific questions incl. edge cases — so you don’t forget anything.",
         "b1": "Piercing location, previous piercings, complications",
-        "b2": "Relevant medical information (e.g. blood pressure, allergies, etc.)",
-        "b3": "Event-mode ready (conventions / walk-ins)",
-        "b4": "Option to record a rejection with documented reason"
+        "b2": "Relevant medical information (e.g., blood pressure, allergies, etc.)",
+        "b3": "Event-mode ready (conventions/walk-ins)",
+        "b4": "Option to reject with documented reason"
       },
-
       "tooth": {
         "title": "Tooth jewelry form",
         "lead": "Tooth-jewelry-specific questions with clear risk disclosure and clean documentation.",
-        "b1": "Dental status (e.g. cavities, gum issues, dental restorations)",
-        "b2": "Relevant medical information and allergies (e.g. adhesive, latex, nickel)",
-        "b3": "Risk information such as enamel damage or detachment",
+        "b1": "Dental status (e.g., cavities, gum issues, dental prosthetics)",
+        "b2": "Relevant medical information and allergies (e.g., adhesive, latex, nickel)",
+        "b3": "Disclosure of risks such as enamel damage or detachment",
         "b4": "Consent and signature specifically for tooth jewelry"
+      },
+      "cosmetic": {
+        "title": "Cosmetics form",
+        "lead": "Cosmetics and treatment forms with type-specific disclosure — legally sound, traceable and cleanly documented.",
+        "b1": "Select the cosmetic type (e.g., PMU, microblading, lashes, other treatments)",
+        "b2": "Individual disclosure and aftercare texts per type (each treatment with its own risk/info texts from studio settings)",
+        "b3": "Relevant health questions (e.g., skin conditions, eye conditions, allergies)",
+        "b4": "Treatment-specific special cases and exclusion reasons",
+        "b5": "Consent declaration and signature matching the selected treatment",
+        "b6": "PDF documentation with exactly the text belonging to the treatment type"
       }
     },
-
     "safety": {
-      "title": "Protection built into the workflow",
-      "lead": "The strength is not “digital”. The strength is that TattooMate does not allow risky gaps.",
-
+      "title": "Workflow safeguards",
+      "lead": "The strength isn’t “digital”. The strength is: TattooMate won’t let you build dangerous gaps.",
       "card1": {
         "title": "Validation & required fields",
-        "lead": "If important information is missing, it won’t be “saved anyway” – the workflow guides the user correctly.",
+        "lead": "If important information is missing, it won’t “save anyway” — it guides you properly.",
         "b1": "Required fields: name, date of birth, consents, etc.",
-        "b2": "Conditional fields: details only when needed (e.g. allergies)",
+        "b2": "Conditional fields: details only when needed (e.g., allergies)",
         "b3": "Clean structure instead of endless free text",
         "b4": "Fewer mistakes under pressure (walk-ins, events)"
       },
-
       "card2": {
-        "title": "Under-18 workflow with blocking",
-        "lead": "For minors, nothing is waved through. The system enforces the correct process.",
-        "b1": "Service-specific minimum age (e.g. piercing from 12, tattoo from 18). The age limit is defined per form and determines what is allowed.",
-        "b2": "Guardian / parent details are mandatory",
-        "b3": "Signatures and uploads are mandatory",
-        "b4": "Submission is blocked until all required elements are complete"
+        "title": "Under-18 workflow with lock",
+        "lead": "If underage, nothing gets waved through. The system enforces the correct process.",
+        "b1": "Service-specific minimum age (e.g., piercing from 12, tattoo from 18). The age limit is set per form and determines what’s allowed at all.",
+        "b2": "Parent/guardian details mandatory",
+        "b3": "Signatures + uploads mandatory",
+        "b4": "Submission blocked until required parts are complete"
       }
     },
-
     "cta": {
-      "title": "Want to see how fast this works in a real studio?",
-      "text": "I’ll walk you through the workflow live. Demos are provided on request only – no public access."
+      "title": "Want to see how fast it runs in the studio?",
+      "text": "Then I’ll show you the workflow live. Demos are by request only — no public access."
     }
   },
   "sicherheit": {
     "hero": {
       "title": "Security and control",
-      "lead": "TattooMate is built to protect data, keep workflows traceable and prevent mistakes.",
+      "lead": "TattooMate is built so data is protected, workflows stay traceable, and mistakes are avoided.",
       "note": "No empty promises. Clear technical and organizational measures."
     },
-
     "overview": {
-      "title": "What security really means",
-      "lead": "Security is more than encryption. Security means control, clear responsibilities and clean workflows.",
+      "title": "What security is really about",
+      "lead": "Security isn’t just encryption. It’s control, clear responsibilities, and clean processes.",
       "o1": {
         "title": "Data stays under control",
-        "text": "You know where your data is stored, who can access it and what happens to it."
+        "text": "You know where your data is, who can access it, and what happens to it."
       },
       "o2": {
         "title": "Access is clearly regulated",
-        "text": "Not everyone sees everything. Roles and permissions prevent unnecessary or incorrect access."
+        "text": "Not everyone sees everything. Roles and permissions prevent unnecessary or wrong access."
       },
       "o3": {
-        "title": "Errors are prevented",
-        "text": "Required logic, blocking rules and validation prevent risky gaps in everyday workflows."
+        "title": "Mistakes are caught",
+        "text": "Required logic, locks and validations prevent risky gaps in daily work."
       }
     },
-
     "data": {
       "title": "Data storage & hosting",
-      "lead": "TattooMate does not force you into someone else’s cloud. You decide how and where your data is operated.",
-
+      "lead": "TattooMate doesn’t force you into someone else’s cloud. You decide how and where your data is operated.",
       "card1": {
         "title": "Self-hosting without cloud lock-in",
-        "lead": "Full control over infrastructure and data – no vendor lock-in.",
-        "b1": "Operation on your own server or environment is possible",
+        "lead": "Full control over infrastructure and data — no vendor lock-in.",
+        "b1": "Can be operated on your own server or environment",
         "b2": "No dependency on external cloud providers",
         "b3": "Clear separation between application and marketing website",
-        "b4": "Suitable for studios with increased data protection requirements"
+        "b4": "Suitable for studios with higher privacy requirements"
       },
-
       "card2": {
-        "title": "Responsible data handling",
-        "lead": "Only what is actually required is stored.",
+        "title": "Conscious data handling",
+        "lead": "Only what’s actually needed is stored.",
         "b1": "No unnecessary tracking or analytics scripts",
-        "b2": "No data sharing with third parties",
-        "b3": "Personal data remains within the studio context",
-        "b4": "PDFs and images are protected and not publicly accessible"
+        "b2": "No sharing of data with third parties",
+        "b3": "Personal data stays within the studio context",
+        "b4": "PDFs and images are protected, not publicly accessible"
       },
-
       "card3": {
-        "title": "SaaS operation (hosted by TattooMate)",
-        "lead": "If desired, we operate TattooMate for your studio – without you losing control over your data.",
+        "title": "Operation as SaaS (hosting by TattooMate)",
+        "lead": "If you want, we operate TattooMate for your studio — without you losing control of your data.",
         "b1": "Separate instances per studio (no shared data storage)",
-        "b2": "No access by third parties to client data or forms",
-        "b3": "Access exclusively via secured connections",
-        "b4": "Suitable for studios that do not want to operate their own server"
+        "b2": "No third-party access to customer data or forms",
+        "b3": "Access only via secured connections",
+        "b4": "Suitable for studios that don’t want to run their own server"
       }
     },
-
     "access": {
       "title": "Access, roles & protection",
-      "lead": "Studios work with multiple people. TattooMate cleanly separates access.",
-
+      "lead": "Studios have multiple people working. TattooMate separates access cleanly.",
       "card1": {
-        "title": "Role and permission system",
-        "lead": "Not every staff member needs access to all functions or data.",
-        "b1": "Role-based permissions (e.g. view vs edit)",
-        "b2": "Admin area restricted to authorized users",
-        "b3": "Reduced risk of incorrect operation",
+        "title": "Roles and permissions system",
+        "lead": "Not every employee needs access to all functions or data.",
+        "b1": "Role-based permissions (e.g., view vs edit)",
+        "b2": "Admin area only for authorized users",
+        "b3": "Less risk from misuse",
         "b4": "Suitable for teams and guest artists"
       },
-
       "card2": {
         "title": "Protected content & images",
         "lead": "Images, PDFs and sensitive data are not freely accessible.",
         "b1": "Protected API endpoints for files",
-        "b2": "Access only with an active session and proper authorization",
+        "b2": "Access only with an active session and permission",
         "b3": "No public file paths",
         "b4": "Especially important for IDs, tattoo and touch-up images"
       }
     },
-
     "cta": {
       "title": "Questions about security or operation?",
-      "text": "I’m happy to explain how TattooMate is operated and which options are available for your studio. Demos are intentionally provided on request only."
+      "text": "I’m happy to explain how TattooMate is operated and what options exist for your studio. Demos are intentionally by request only."
     }
   },
   "preise": {
     "hero": {
-      "title": "Clear pricing. No negotiation.",
-      "lead": "TattooMate has fixed prices – transparent, predictable and the same for every studio.",
-      "note": "No hidden discounts. No “final price” discussions. Exactly how it should be."
+      "title": "Clear prices. No negotiation.",
+      "lead": "TattooMate has fixed prices — transparent, understandable, and the same for every studio.",
+      "note": "No backroom discounts. No “final price”. Exactly how you’d want it yourself."
     },
-
     "packages": {
-      "title": "Pricing & packages",
-      "lead": "TattooMate is licensed per studio. Number of artists, event usage or daily operation make no difference."
+      "title": "Price for TattooMate",
+      "lead": "TattooMate is licensed per studio. Number of artists, event usage or daily usage makes no difference."
     },
-
+    "addon": {
+      "title": "Optional services",
+      "lead": "Optional services such as hosting or setup are billed studio-wide. Optional services have a fixed per-studio price and are independent of usage or team size."
+    },
+    "modul": {
+      "title": "Add-on modules for TattooMate",
+      "lead": "Extends the TattooMate base package.",
+      "secondlead": "More modules for additional use cases are planned."
+    },
+    "premium": {
+      "title": "Premium modules",
+      "lead": "For studios with special requirements for hygiene, liability and documentation."
+    },
+    "otherIndustries": {
+      "title": "TattooMate for other industries",
+      "lead": "For studios without tattoo or piercing",
+      "leadSubtext": "e.g., cosmetics or tooth jewelry",
+      "secondlead": "One form matching your studio is included in the package.",
+      "noticelead": "Additional forms: €150, each further one €75."
+    },
     "base": {
       "title": "TattooMate base package",
-      "price": "€499",
+      "price": "499 €",
       "period": " one-time",
-      "lead": "Everything a tattoo or piercing studio needs for daily operation.",
-      "b1": "Tattoo and piercing consent forms included",
-      "b2": "U18 workflow with mandatory fields and blocking logic",
+      "lead": "Everything a tattoo or piercing studio needs day to day.",
+      "b1": "Tattoo and piercing forms included",
+      "b2": "Under-18 workflow with required fields and locking logic",
       "b3": "Signatures, PDFs and clean documentation",
       "b4": "Event & convention mode included",
-      "b5": "No limitation on number of artists"
+      "b5": "Newsletter system incl. campaigns and automations (e.g., birthdays, recall, follow-ups)",
+      "b6": "No limit on number of artists"
     },
-
     "tooth": {
       "title": "Tooth jewelry module",
-      "price": "+ €59",
+      "price": "+ 75 €",
       "period": " one-time",
-      "lead": "Optional add-on for cosmetic tooth jewelry.",
-      "b1": "Dedicated tooth jewelry consent form",
-      "b2": "Risk information and separate consent",
-      "b3": "Clean documentation within the studio workflow"
+      "lead": "Optional add-on module for tooth jewelry.",
+      "b1": "Dedicated tooth jewelry form",
+      "b2": "Risk disclosure and separate consent",
+      "b3": "Clean documentation in the studio workflow"
     },
-
+    "cosmetic": {
+      "title": "Cosmetics module",
+      "price": "+ 75 €",
+      "period": " one-time",
+      "lead": "Optional add-on module for cosmetic services.",
+      "b1": "Dedicated cosmetics form",
+      "b2": "Separate disclosure texts for PMU, microblading & lashes",
+      "b3": "Risk disclosure and separate consent",
+      "b4": "Clean documentation in the studio workflow"
+    },
     "hosting": {
       "title": "Hosting by TattooMate (SaaS)",
-      "price": "+ €59",
+      "price": "+ 59 €",
       "period": " per month",
-      "lead": "We take care of operation, updates and backups.",
+      "lead": "We handle operation, updates and backups.",
       "b1": "Separate instance per studio",
       "b2": "Updates, maintenance and backups included",
       "b3": "No own server required",
-      "avvNote": "When used as SaaS, data processing is based on a"
+      "avvNote": "When using SaaS, data processing is based on a"
     },
-
+    "cosmeticStudio": {
+      "title": "For cosmetics studios",
+      "price": "349 €",
+      "period": " one-time",
+      "lead": "Digital consent and disclosure forms for cosmetics studios — flexible, type-specific and legally cleanly documented.",
+      "second": "This package is designed specifically for cosmetic treatments and covers different services with clean separation.",
+      "b1": "Support for multiple cosmetic types (e.g., PMU, microblading, lash extensions, other treatments)",
+      "b2": "Individual disclosure, risk and aftercare texts per treatment type — centrally managed in the studio and automatically assigned in the form & PDF",
+      "b3": "Treatment-specific health questions and exclusion criteria",
+      "b4": "Type-specific consent declaration incl. matching signature",
+      "b5": "Newsletter system incl. campaigns and automations (e.g., birthdays, recall, follow-ups)",
+      "b6": "Complete PDF documentation of the exact treatment that was performed"
+    },
+    "toothStudio": {
+      "title": "For tooth jewelry studios",
+      "price": "349 €",
+      "period": " one-time",
+      "lead": "Digital consent and disclosure forms for tooth jewelry — legally sound, traceable and specifically aligned with dental treatments.",
+      "second": "This package is designed specifically for tooth jewelry and bonding treatments and covers health, legal and liability-relevant aspects.",
+      "b1": "Dedicated forms for tooth jewelry and bonding treatments",
+      "b2": "Individual disclosure, risk and aftercare texts for tooth jewelry — centrally managed in the studio and automatically assigned in the form & PDF",
+      "b3": "Extended health questions (e.g., dental status, cavities, gums, allergies, pre-existing conditions)",
+      "b4": "Legally sound consent declaration incl. matching signature and liability waiver",
+      "b5": "Newsletter system incl. campaigns and automations (e.g., care instructions, recall, follow-ups)",
+      "b6": "Complete PDF documentation of the performed tooth jewelry treatment"
+    },
     "setup": {
       "title": "Setup on your own server",
-      "price": "+ €249",
+      "price": "+ 249 €",
       "period": " one-time",
-      "lead": "We install TattooMate on your existing server (e.g. Hetzner, Ionos, Strato or a root server).",
-      "b1": "Installation and configuration",
-      "b2": "Let’s Encrypt SSL certificate",
-      "b3": "Database setup"
+      "lead": "We install TattooMate on your existing server (e.g., Hetzner, Ionos, Strato or a root server).",
+      "b1": "Setup & configuration",
+      "b2": "Let's Encrypt SSL certificate",
+      "b3": "Database"
     },
-
     "training": {
       "title": "Onboarding & training",
-      "price": "+ €79",
+      "price": "+ 79 €",
       "period": " per hour",
-      "lead": "We get you and your team up to speed with TattooMate.",
+      "lead": "We get you and your team ready for TattooMate.",
       "b1": "Live online training via video call",
-      "b2": "Explanation of all features and workflows",
-      "b3": "Individual questions and real-world examples"
+      "b2": "Explanation of all features & workflows",
+      "b3": "Individual questions & practical examples"
     },
-
-    "addon": {
-      "title": "Optional services",
-      "lead": "Optional services such as hosting or setup are charged per studio. All optional services have fixed pricing and are independent of usage or team size."
-    },
-
     "cta": {
-      "title": "Want to see how it works in a real studio?",
-      "text": "In the demo, I’ll show you TattooMate in a real workflow. The price stays the same – the demo is for your questions."
+      "title": "Want to see how it works in the studio?",
+      "text": "In the demo I’ll show you TattooMate in the real workflow. The price stays the same — the demo is for questions."
     }
   },
   "faq": {
     "hero": {
-      "title": "Frequently Asked Questions",
-      "lead": "Short, honest, and focused on real studio practice."
+      "title": "Frequently asked questions",
+      "lead": "Short, honest and practical."
     },
-
     "items": [
       {
         "q": "What is TattooMate?",
-        "a": "TattooMate is a web-based solution for digital consent forms, health information, and signatures in tattoo and piercing studios."
+        "a": "TattooMate is a web-based solution for digital consent forms, health information and signatures in tattoo and piercing studios."
       },
       {
-        "q": "Does it work on phones and tablets?",
-        "a": "Yes. TattooMate is fully web-based and optimized for touch use. Customers do not need to install an app. A modern browser and the smartphone camera are sufficient."
+        "q": "Does it run on phone & tablet?",
+        "a": "Yes. TattooMate is fully web-based and optimized for touch. Customers don’t need to install an app. A modern browser and the phone camera are enough."
       },
       {
-        "q": "How do customers access the forms?",
-        "a": "Simply via a QR code. The code is generated in the admin area and can be displayed in the studio or on a tablet. Customers scan it with their smartphone and are taken directly to the correct form."
+        "q": "How do customers get to the forms?",
+        "a": "Simply via QR code. The code is generated in the admin area and can be posted in the studio or shown on a tablet. Customers scan it and go directly to the right form."
       },
       {
         "q": "Do we need additional devices?",
-        "a": "No, additional devices are not strictly required. However, we recommend one or two tablets (even inexpensive models are sufficient) connected to the studio Wi-Fi. This allows customers to fill out forms without using their own mobile data. This is especially useful when an additional signature is required for a tattoo touch-up."
+        "a": "No, additional devices aren’t strictly required. However, we recommend one or two tablets (even inexpensive ones), connected to the studio Wi-Fi. That way customers can fill out forms without using their own mobile data. This is especially handy when a touch-up requires an additional signature."
       },
       {
-        "q": "Is there a limit to the number of artists?",
-        "a": "No. TattooMate is licensed per studio. You can create as many artists as you like without affecting the price."
+        "q": "Is there a limit on the number of artists?",
+        "a": "No. TattooMate is licensed per studio. You can create as many artists as you want without the price changing."
       },
       {
-        "q": "Is the event or convention mode an extra feature?",
-        "a": "No. The event and convention mode is always included and can be used when needed."
+        "q": "Is event or convention mode extra?",
+        "a": "No. Event and convention mode are always included and can be used when needed."
       },
       {
-        "q": "Can I separate studio and convention data?",
-        "a": "Yes. Using the event/convention mode with separate data capture and its own overview."
+        "q": "Can I separate studio and conventions?",
+        "a": "Yes. Via the event/convention mode with its own capture and separate overview."
       },
       {
-        "q": "How does the under-18 process actually work?",
-        "a": "If a customer is below the minimum age, parent details, signatures, and required uploads become mandatory. Without these required fields, no data is submitted."
+        "q": "How does under-18 really work?",
+        "a": "If a customer is below the minimum age, parent fields, signatures and required uploads become mandatory. Nothing is submitted without these required fields."
       },
       {
-        "q": "Can PDFs be generated again later?",
-        "a": "Yes. The studio can generate, print, or save PDFs again at any time in the admin area."
+        "q": "Can I generate PDFs again later?",
+        "a": "Yes. The studio can regenerate, print or save PDFs anytime in the admin."
       },
       {
-        "q": "Who has access to customer data?",
-        "a": "Only authorized studio users. TattooMate uses roles and permissions so that not everyone can see or edit everything."
+        "q": "Who can access customer data?",
+        "a": "Only authorized studio users. TattooMate uses roles and permissions so not everyone can see or edit everything."
       },
       {
-        "q": "Is TattooMate legally compliant?",
-        "a": "TattooMate supports clean documentation of consent, signatures, and health information. It does not replace legal advice, but it provides traceable and reproducible workflows for the studio."
+        "q": "Is TattooMate legally safe?",
+        "a": "TattooMate helps you document consent, signatures and health information cleanly. It does not replace legal advice, but it creates traceable and reproducible workflows."
       },
       {
         "q": "Is TattooMate GDPR-compliant?",
-        "a": "Yes. No ID documents or PDFs are sent via email. Documents are generated and stored in the admin area. ID images are stored separately from the forms and cannot be directly assigned. All data remains under your control."
+        "a": "Yes. No IDs or PDFs are sent by email. Documents are generated and stored in the admin area. ID images are stored separately from forms and are not directly attributable. The data remains fully under your control."
       },
       {
-        "q": "Is there a newsletter / opt-in?",
-        "a": "Yes, optionally. The newsletter is only activated if the customer explicitly agrees in the form (checkbox) and signs the consent. Unsubscribing is possible at any time; the time and source of consent are documented."
+        "q": "Is there newsletter / opt-in?",
+        "a": "Yes, optional. The newsletter is only enabled if the customer explicitly agrees in the form (checkbox) and signs the consent. Unsubscribe is always possible; timestamp and source of consent are documented."
       },
       {
         "q": "Is the newsletter system GDPR-compliant?",
-        "a": "Yes. Customers decide themselves when filling out the form whether they want to receive newsletters. An unsubscribe link can be included in the newsletter and should be sent with each mailing."
+        "a": "Yes. Customers decide during the form whether they want newsletter updates. An unsubscribe link can be included in newsletters and should be sent with each campaign."
       },
       {
         "q": "Can I host TattooMate myself?",
-        "a": "Yes. You can run TattooMate on your own server or use hosting provided by TattooMate. Both options are clearly defined and transparently priced."
+        "a": "Yes. You can run TattooMate on your own server or use hosting by TattooMate. Both options are clearly defined and transparently priced."
       },
       {
         "q": "What does SaaS mean?",
-        "a": "SaaS stands for Software as a Service. This means the software is used via the internet without having to install or operate it yourself. Maintenance and updates are handled by the provider."
+        "a": "SaaS stands for Software as a Service. That means: you use the software over the internet without installing or operating it yourself. Maintenance and updates are handled by the provider."
       },
       {
-        "q": "Are there any hidden costs or additional fees?",
-        "a": "No. All prices are clearly defined. There are no usage-based fees, no hidden surcharges, and no negotiations."
+        "q": "Are there hidden costs or additional fees?",
+        "a": "No. All prices are fixed. There are no usage-based fees, no hidden surcharges and no negotiations."
       },
       {
         "q": "Why TattooMate — and why maybe not?",
-        "a": "You should not use TattooMate if you are just looking for any form. It is designed for studios that want to handle their documentation in a simple, clean, and GDPR-compliant way — often saving time and costs in the process."
+        "a": "You shouldn’t use TattooMate if you’re just looking for any form. It’s for studios that want clean documentation, simple workflows and GDPR-aware handling — which often saves time and money."
       },
       {
         "q": "Why is there a demo if prices are fixed?",
-        "a": "The demo is not intended for price negotiations, but to show the workflow, answer questions, and ensure that TattooMate fits your studio."
+        "a": "The demo isn’t for price negotiations. It’s to show the workflow, answer questions and make sure TattooMate fits your studio."
       }
     ],
-
     "cta": {
-      "title": "Still have questions?",
-      "text": "Feel free to get in touch with us."
+      "title": "Still questions?",
+      "text": "Don’t hesitate — send us a message."
     }
   },
   "impressum": {
     "hero": {
-      "title": "Legal notice",
-      "lead": "Information according to § 5 TMG"
+      "title": "Imprint",
+      "lead": "Information in accordance with § 5 TMG"
     },
-
     "provider": {
       "title": "Service provider",
       "name": "TattooMate",
-      "address": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nGermany"
+      "address": "Andy Nikodem\nGrüne Twiete 70\n25469 Halstenbek\nGermany"
     },
-
     "contact": {
       "title": "Contact",
       "email": "Email: info@tattoomate.de"
     },
-
     "legal": {
-      "title": "Legal information",
-      "text": "TattooMate is a software solution designed to support studio workflows. The content of this website is provided for informational purposes only and does not constitute legal advice."
+      "title": "Legal notice",
+      "text": "TattooMate is a software solution to support studio workflows. The contents of this website are for information purposes and do not constitute legal advice."
     },
-
     "liability": {
       "title": "Liability for content",
-      "text": "As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 (1) TMG."
+      "text": "As a service provider, we are responsible for our own content on these pages in accordance with § 7(1) TMG and general laws."
     },
-
     "copyright": {
       "title": "Copyright",
-      "text": "The content and works created by the site operators on these pages are subject to German copyright law."
+      "text": "The content and works created by the site operator on these pages are subject to German copyright law."
     }
   },
   "datenschutz": {
     "hero": {
       "title": "Privacy policy",
-      "lead": "Clear, understandable and without marketing fluff.",
+      "lead": "Short, understandable, and without marketing fluff.",
       "note": "This page describes data processing on the TattooMate website. The TattooMate app itself is operated separately by the studio (self-hosted or SaaS)."
     },
-
     "controller": {
       "title": "Controller",
-      "text": "The controller under GDPR is the provider listed in the legal notice."
+      "text": "The controller within the meaning of the GDPR is the provider named in the imprint."
     },
-
     "general": {
-      "title": "General information",
-      "text": "We only process personal data when required to operate this website or when you actively provide data (e.g. via contact or demo request)."
+      "title": "General",
+      "text": "We process personal data only when necessary to operate this website or when you actively provide data to us (e.g., via contact/demo request)."
     },
-
     "hosting": {
-      "title": "Website hosting",
-      "text": "When you access this website, technically necessary data is processed to deliver and secure the service."
+      "title": "Hosting of this website",
+      "text": "When you access the website, technically necessary data is processed so the site can be delivered and secured."
     },
-
     "cloudflare": {
-      "title": "Cloudflare (CDN, DNS, protection against abuse)",
-      "text": "This website uses Cloudflare as a content delivery network (CDN) and security service (e.g. DDoS protection). Requests may be processed via Cloudflare. Depending on configuration, IP address, device/browser information and technical metadata may be processed to ensure delivery and security."
+      "title": "Cloudflare (CDN, DNS, abuse protection)",
+      "text": "This website uses Cloudflare as a content delivery network (CDN) and security service (e.g., DDoS protection). Requests are processed via Cloudflare. Depending on configuration, IP address, device and browser information, and technical metadata may be processed to ensure delivery and security."
     },
-
     "logs": {
       "title": "Server and security logs",
-      "text": "When accessing the website, server and security logs may be generated (e.g. IP address, timestamp, requested page, referrer, user agent, status code). This data is used for technical operation, troubleshooting and abuse prevention. We do not combine this with other data or perform profiling."
+      "text": "When accessing the website, server and security logs may occur (e.g., IP address, timestamp, page accessed, referrer, user agent, status code). This data is used for technical provision, troubleshooting, and defending against abuse. It is not merged with other data and no profiling takes place."
     },
-
     "cookies": {
       "title": "Cookies and tracking",
-      "text": "We do not use unnecessary tracking or analytics cookies on this website. If technically necessary cookies are used (e.g. for language settings), they are strictly used for website functionality."
+      "text": "We do not use unnecessary tracking or analytics cookies on this website. If technically necessary cookies are used (e.g., for language settings), they are used solely for the functionality of the website."
     },
-
     "contact": {
       "title": "Contact / demo request",
-      "text": "If you contact us (e.g. via email or a form), we process the data you provide to handle your request. We do not share this data with third parties unless it is technically required to process your request."
+      "text": "If you contact us (e.g., by email or form), we process the data you provide to handle your request. We do not share this data with third parties unless it is technically required to process the request."
     },
-
     "rights": {
       "title": "Your rights",
-      "text": "You have the right to access, rectification, erasure, restriction of processing, data portability and to object. You also have the right to lodge a complaint with a data protection authority."
+      "text": "You have the right of access, rectification, erasure, restriction of processing, data portability and objection. You can also lodge a complaint with a data protection authority."
     },
-
     "changes": {
       "title": "Changes",
-      "text": "We may update this privacy policy when necessary, e.g. if technical processes change."
+      "text": "We may update this privacy policy if needed, e.g., if technical processes change."
     }
   },
   "agb": {
     "hero": {
       "title": "Terms and Conditions",
-      "lead": "General terms and conditions for TattooMate.",
-      "note": "Note: These terms provide a general framework. A legal review is recommended before commercial use."
+      "lead": "General Terms and Conditions for TattooMate.",
+      "note": "Note: These terms are a baseline. Before selling, a legal review is recommended."
     },
-
     "items": [
       {
         "title": "1. Scope",
-        "text": "These Terms and Conditions apply to all contracts for the use of the software “TattooMate” as well as related services (e.g. hosting, setup, training) concluded between the provider and the customer (studio).\n\nDeviating terms of the customer shall only apply if expressly agreed in writing by the provider."
+        "text": "These General Terms and Conditions (GTC) apply to all contracts for the use of the software “TattooMate” as well as related services (e.g., hosting, setup, training) concluded between the provider and the customer (studio) for its own operations.\n\nDeviating terms of the customer apply only if the provider expressly agrees to them in writing."
       },
       {
-        "title": "2. Subject of the service",
-        "text": "TattooMate is a software solution designed to support studio workflows, in particular the digital capture and documentation of consents, health information, signatures and related documents.\n\nThe provider owes the provision of the software within the agreed scope of services. Legal advice is not part of the service."
+        "title": "2. Subject matter of the service",
+        "text": "TattooMate is software to support studio workflows, in particular the digital capture and documentation of consents, health information, signatures and related documents.\n\nThe provider owes the provision of the software according to the agreed scope of services. Legal advice is not part of the service."
       },
       {
         "title": "3. Conclusion of contract",
-        "text": "A contract is concluded as soon as the customer accepts an offer from the provider or the provider activates or delivers the service.\n\nThe provider may make the conclusion of the contract dependent on verification of the information provided or advance payment."
+        "text": "A contract is concluded as soon as the customer accepts an offer from the provider or the provider activates or provides the service.\n\nThe provider may make conclusion of the contract dependent on verification of information or advance payment."
       },
       {
         "title": "4. Prices and payment terms",
-        "text": "The prices agreed at the time of conclusion of the contract shall apply. Unless otherwise stated, all prices are exclusive of statutory VAT.\n\nOne-time services (e.g. license, setup, modules) are due before service provision unless otherwise agreed. Ongoing services (e.g. hosting) are billed monthly in advance unless otherwise agreed."
+        "text": "The prices agreed at the time the contract is concluded apply. Unless stated otherwise, all prices are plus statutory VAT.\n\nOne-time services (e.g., license, setup, modules) are due before performance unless otherwise agreed. Ongoing services (e.g., hosting) are billed monthly in advance unless otherwise agreed."
       },
       {
         "title": "5. License and rights of use (self-hosting)",
-        "text": "In the case of self-hosting, the customer is granted a non-exclusive, non-transferable right to use the software for their own studio operations.\n\nPassing on, renting, selling or making the software publicly available is not permitted without the provider’s express consent.\n\nThe customer is responsible for the proper operation of their infrastructure (servers, updates, backups, security) unless additional services have been agreed."
+        "text": "For self-hosting, the customer receives a non-exclusive, non-transferable right to use the software for its own studio operations.\n\nPassing on, renting, selling or publicly providing the software is not permitted without the provider’s express consent.\n\nThe customer is responsible for proper operation of its infrastructure (server, updates, backups, security) unless additional services were agreed."
       },
       {
         "title": "6. Hosting (SaaS)",
-        "text": "If hosting by the provider is agreed, the provider shall make TattooMate available as a hosted service.\n\nThe provider strives for high availability. Maintenance windows, updates or disruptions may lead to temporary restrictions.\n\nThe customer is responsible for proper use, their access credentials and the authorization of their users."
+        "text": "If hosting by the provider is agreed, the provider supplies TattooMate as a hosted service.\n\nThe provider strives for high availability. Maintenance windows, updates or disruptions may lead to temporary limitations.\n\nThe customer is responsible for correct use, its access credentials and the authorization of its users."
       },
       {
-        "title": "7. Obligations of the customer",
-        "text": "The customer is obliged to use the software only in accordance with applicable law and to instruct their users accordingly.\n\nThe customer is the controller within the meaning of the GDPR for personal data collected in the studio, unless an alternative model is expressly agreed.\n\nThe customer must ensure that access is granted only to authorized persons (e.g. via roles/permissions and secure passwords)."
+        "title": "7. Customer obligations",
+        "text": "The customer is obliged to use the software only in accordance with applicable laws and to instruct its users accordingly.\n\nThe customer is the controller within the meaning of the GDPR for personal data captured in the studio unless another model is expressly agreed.\n\nThe customer must ensure that only authorized persons have access (e.g., via roles/permissions and secure passwords)."
       },
       {
-        "title": "8. Data protection and data processing",
-        "text": "In the case of self-hosting, data generally remains under the responsibility and infrastructure of the customer.\n\nIn the case of hosting (SaaS), a data processing agreement (DPA) may be required. Details are regulated within the contract.\n\nFurther information can be found in the privacy policy."
+        "title": "8. Data protection and processing on behalf",
+        "text": "With self-hosting, data generally remains within the responsibility and infrastructure of the customer.\n\nWith hosting (SaaS), a data processing agreement (DPA) may be required. Details are regulated in the contract.\n\nFurther information can be found in the privacy policy."
       },
       {
         "title": "9. Updates and further development",
-        "text": "TattooMate is continuously developed. The provider may improve, modify or extend functions provided that the agreed scope of services is not materially impaired.\n\nIn the case of self-hosting, the customer may install updates as they become available. In the case of hosting (SaaS), updates are usually installed by the provider."
+        "text": "TattooMate is continuously developed. The provider may improve, change or add features as long as this does not materially impair the agreed scope of services.\n\nWith self-hosting, the customer can apply updates when available. With SaaS hosting, updates are usually applied by the provider."
       },
       {
         "title": "10. Support and training",
-        "text": "The scope of support and response times depend on the agreed package or offer.\n\nTraining or onboarding services, if booked, are charged at the agreed hourly rate."
+        "text": "Support scope and response times depend on the agreed package or offer.\n\nTraining or onboarding, if booked, is billed at the agreed hourly rate."
       },
       {
         "title": "11. Defects and liability",
-        "text": "The provider shall be liable without limitation in cases of intent and gross negligence.\n\nIn cases of slight negligence, the provider shall only be liable for breaches of essential contractual obligations (cardinal obligations) and limited to the typically foreseeable damage.\n\nLiability for lost profits, indirect damages or consequential damages is excluded to the extent permitted by law.\n\nThe provider is not liable for the substantive correctness of studio texts, consents or legal wording defined by the customer."
+        "text": "The provider is liable without limitation in cases of intent and gross negligence.\n\nIn cases of simple negligence, the provider is liable only for breach of essential contractual obligations (cardinal duties) and is limited to the typically foreseeable damage.\n\nLiability for lost profits, indirect damages or consequential damages is excluded to the extent permitted by law.\n\nThe provider is not liable for the substantive correctness of studio texts, consents or legal wording defined by the customer."
       },
       {
         "title": "12. Term and termination (SaaS)",
-        "text": "For ongoing services (e.g. hosting), the terms and notice periods agreed in the offer or contract shall apply.\n\nAfter termination, the customer may, where technically possible and agreed, export their data. Details are regulated within the contract."
+        "text": "For ongoing services (e.g., hosting), the terms and notice periods agreed in the offer or contract apply.\n\nAfter the contract ends, the customer may, as far as technically possible and agreed, export its data. Details are regulated in the data processing agreement."
       },
       {
         "title": "13. Final provisions",
-        "text": "The law of the Federal Republic of Germany shall apply.\n\nIf individual provisions are or become invalid, the validity of the remaining provisions shall remain unaffected.\n\nThe place of jurisdiction is, insofar as legally permissible, the provider’s place of business."
+        "text": "The law of the Federal Republic of Germany applies.\n\nIf individual provisions are or become invalid, the validity of the remaining provisions remains unaffected.\n\nPlace of jurisdiction is, to the extent permissible, the provider’s seat."
       }
     ]
   },
@@ -893,95 +890,93 @@
     "hero": {
       "title": "Data Processing Agreement (DPA)",
       "lead": "Agreement on the processing of personal data pursuant to Art. 28 GDPR.",
-      "note": "This DPA applies only when TattooMate is used as a hosted SaaS solution."
+      "note": "This DPA applies only when using TattooMate as a hosted SaaS solution."
     },
-
     "items": [
       {
-        "title": "1. Subject and duration",
-        "text": "This Data Processing Agreement governs the processing of personal data by the processor on behalf of the controller in connection with the use of TattooMate as a SaaS solution.\n\nThe duration of processing corresponds to the term of the underlying contract."
+        "title": "1. Subject matter and duration",
+        "text": "This data processing agreement governs the processing of personal data by the processor on behalf of the controller in the course of using TattooMate as a SaaS solution.\n\nThe duration of processing depends on the term of the underlying contract."
       },
       {
-        "title": "2. Nature and purpose of processing",
-        "text": "Processing is carried out for the purpose of providing and operating the TattooMate software.\n\nThis includes in particular the storage, organization, display and processing of customer data, consents, health information, signatures, images and documents recorded by the studio."
+        "title": "2. Type and purpose of processing",
+        "text": "Processing is carried out for the purpose of providing and using the TattooMate software.\n\nThis includes in particular the storage, organization, display and processing of customer data, consents, health information, signatures, images and documents captured by the studio."
       },
       {
         "title": "3. Categories of data subjects",
-        "text": "Data subjects include in particular:\n- Customers of the studio\n- Legal guardians (for underage cases)\n- Employees and artists of the studio"
+        "text": "Data subjects are in particular:\n- customers of the studio\n- legal guardians (for under-18 cases)\n- employees and artists of the studio"
       },
       {
-        "title": "4. Categories of personal data",
-        "text": "The following categories of personal data are processed in particular:\n- Master data (e.g. name, date of birth)\n- Contact data\n- Health-related data\n- Consents and signatures\n- Image and document data (e.g. IDs, tattoo and touch-up images)"
+        "title": "4. Types of personal data",
+        "text": "The following data is processed in particular:\n- master data (e.g., name, date of birth)\n- contact data\n- health information\n- consents and signatures\n- image and document data (e.g., IDs, tattoo/touch-up images)"
       },
       {
         "title": "5. Responsibility",
-        "text": "The controller is responsible for the lawfulness of data collection and processing.\n\nThe processor processes personal data exclusively on documented instructions from the controller."
+        "text": "The controller is responsible for the lawfulness of data collection and processing.\n\nThe processor processes the data exclusively on documented instructions of the controller."
       },
       {
-        "title": "6. Obligations of the processor",
-        "text": "The processor undertakes to:\n- treat personal data confidentially\n- implement appropriate technical and organizational measures (TOMs)\n- ensure that only authorized personnel process personal data\n- support the controller in responding to data protection requests"
+        "title": "6. Processor obligations",
+        "text": "The processor undertakes to:\n- treat personal data confidentially\n- implement appropriate technical and organizational measures (TOMs)\n- assign processing only to authorized personnel\n- support the controller with data protection requests"
       },
       {
         "title": "7. Technical and organizational measures",
-        "text": "Measures include in particular:\n- access restrictions and role/permission systems\n- encrypted connections (TLS)\n- separate instances per studio\n- protection against unauthorized access\n\nA detailed overview of the TOMs can be provided upon request."
+        "text": "Measures include in particular:\n- access restrictions and role/permission systems\n- encrypted connections (TLS)\n- separate instances per studio\n- protection against unauthorized access\n\nA detailed overview of TOMs can be provided upon request."
       },
       {
         "title": "8. Sub-processors",
-        "text": "The use of sub-processors (e.g. hosting or infrastructure providers) takes place only if they are contractually bound to comply with GDPR requirements.\n\nThe controller will be informed of material changes."
+        "text": "Sub-processors (e.g., hosting or infrastructure providers) are used only if they are contractually obliged to comply with the GDPR.\n\nThe controller will be informed about material changes."
       },
       {
         "title": "9. Rights of data subjects",
-        "text": "The processor supports the controller in fulfilling data subjects’ rights (e.g. access, erasure, rectification), insofar as this is technically feasible."
+        "text": "The processor supports the controller in safeguarding the rights of data subjects (e.g., access, deletion, rectification) as far as technically possible."
       },
       {
-        "title": "10. Termination of processing",
-        "text": "Upon termination of the contract, personal data will be deleted or made available for return at the controller’s choice, unless statutory retention obligations apply."
+        "title": "10. End of processing",
+        "text": "After termination of the contract, personal data will be deleted or made available for return at the controller’s choice, unless there is a legal retention obligation."
       },
       {
         "title": "11. Liability",
-        "text": "The liability provisions of the main contract apply. Liability is governed by the applicable provisions of the GDPR."
+        "text": "The liability provisions of the main contract apply. Liability is governed by the legal provisions of the GDPR."
       },
       {
         "title": "12. Final provisions",
-        "text": "The law of the Federal Republic of Germany shall apply.\n\nIf individual provisions of this DPA are or become invalid, the validity of the remaining provisions shall remain unaffected."
+        "text": "The law of the Federal Republic of Germany applies.\n\nIf individual provisions of this DPA are invalid, the validity of the remaining provisions remains unaffected."
       }
     ]
   },
   "warum": {
     "title": "Why TattooMate exists",
-    "lead": "TattooMate wasn’t created because I wanted to build “just another piece of software”. It was created because I saw how much studio life is tied to paper, stress, and unnecessary work.",
-    "p1": "The personal trigger was quite simple — and exactly because of that, very clear: my wife works in a tattoo and piercing studio.",
-    "p2": "And I saw what that means in everyday life. Printing consent forms over and over again. Stapling. Punching holes. Having clients fill them out. Filing everything away. Not once a day, but constantly. Always when there are actually more important things to do.",
-    "p3": "It was immediately clear to me: this is not.",
-    "callout": "“just a bit of office work. It’s a process that eats up time every single day — for something that can technically be solved cleanly and reliably.”",
+    "lead": "TattooMate wasn’t created because I wanted to build “just another software”. It was created because I saw how much studio life is weighed down by paper, stress and unnecessary work.",
+    "p1": "The personal trigger was pretty simple — and exactly because of that, obvious: my wife works in a tattoo and piercing studio.",
+    "p2": "And I experienced what that means day to day. Printing consents again and again. Stapling. Punching. Having customers fill them out. Filing them afterwards. And not once a day, but constantly — always when more important things should be happening.",
+    "p3": "For me it was immediately clear: this isn’t just",
+    "callout": "“a bit of admin. It’s a process that eats time every single day — for something that can be solved cleanly with technology.”",
     "h2_1": "What really bothered me about it",
-    "p4": "First, it’s unnecessary work. Not in the sense of “people are lazy”, but in the sense of: this is manual labor simply because it has always been done that way.",
-    "p5": "Second, it creates paper waste for years. Many of these documents have to be stored for a long time — which means stacks, folders, storage space. All for something that really just needs to be documented safely.",
-    "p6": "Third, things get uncomfortable when liability questions come up. If at some point a request comes in and you need exactly that one consent form, it often turns into a search nobody enjoys — and one that can easily go wrong under pressure. You’re not looking for “a document”, you’re looking for a tiny sheet of paper in years of archives.",
-    "h2_2": "Why existing solutions didn’t work for me",
-    "p7": "Of course there are digital alternatives. Some of them are technically solid and visually modern.",
-    "p8": "What bothered me wasn’t the technology, but the direction: many solutions are built as platforms. Data is stored externally, processes are predefined, and studios have to adapt — not the other way around.",
-    "p9": "On top of that, feature bundles are often included that may be useful for some studios, but not for others. Calendars, customer management or marketing features are frequently built in, even if they aren’t actually needed in daily work.",
-    "p10": "What I was missing was a real option to run the system yourself and keep full control over your data. Especially when dealing with sensitive information and GDPR-relevant data, that’s not a side note for me — it’s essential.",
+    "p4": "First, it’s unnecessary work. Not in the sense of “people are lazy”, but in the sense of: it’s manual labor simply because it’s always been done that way.",
+    "p5": "Second, it creates paper waste for years. Many of these documents have to be stored for a long time — which means stacks, folders, storage space. For something that really just needs to be documented securely.",
+    "p6": "Third, it gets really painful when it comes to claims: when a request comes in and you need that one specific consent, it often turns into a search mission that realistically nobody enjoys — and that can go wrong under stress. You’re not looking for “a document”, you’re looking for a tiny sheet in years of paper archives.",
+    "h2_2": "Why existing solutions didn’t fit for me",
+    "p7": "Of course, there are digital alternatives. Some are technically well built and look modern.",
+    "p8": "What bothered me wasn’t so much the tech, but the orientation: many solutions are designed as platforms. Data sits externally, processes are predefined, and studios have to adapt — not the other way around.",
+    "p9": "On top of that, feature bundles are useful for some studios but not for others. Calendars, CRM or marketing features are often baked in, even if they’re not needed day to day.",
+    "p10": "A real option to self-host and keep full control over data was missing for me. With sensitive information and GDPR-relevant data, that isn’t a side note — it’s decisive.",
     "h2_3": "What TattooMate was actually built for",
-    "p11": "TattooMate did not start as a business. That’s important to me. I didn’t build it to “enter the market” or to create a SaaS product.",
-    "p12": "I built it to take this work off my wife’s shoulders. And as a small bonus goal: less paper waste. More sustainability, without studios having to fight for it.",
-    "p13": "Only when other studios started asking if they could use it as well did it slowly turn into a product. Not planned. Not the focus. More like: “Okay — if this helps multiple studios, then let’s do it properly.”",
+    "p11": "At the start, TattooMate wasn’t a business. That matters to me. I didn’t build it to “enter the market” or to spin up a SaaS.",
+    "p12": "I built it to take that work off my wife’s shoulders. And as a bonus goal: less paper waste. More sustainability, without the studio having to fight for it.",
+    "p13": "Only when other studios asked if they could use it too did it slowly become a product. Not planned. Not the focus. More like: “Okay — if this helps multiple studios, we’ll do it properly.”",
     "h2_4": "The mindset behind it",
-    "p14": "TattooMate is meant to be a tool. Not a data collector. No forced calendar. No system that pushes studios into a platform.",
-    "p15": "It’s about clean documentation, less daily stress, and real control over your own data. If that sounds like you, TattooMate fits.",
-    "p16": "That applies here as well — no cookie banner needed.",
-    "outro": "If you’re just looking for any online form, TattooMate is probably not the right tool.",
-    "outro2": "But if you want a solution that takes real studio life seriously and doesn’t follow Silicon Valley logic, TattooMate fits.",
-    "ctaDemo": "Request a demo",
-    "ctaContact": "Or contact me directly"
+    "p14": "TattooMate should be a tool. Not a data collector. Not a calendar requirement. Not a system that forces studios into a platform.",
+    "p15": "It’s about clean proof, less stress in daily work, and real control over your own data. If that sounds like you, TattooMate fits.",
+    "p16": "That applies here too — so no cookie banner is needed.",
+    "outro": "If you’re just looking for any online form, TattooMate probably isn’t the right tool.",
+    "outro2": "But if you want a solution that takes studio life seriously and doesn’t follow Silicon-Valley logic, TattooMate fits.",
+    "ctaDemo": "Request demo",
+    "ctaContact": "Or message me directly"
   },
   "footer": {
-    "claim": "Digital consent forms for tattoo & piercing studios",
+    "claim": "Digital consents for tattoo & piercing studios",
     "meta": {
       "copyright": "© {{year}} TattooMate",
       "made": "Made in Germany"
     }
   }
 }
-
