@@ -102,7 +102,7 @@ export default async function FunktionenPage({
       {/* FORMS & SAFETY */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "funktionen.blocks.forms.title")}</h2>
             <p className="tm-text">{t(dict, "funktionen.blocks.forms.lead")}</p>
           </div>
@@ -135,7 +135,7 @@ export default async function FunktionenPage({
       {/* DOCUMENTATION & PDF */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "funktionen.blocks.pdf.title")}</h2>
             <p className="tm-text">{t(dict, "funktionen.blocks.pdf.lead")}</p>
           </div>
@@ -168,7 +168,7 @@ export default async function FunktionenPage({
       {/* ADMIN & SEARCH */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "funktionen.blocks.admin.title")}</h2>
             <p className="tm-text">{t(dict, "funktionen.blocks.admin.lead")}</p>
           </div>
@@ -201,7 +201,7 @@ export default async function FunktionenPage({
       {/* EVENTS */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "funktionen.blocks.events.title")}</h2>
             <p className="tm-text">{t(dict, "funktionen.blocks.events.lead")}</p>
           </div>
@@ -234,7 +234,7 @@ export default async function FunktionenPage({
       {/* PRIVACY & ROLES */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "funktionen.blocks.security.title")}</h2>
             <p className="tm-text">{t(dict, "funktionen.blocks.security.lead")}</p>
           </div>

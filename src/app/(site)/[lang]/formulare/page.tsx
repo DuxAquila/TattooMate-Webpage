@@ -56,7 +56,7 @@ export default async function Formulare({
       {/* OVERVIEW */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "formulare.overview.title")}</h2>
             <p className="tm-text">{t(dict, "formulare.overview.lead")}</p>
           </div>
@@ -81,7 +81,7 @@ export default async function Formulare({
       {/* FORM TYPES */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "formulare.types.title")}</h2>
             <p className="tm-text">{t(dict, "formulare.types.lead")}</p>
           </div>
@@ -129,7 +129,7 @@ export default async function Formulare({
       {/* SAFETY */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "formulare.safety.title")}</h2>
             <p className="tm-text">{t(dict, "formulare.safety.lead")}</p>
           </div>

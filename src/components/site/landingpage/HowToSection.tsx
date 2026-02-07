@@ -27,7 +27,7 @@ export default function HowToSection({
   return (
     <section className="tm-section">
       <div className="tm-container">
-        <div className="tm-head">
+        <div className="tm-head tm-center">
           <h2 className="tm-h2">{headline}</h2>
           <p className="tm-lead">{subtitle}</p>
         </div>

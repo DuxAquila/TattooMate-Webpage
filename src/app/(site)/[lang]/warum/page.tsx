@@ -27,7 +27,7 @@ export default async function WarumPage({
           {/* Content */}
           <article
             className="tm-stack-md"
-            style={{ maxWidth: 780, marginInline: "auto" }}
+            style={{ marginInline: "auto" }}
           >
               <div className="tm-prose">
               <p>{t(dict, "warum.p1")}</p>
@@ -42,7 +42,7 @@ export default async function WarumPage({
 
             {/* Abschnitt 1 */}
             <div className="tm-stack-sm">
-              <h2 className="tm-h2">{t(dict, "warum.h2_1")}</h2>
+              <h2 className="tm-h2 tm-center">{t(dict, "warum.h2_1")}</h2>
               <div className="tm-prose">
                 <p>{t(dict, "warum.p4")}</p>
                 <p>{t(dict, "warum.p5")}</p>
@@ -52,7 +52,7 @@ export default async function WarumPage({
 
             {/* Abschnitt 2 */}
             <div className="tm-stack-sm">
-              <h2 className="tm-h2">{t(dict, "warum.h2_2")}</h2>
+              <h2 className="tm-h2  tm-center">{t(dict, "warum.h2_2")}</h2>
               <div className="tm-prose">
                 <p>{t(dict, "warum.p7")}</p>
                 <p>{t(dict, "warum.p8")}</p>
@@ -63,7 +63,7 @@ export default async function WarumPage({
 
             {/* Abschnitt 3 */}
             <div className="tm-stack-sm">
-              <h2 className="tm-h2">{t(dict, "warum.h2_3")}</h2>
+              <h2 className="tm-h2 tm-center">{t(dict, "warum.h2_3")}</h2>
               <div className="tm-prose">
                 <p>{t(dict, "warum.p11")}</p>
                 <p>{t(dict, "warum.p12")}</p>
@@ -73,11 +73,11 @@ export default async function WarumPage({
 
             {/* Abschnitt 4 */}
             <div className="tm-stack-sm">
-              <h2 className="tm-h2">{t(dict, "warum.h2_4")}</h2>
+              <h2 className="tm-h2 tm-center">{t(dict, "warum.h2_4")}</h2>
               <div className="tm-prose">
                 <p>{t(dict, "warum.p14")}</p>
                 <p>{t(dict, "warum.p15")}</p>
-                <p className="tm-text-muted tm-center is-tight">{t(dict, "warum.p16")}</p>
+                <p className="tm-text-muted is-tight">{t(dict, "warum.p16")}</p>
                 <p></p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default async function WarumPage({
                   <p className="is-tight">{t(dict, "warum.outro2")}</p>
                 </div>
 
-                <div className="tm-stack-sm" style={{ maxWidth: 300, marginInline: "auto" }}>
+                <div className="tm-actions">
                   <Link
                     className="tm-btn tm-btn--primary"
                     href={`/${lang}/demo`}

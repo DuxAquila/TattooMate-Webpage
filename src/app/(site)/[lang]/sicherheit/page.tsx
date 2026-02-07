@@ -81,7 +81,7 @@ export default async function Sicherheit({
       {/* DATA & HOSTING */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "sicherheit.data.title")}</h2>
             <p className="tm-text">{t(dict, "sicherheit.data.lead")}</p>
           </div>
@@ -126,7 +126,7 @@ export default async function Sicherheit({
       {/* ACCESS & ROLES */}
       <section className="tm-section">
         <div className="tm-container tm-stack-lg">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, "sicherheit.access.title")}</h2>
             <p className="tm-text">{t(dict, "sicherheit.access.lead")}</p>
           </div>

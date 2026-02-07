@@ -67,7 +67,7 @@ export default async function HomePage({
       />
       <section className="tm-section">
         <div className="tm-container">
-          <div className="tm-head">
+          <div className="tm-head tm-center">
             <h2 className="tm-h2">{t(dict, 'home.features.headline')}</h2>
           </div>
 
