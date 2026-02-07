@@ -122,7 +122,51 @@ export default async function Preise({
         </div>
       </section>
 
-      {/* PACKET */}
+      {/* OTHER INDUSTRIES */}
+      <section className="tm-section">
+        <div className="tm-container tm-stack-lg">
+          <div className="tm-head tm-center">
+            <h2 className="tm-h2">{t(dict, "preise.otherIndustries.title")}</h2>
+            <p className="tm-h3">{t(dict, "preise.otherIndustries.lead")} <br /> <span className="tm-text"> {t(dict, "preise.otherIndustries.leadSubtext")}</span></p>
+            <p className="tm-h4">{t(dict, "preise.otherIndustries.secondlead")} <br /> <span className="tm-text"> {t(dict, "preise.otherIndustries.noticelead")}</span></p>
+          </div>
+
+          <div className="tm-grid tm-grid--2">
+            <PriceCard
+              title={t(dict, "preise.cosmeticStudio.title")}
+              price={t(dict, "preise.cosmeticStudio.price")}
+              period={t(dict, "preise.cosmeticStudio.period")}
+              lead={t(dict, "preise.cosmeticStudio.lead")}
+              bullets={[
+                t(dict, "preise.cosmeticStudio.b1"),
+                t(dict, "preise.cosmeticStudio.b2"),
+                t(dict, "preise.cosmeticStudio.b3"),
+                t(dict, "preise.cosmeticStudio.b4"),
+                t(dict, "preise.cosmeticStudio.b5"),
+                t(dict, "preise.cosmeticStudio.b6"),
+              ]}
+            />
+
+            <PriceCard
+              title={t(dict, "preise.toothStudio.title")}
+              price={t(dict, "preise.toothStudio.price")}
+              period={t(dict, "preise.toothStudio.period")}
+              lead={t(dict, "preise.toothStudio.lead")}
+              bullets={[
+                t(dict, "preise.toothStudio.b1"),
+                t(dict, "preise.toothStudio.b2"),
+                t(dict, "preise.toothStudio.b3"),
+                t(dict, "preise.toothStudio.b4"),
+                t(dict, "preise.toothStudio.b5"),
+                t(dict, "preise.toothStudio.b6"),
+              ]}
+            />
+
+          </div>
+        </div>
+      </section>
+
+      {/* OPTIONAL PACKET */}
       <section className="tm-section tm-section--soft">
         <div className="tm-container tm-stack-lg">
           <div className="tm-head tm-center">

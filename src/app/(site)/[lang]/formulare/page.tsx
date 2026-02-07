@@ -122,6 +122,19 @@ export default async function Formulare({
                 t(dict, "formulare.types.tooth.b4"),
               ]}
             />
+			
+            <FeatureBlock
+              title={t(dict, "formulare.types.cosmetic.title")}
+              lead={t(dict, "formulare.types.cosmetic.lead")}
+              bullets={[
+                t(dict, "formulare.types.cosmetic.b1"),
+                t(dict, "formulare.types.cosmetic.b2"),
+                t(dict, "formulare.types.cosmetic.b3"),
+                t(dict, "formulare.types.cosmetic.b4"),
+                t(dict, "formulare.types.cosmetic.b5"),
+                t(dict, "formulare.types.cosmetic.b6"),
+              ]}
+            />
           </div>
         </div>
       </section>

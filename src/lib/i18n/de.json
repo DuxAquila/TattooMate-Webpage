@@ -449,7 +449,17 @@
         "b2": "Relevante medizinische Angaben und Allergien (z. B. Kleber, Latex, Nickel)",
         "b3": "Aufklärung über Risiken wie Zahnschmelzschäden oder Ablösungen",
         "b4": "Einverständnis und Unterschrift speziell für Zahnschmuck"
-      }
+      },
+	  "cosmetic": {
+		  "title": "Kosmetik Formular",
+		  "lead": "Kosmetik- und Behandlungsformulare mit typabhängiger Aufklärung – rechtssicher, nachvollziehbar und sauber dokumentiert.",
+		  "b1": "Auswahl des Kosmetik-Typs (z. B. PMU, Microblading, Wimpern, weitere Behandlungen)",
+		  "b2": "Individuelle Aufklärungs- und Nachsorgetexte pro Typ (jede Behandlung mit eigenen Risiko- und Infotexten aus den Studio-Settings)",
+		  "b3": "Relevante Gesundheitsfragen (z. B. Hauterkrankungen, Augenerkrankungen, Allergien)",
+		  "b4": "Behandlungsspezifische Besonderheiten und Ausschlussgründe",
+		  "b5": "Einverständniserklärung und Unterschrift passend zur gewählten Behandlung",
+		  "b6": "PDF-Dokumentation mit exakt dem Text, der zum Behandlungs-Typ gehört"
+	  }
     },
 
     "safety": {
@@ -593,7 +603,10 @@
 
     "otherIndustries": {
       "title": "TattooMate für andere Branchen",
-      "lead": "Für Studios ohne Tattoo oder Piercing – z. B. Kosmetik oder Zahnschmuck."
+      "lead": "Für Studios ohne Tattoo oder Piercing",
+	  "leadSubtext": "z. B. Kosmetik- oder Zahnschmuck",
+      "secondlead": "Ein Formular ist im Paket passend zum Studio enthalten.",
+	  "noticelead": "Weitere Formulare: 150 €, jedes zusätzliche 75 €."
     },
 
     "base": {
@@ -605,7 +618,8 @@
       "b2": "U18-Workflow mit Pflichtfeldern und Sperrlogik",
       "b3": "Unterschriften, PDFs und saubere Dokumentation",
       "b4": "Event- & Convention-Modus inklusive",
-      "b5": "Keine Begrenzung der Artist-Anzahl"
+	  "b5": "Newsletter-System inkl. Kampagnen und Automationen (z. B. Geburtstage, Recall, Follow-ups)",
+      "b6": "Keine Begrenzung der Artist-Anzahl"
     },
 
     "tooth": {
@@ -639,6 +653,34 @@
       "b3": "Kein eigener Server notwendig",
       "avvNote": "Bei Nutzung als SaaS erfolgt die Datenverarbeitung auf Grundlage eines"
     },
+
+	"cosmeticStudio": {
+		"title": "Für Kosmetik Studios",
+		"price": "349 €",
+		"period": " einmalig",
+		"lead": "Digitale Einverständnis- und Aufklärungsformulare für Kosmetikstudios – flexibel, typabhängig und rechtlich sauber dokumentiert.",
+		"second": "Dieses Paket ist speziell für kosmetische Behandlungen konzipiert und deckt unterschiedliche Leistungen sauber getrennt ab.",
+		"b1": "Unterstützung mehrerer Kosmetik-Typen (z. B. PMU, Microblading, Wimpernverlängerung, weitere Behandlungen)",
+		"b2": "Individuelle Aufklärungs-, Risiko- und Nachsorgetexte pro Behandlungs-Typ – zentral im Studio pflegbar und automatisch im Formular & PDF zugeordnet",
+		"b3": "Behandlungsspezifische Gesundheitsabfragen und Ausschlusskriterien",
+		"b4": "Typabhängige Einverständniserklärung inkl. passender Unterschrift",
+		"b5": "Newsletter-System inkl. Kampagnen und Automationen (z. B. Geburtstage, Recall, Follow-ups)",
+		"b6": "Lückenlose PDF-Dokumentation genau der Behandlung, die durchgeführt wurde"
+	},
+	
+	"toothStudio": {
+		"title": "Für Zahnschmuck Studios",
+		"price": "349 €",
+		"period": " einmalig",
+		"lead": "Digitale Einverständnis- und Aufklärungsformulare für Zahnschmuck – rechtssicher, nachvollziehbar und speziell auf dentale Behandlungen abgestimmt.",
+		"second": "Dieses Paket ist speziell für Zahnschmuck- und Bonding-Behandlungen konzipiert und berücksichtigt gesundheitliche, rechtliche und haftungsrelevante Aspekte.",
+		"b1": "Spezielle Formulare für Zahnschmuck- und Bonding-Behandlungen",
+		"b2": "Individuelle Aufklärungs-, Risiko- und Nachsorgetexte für Zahnschmuck – zentral im Studio pflegbar und automatisch im Formular & PDF zugeordnet",
+		"b3": "Erweiterte Gesundheitsabfragen (z. B. Zahnstatus, Karies, Zahnfleisch, Allergien, Vorerkrankungen)",
+		"b4": "Rechtssichere Einverständniserklärung inkl. passender Unterschrift und Haftungsausschluss",
+		"b5": "Newsletter-System inkl. Kampagnen und Automationen (z. B. Pflegehinweise, Recall, Follow-ups)",
+		"b6": "Lückenlose PDF-Dokumentation der durchgeführten Zahnschmuck-Behandlung"
+	},
 
     "setup": {
       "title": "Einrichtung auf eigenem Server",
