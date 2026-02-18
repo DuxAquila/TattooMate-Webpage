@@ -11,7 +11,7 @@
   "overrides": {
     "hono": ">=4.11.7",
     "lodash": ">=4.17.23",
-    "fast-xml-parser": "5.3.4"
+    "fast-xml-parser": ">=5.3.6"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.2.0",
