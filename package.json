@@ -9,10 +9,10 @@
     "lint": "eslint"
   },
   "overrides": {
-    "hono": ">=4.11.10",
+    "hono": ">=4.12.2",
     "lodash": ">=4.17.23",
-    "fast-xml-parser": ">=5.3.6",
-    "minimatch": "^10.2.1"
+    "fast-xml-parser": ">=5.3.8",
+    "minimatch": "^10.2.3"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.2.0",
