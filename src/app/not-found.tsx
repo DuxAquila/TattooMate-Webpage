@@ -1,4 +1,5 @@
 // /src/app/not-found.tsx
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -22,9 +23,9 @@ export default function NotFound() {
           </p>
 
           <div className="tm-actions">
-            <a href="/" className="tm-btn tm-btn--primary">
+            <Link href="/" className="tm-btn tm-btn--primary">
               Zur Startseite
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,12 +1,14 @@
 // src/components/site/UseCasesSection.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 type UseCase = {
   title: string;
   text: string;
 };
+
+type PreviewType = 'studio' | 'event' | 'qrcode';
 
 export default function UseCasesSection({
   headline,
@@ -25,7 +27,7 @@ export default function UseCasesSection({
   subtitle: string;
   items: UseCase[];
   ctaEvent: string; // bleibt drin (kompatibel), wird nicht mehr als Button genutzt
-  ctaQr: string;    // bleibt drin (kompatibel), wird nicht mehr als Button genutzt
+  ctaQr: string; // bleibt drin (kompatibel), wird nicht mehr als Button genutzt
   previewStudioTitle: string;
   previewStudioText: string;
   previewEventTitle: string;
@@ -33,12 +35,18 @@ export default function UseCasesSection({
   previewQrTitle: string;
   previewQrText: string;
 }) {
-  const [preview, setPreview] = useState<null | 'studio' | 'event' | 'qrcode'>(null);
+  const [preview, setPreview] = useState<PreviewType | null>(null);
   const [zoom, setZoom] = useState(false);
 
-  useEffect(() => {
+  const openPreview = (type: PreviewType) => {
+    setPreview(type);
     setZoom(false);
-  }, [preview]);
+  };
+
+  const closePreview = () => {
+    setPreview(null);
+    setZoom(false);
+  };
 
   return (
     <section className="tm-section">
@@ -57,12 +65,11 @@ export default function UseCasesSection({
           ))}
         </div>
 
-        {/* Pyramiden-Previews (statt Buttons) */}
         <div className="tm-thumbs tm-grid tm-grid--3" aria-label="Vorschauen">
           <button
             type="button"
             className="tm-thumb"
-            onClick={() => setPreview('studio')}
+            onClick={() => openPreview('studio')}
             aria-label="Studio-Modus Vorschau öffnen"
           >
             <div className="tm-media">
@@ -81,7 +88,7 @@ export default function UseCasesSection({
           <button
             type="button"
             className="tm-thumb"
-            onClick={() => setPreview('event')}
+            onClick={() => openPreview('event')}
             aria-label="Event-Modus Vorschau öffnen"
           >
             <div className="tm-media">
@@ -100,7 +107,7 @@ export default function UseCasesSection({
           <button
             type="button"
             className="tm-thumb"
-            onClick={() => setPreview('qrcode')}
+            onClick={() => openPreview('qrcode')}
             aria-label="QR-Code Tool Vorschau öffnen"
           >
             <div className="tm-media">
@@ -120,12 +127,12 @@ export default function UseCasesSection({
 
       {preview && (
         <div className="tm-preview">
-          <div className="tm-preview__backdrop" onClick={() => setPreview(null)} />
+          <div className="tm-preview__backdrop" onClick={closePreview} />
 
           <div className="tm-preview__modal">
             <button
               className="tm-preview__close"
-              onClick={() => setPreview(null)}
+              onClick={closePreview}
               aria-label="Schließen"
             >
               ×
