@@ -643,6 +643,17 @@
       "b4": "Saubere Dokumentation im Studio-Workflow"
     },
 
+    "bodymod": {
+      "title": "Body Modifikation-Modul",
+      "price": "+ 95 €",
+      "period": " einmalig",
+      "lead": "Optionales Zusatzmodul für Body Modifications.",
+      "b1": "Eigenes Body Modification-Formular",
+      "b2": "Unterstützt Implantate, Skalpellierungen, Branding, Zungenspaltung u. v. m.",
+      "b3": "Risikoaufklärung und separate Einwilligung",
+      "b4": "Saubere Dokumentation im Studio-Workflow"
+    },
+
     "hosting": {
       "title": "Hosting durch TattooMate (SaaS)",
       "price": "+ 59 €",

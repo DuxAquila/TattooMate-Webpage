@@ -118,6 +118,19 @@ export default async function Preise({
               ]}
             />
 
+            <PriceCard
+              title={t(dict, "preise.bodymod.title")}
+              price={t(dict, "preise.bodymod.price")}
+              period={t(dict, "preise.bodymod.period")}
+              lead={t(dict, "preise.bodymod.lead")}
+              bullets={[
+                t(dict, "preise.bodymod.b1"),
+                t(dict, "preise.bodymod.b2"),
+                t(dict, "preise.bodymod.b3"),
+                t(dict, "preise.bodymod.b4"),
+              ]}
+            />
+
           </div>
         </div>
       </section>

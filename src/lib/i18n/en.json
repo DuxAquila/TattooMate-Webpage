@@ -608,6 +608,16 @@
       "b3": "Risk disclosure and separate consent",
       "b4": "Clean documentation in the studio workflow"
     },
+    "bodymod": {
+      "title": "Body Modification Module",
+      "price": "+ 95 €",
+      "period": " one-time",
+      "lead": "Optional add-on module for body modifications.",
+      "b1": "Dedicated body modification consent form",
+      "b2": "Supports implants, scarification, branding, tongue splitting, and more",
+      "b3": "Risk disclosure and separate consent",
+      "b4": "Clean documentation in the studio workflow"
+    },
     "hosting": {
       "title": "Hosting by TattooMate (SaaS)",
       "price": "+ 59 €",
