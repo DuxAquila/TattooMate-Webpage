@@ -1,6 +1,7 @@
 // File: /src/app/(site)/[lang]/funktionen/page.tsx
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
+import type { Metadata } from "next";
 
 function FeatureBlock({
   title,
@@ -37,6 +38,41 @@ function FaqItem({
       <p className="tm-text">{a}</p>
     </div>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isDE = lang === "de";
+
+  return {
+    title: isDE
+      ? "Funktionen – TattooMate | Digitale Formulare & Dokumentation"
+      : "Features – TattooMate | Digital Forms & Documentation",
+    description: isDE
+      ? "Alle Funktionen von TattooMate: digitale Tattoo- & Piercing-Formulare, PDF-Dokumentation, QR-Codes, Event-Modus und DSGVO-konforme Datenhaltung."
+      : "All TattooMate features: digital tattoo & piercing forms, PDF documentation, QR codes, event mode and GDPR-compliant data storage.",
+    alternates: {
+      canonical: `https://tattoomate.de/${lang}/funktionen`,
+      languages: {
+        de: "https://tattoomate.de/de/funktionen",
+        en: "https://tattoomate.de/en/funktionen",
+      },
+    },
+    openGraph: {
+      title: isDE ? "Funktionen – TattooMate" : "Features – TattooMate",
+      description: isDE
+        ? "Digitale Formulare, PDF-Dokumentation, QR-Codes und mehr – alles für Studios entwickelt."
+        : "Digital forms, PDF documentation, QR codes and more — built for studios.",
+      url: `https://tattoomate.de/${lang}/funktionen`,
+      siteName: "TattooMate",
+      locale: isDE ? "de_DE" : "en_US",
+      type: "website",
+    },
+  };
 }
 
 export default async function FunktionenPage({
