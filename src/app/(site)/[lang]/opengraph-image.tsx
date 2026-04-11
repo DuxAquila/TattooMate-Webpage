@@ -17,96 +17,136 @@ export default async function OgImage({
         style={{
           width: "1200px",
           height: "630px",
-          background: "linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f172a 100%)",
+          background: "#ffffff",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "flex-start",
           padding: "80px",
-          fontFamily: "sans-serif",
+          fontFamily: "system-ui, sans-serif",
           position: "relative",
         }}
       >
-        {/* Akzent-Linie oben */}
+        {/* Accent-Gradient – exakt wie tm-section--accent-top */}
         <div style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
-          height: "6px",
-          background: "#ef4444",
+          height: "100%",
+          background: "linear-gradient(to bottom, rgba(255,59,48,0.08), rgba(255,138,0,0.04) 35%, transparent 70%)",
         }} />
 
-        {/* Badge */}
+        {/* Akzentlinie oben links – wie der rote Strich auf der Seite */}
+        <div style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "200px",
+          height: "4px",
+          background: "linear-gradient(135deg, #ff3b30, #ff8a00)",
+        }} />
+
+        {/* Badges – wie tm-pill */}
         <div style={{
           display: "flex",
-          gap: "12px",
-          marginBottom: "32px",
+          gap: "10px",
+          marginBottom: "40px",
+          position: "relative",
         }}>
-          {["DSGVO-konform", "Made in Germany", "Kein Cloud-Zwang"].map((label) => (
+          {(isDE
+            ? ["DSGVO-konform", "Made in Germany", "Kein Cloud-Zwang"]
+            : ["GDPR-compliant", "Made in Germany", "No cloud lock-in"]
+          ).map((label) => (
             <div key={label} style={{
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.15)",
+              background: "rgba(15,23,42,0.06)",
+              border: "1px solid rgba(15,23,42,0.12)",
               borderRadius: "999px",
-              padding: "6px 16px",
-              color: "rgba(255,255,255,0.7)",
-              fontSize: "14px",
+              padding: "6px 18px",
+              color: "#64748b",
+              fontSize: "15px",
+              fontWeight: 600,
             }}>
               {label}
             </div>
           ))}
         </div>
 
-        {/* Headline */}
+        {/* H1 – wie tm-h1 */}
         <div style={{
-          fontSize: "56px",
-          fontWeight: 800,
-          color: "#ffffff",
+          fontSize: "52px",
+          fontWeight: 700,
+          color: "#0f172a",
           lineHeight: 1.15,
-          maxWidth: "800px",
-          marginBottom: "24px",
+          letterSpacing: "-0.02em",
+          maxWidth: "780px",
+          marginBottom: "20px",
+          position: "relative",
         }}>
           {isDE
             ? "Digitale Einwilligungen für Tattoo- & Piercingstudios"
             : "Digital Consent Forms for Tattoo & Piercing Studios"}
         </div>
 
-        {/* Subline */}
+        {/* Subline – wie tm-lead */}
         <div style={{
-          fontSize: "24px",
-          color: "rgba(255,255,255,0.55)",
-          marginBottom: "48px",
+          fontSize: "22px",
+          color: "#64748b",
+          marginBottom: "56px",
+          position: "relative",
         }}>
-          {isDE ? "Rechtssicher. Digital. Einfach." : "Legally sound. Digital. Simple."}
+          {isDE
+            ? "Rechtssicher. Digital. Einfach."
+            : "Legally sound. Digital. Simple."}
         </div>
 
-        {/* Brand */}
+        {/* Brand – wie tm-brand */}
         <div style={{
           display: "flex",
           alignItems: "center",
           gap: "12px",
+          position: "relative",
         }}>
+          <img
+            src="https://tattoomate.de/images/branding/logo-tattoomate.svg"
+            width={44}
+            height={44}
+            alt="TattooMate Logo"
+          />
           <div style={{
-            width: "48px",
-            height: "48px",
-            background: "#ef4444",
-            borderRadius: "12px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             fontSize: "24px",
             fontWeight: 800,
-            color: "#fff",
-          }}>
-            T
-          </div>
-          <div style={{
-            fontSize: "28px",
-            fontWeight: 800,
-            color: "#ffffff",
+            color: "#0f172a",
           }}>
             TattooMate
           </div>
+        </div>
+
+        {/* Primary Button rechts unten – wie tm-btn--primary */}
+        <div style={{
+          position: "absolute",
+          bottom: "80px",
+          right: "80px",
+          background: "linear-gradient(135deg, #ff3b30, #ff8a00)",
+          borderRadius: "12px",
+          padding: "14px 28px",
+          color: "#ffffff",
+          fontSize: "16px",
+          fontWeight: 700,
+          boxShadow: "0 10px 18px rgba(255,59,48,0.18)",
+        }}>
+          {isDE ? "Live-Demo anfordern →" : "Request live demo →"}
+        </div>
+
+        {/* tattoomate.de URL unten rechts unter dem Button */}
+        <div style={{
+          position: "absolute",
+          bottom: "48px",
+          right: "80px",
+          fontSize: "13px",
+          color: "#64748b",
+        }}>
+          tattoomate.de
         </div>
       </div>
     ),
