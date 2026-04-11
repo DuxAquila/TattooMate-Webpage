@@ -1,6 +1,7 @@
 // File: /src/app/(site)/[lang]/preise/page.tsx
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
+import type { Metadata } from "next";
 
 function PriceCard({
   title,
@@ -35,6 +36,41 @@ function PriceCard({
       </ul>
     </div>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isDE = lang === "de";
+
+  return {
+    title: isDE
+      ? "Preise – TattooMate | Transparente Festpreise ohne Überraschungen"
+      : "Pricing – TattooMate | Transparent Fixed Prices",
+    description: isDE
+      ? "TattooMate Preise: Klare Festpreise für Lizenz, Hosting und Setup. Keine versteckten Kosten, keine nutzungsabhängigen Gebühren."
+      : "TattooMate pricing: clear fixed prices for license, hosting and setup. No hidden costs, no usage-based fees.",
+    alternates: {
+      canonical: `https://tattoomate.de/${lang}/preise`,
+      languages: {
+        de: "https://tattoomate.de/de/preise",
+        en: "https://tattoomate.de/en/preise",
+      },
+    },
+    openGraph: {
+      title: isDE ? "Preise – TattooMate" : "Pricing – TattooMate",
+      description: isDE
+        ? "Transparente Festpreise – keine Überraschungen, keine Verhandlungen."
+        : "Transparent fixed prices — no surprises, no negotiations.",
+      url: `https://tattoomate.de/${lang}/preise`,
+      siteName: "TattooMate",
+      locale: isDE ? "de_DE" : "en_US",
+      type: "website",
+    },
+  };
 }
 
 export default async function Preise({
