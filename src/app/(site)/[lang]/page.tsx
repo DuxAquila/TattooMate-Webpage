@@ -5,6 +5,44 @@ import UseCasesSection from '@/components/site/landingpage/UseCasesSection';
 import HowToSection from '@/components/site/landingpage/HowToSection';
 import MiniFaqSection from '@/components/site/landingpage/MiniFaqSection';
 import CtaSection from '@/components/site/landingpage/CtaSection';
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isDE = lang === "de";
+
+  return {
+    title: isDE
+      ? "TattooMate – Digitale Einwilligungen für Tattoo- & Piercingstudios"
+      : "TattooMate – Digital Consent Forms for Tattoo & Piercing Studios",
+    description: isDE
+      ? "DSGVO-konforme digitale Einwilligungsformulare für Tattoo- und Piercingstudios. Kein Cloud-Zwang, made in Germany. Jetzt Demo anfordern."
+      : "GDPR-compliant digital consent forms for tattoo and piercing studios. No cloud lock-in, made in Germany. Request a demo now.",
+    alternates: {
+      canonical: `https://tattoomate.de/${lang}`,
+      languages: {
+        de: "https://tattoomate.de/de",
+        en: "https://tattoomate.de/en",
+      },
+    },
+    openGraph: {
+      title: isDE
+        ? "TattooMate – Digitale Einwilligungen für Studios"
+        : "TattooMate – Digital Consent Forms for Studios",
+      description: isDE
+        ? "Rechtssichere digitale Formulare für Tattoo- und Piercingstudios. DSGVO-konform, kein Cloud-Zwang."
+        : "Legally sound digital forms for tattoo and piercing studios. GDPR-compliant, no cloud lock-in.",
+      url: `https://tattoomate.de/${lang}`,
+      siteName: "TattooMate",
+      locale: isDE ? "de_DE" : "en_US",
+      type: "website",
+    },
+  };
+}
 
 export default async function HomePage({
   params,
