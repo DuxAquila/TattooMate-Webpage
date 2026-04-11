@@ -1,6 +1,7 @@
 // File: /src/app/(site)/[lang]/sicherheit/page.tsx
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
+import type { Metadata } from "next";
 
 function FeatureBlock({
   title,
@@ -22,6 +23,41 @@ function FeatureBlock({
       </ul>
     </div>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isDE = lang === "de";
+
+  return {
+    title: isDE
+      ? "Sicherheit & Datenschutz – TattooMate | DSGVO-konform"
+      : "Security & Privacy – TattooMate | GDPR-compliant",
+    description: isDE
+      ? "TattooMate speichert Kundendaten DSGVO-konform. Self-Hosting möglich, keine Drittanbieter-Tracker, Rollen & Rechteverwaltung inklusive."
+      : "TattooMate stores customer data GDPR-compliantly. Self-hosting possible, no third-party trackers, roles & permissions included.",
+    alternates: {
+      canonical: `https://tattoomate.de/${lang}/sicherheit`,
+      languages: {
+        de: "https://tattoomate.de/de/sicherheit",
+        en: "https://tattoomate.de/en/sicherheit",
+      },
+    },
+    openGraph: {
+      title: isDE ? "Sicherheit – TattooMate" : "Security – TattooMate",
+      description: isDE
+        ? "DSGVO-konform, kein Cloud-Zwang, Self-Hosting möglich."
+        : "GDPR-compliant, no cloud lock-in, self-hosting possible.",
+      url: `https://tattoomate.de/${lang}/sicherheit`,
+      siteName: "TattooMate",
+      locale: isDE ? "de_DE" : "en_US",
+      type: "website",
+    },
+  };
 }
 
 export default async function Sicherheit({
