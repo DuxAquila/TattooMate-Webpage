@@ -7,9 +7,11 @@ export const contentType = "image/png";
 export default async function OgImage({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;  // <-- als Promise typisieren
 }) {
-  const isDE = params.lang === "de";
+  const { lang } = await params;  // <-- awaiten
+  const isDE = lang === "de";
+
 
   return new ImageResponse(
     (
