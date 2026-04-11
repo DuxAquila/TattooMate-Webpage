@@ -30,18 +30,28 @@ export async function generateMetadata({
         en: "https://tattoomate.de/en",
       },
     },
-    openGraph: {
-      title: isDE
-        ? "TattooMate – Digitale Einwilligungen für Studios"
-        : "TattooMate – Digital Consent Forms for Studios",
-      description: isDE
-        ? "Rechtssichere digitale Formulare für Tattoo- und Piercingstudios. DSGVO-konform, kein Cloud-Zwang."
-        : "Legally sound digital forms for tattoo and piercing studios. GDPR-compliant, no cloud lock-in.",
-      url: `https://tattoomate.de/${lang}`,
-      siteName: "TattooMate",
-      locale: isDE ? "de_DE" : "en_US",
-      type: "website",
-    },
+      openGraph: {
+        title: isDE
+          ? "TattooMate – Digitale Einwilligungen für Studios"
+          : "TattooMate – Digital Consent Forms for Studios",
+        description: isDE
+          ? "Rechtssichere digitale Formulare für Tattoo- und Piercingstudios. DSGVO-konform, kein Cloud-Zwang."
+          : "Legally sound digital forms for tattoo and piercing studios. GDPR-compliant, no cloud lock-in.",
+        url: `https://tattoomate.de/${lang}`,
+        siteName: "TattooMate",
+        locale: isDE ? "de_DE" : "en_US",
+        type: "website",
+        images: [
+          {
+            url: `https://tattoomate.de/${lang}/opengraph-image-196xyf`,
+            width: 1200,
+            height: 630,
+            alt: isDE
+              ? "TattooMate – Digitale Einwilligungen für Studios"
+              : "TattooMate – Digital Consent Forms for Studios",
+          },
+        ],
+      },
   };
 }
 
