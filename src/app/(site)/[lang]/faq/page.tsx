@@ -2,6 +2,7 @@
 
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import FaqAccordion from './FaqAccordion';
+import type { Metadata } from "next";
 
 function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
   return (
@@ -18,6 +19,41 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
       </div>
     </details>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isDE = lang === "de";
+
+  return {
+    title: isDE
+      ? "FAQ – TattooMate | Häufige Fragen zu Preisen, DSGVO & Betrieb"
+      : "FAQ – TattooMate | Common Questions on Pricing, GDPR & Setup",
+    description: isDE
+      ? "Antworten auf häufige Fragen zu TattooMate: Preise, DSGVO, Self-Hosting, SaaS, Demo und mehr."
+      : "Answers to common questions about TattooMate: pricing, GDPR, self-hosting, SaaS, demo and more.",
+    alternates: {
+      canonical: `https://tattoomate.de/${lang}/faq`,
+      languages: {
+        de: "https://tattoomate.de/de/faq",
+        en: "https://tattoomate.de/en/faq",
+      },
+    },
+    openGraph: {
+      title: isDE ? "FAQ – TattooMate" : "FAQ – TattooMate",
+      description: isDE
+        ? "Häufige Fragen zu TattooMate – schnell beantwortet."
+        : "Common questions about TattooMate — answered quickly.",
+      url: `https://tattoomate.de/${lang}/faq`,
+      siteName: "TattooMate",
+      locale: isDE ? "de_DE" : "en_US",
+      type: "website",
+    },
+  };
 }
 
 export default async function FAQ({
