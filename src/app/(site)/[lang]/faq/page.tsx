@@ -1,7 +1,7 @@
 // File: /src/app/(site)/[lang]/faq/page.tsx
-
 import { getDict, t } from "@/lib/i18n/dictionaries";
 import FaqAccordion from './FaqAccordion';
+import JsonLd from "@/components/site/JsonLd";
 import type { Metadata } from "next";
 
 function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
@@ -11,7 +11,6 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
         <h3 className="tm-h3 tm-faq__q">{q}</h3>
         <span className="tm-faq__chev" aria-hidden="true">▾</span>
       </summary>
-
       <div data-faq-panel>
         <div className="tm-faq__a">
           <p className="tm-text">{a}</p>
@@ -28,7 +27,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   const isDE = lang === "de";
-
   return {
     title: isDE
       ? "FAQ – TattooMate | Häufige Fragen zu Preisen, DSGVO & Betrieb"
@@ -63,12 +61,23 @@ export default async function FAQ({
 }) {
   const { lang } = await params;
   const dict = await getDict(lang as "de" | "en");
-
-  // items direkt aus dict lesen
   const items = (dict as any)?.faq?.items ?? [];
 
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": items.map((item: { q: string; a: string }) => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.a
+          }
+        }))
+      }} />
+
       <section className="tm-section tm-section--soft tm-section--accent-top">
         <div className="tm-container tm-center tm-stack-md">
           <h1 className="tm-h1">{t(dict, "faq.hero.title")}</h1>

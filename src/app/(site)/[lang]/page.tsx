@@ -6,6 +6,7 @@ import HowToSection from '@/components/site/landingpage/HowToSection';
 import MiniFaqSection from '@/components/site/landingpage/MiniFaqSection';
 import CtaSection from '@/components/site/landingpage/CtaSection';
 import type { Metadata } from "next";
+import JsonLd from "@/components/site/JsonLd";
 
 export async function generateMetadata({
   params,
@@ -57,6 +58,37 @@ export default async function HomePage({
 
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TattooMate",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "description": lang === "de"
+          ? "DSGVO-konforme digitale Einwilligungsformulare für Tattoo- und Piercingstudios"
+          : "GDPR-compliant digital consent forms for tattoo and piercing studios",
+        "url": "https://tattoomate.de",
+        "inLanguage": lang === "de" ? "de-DE" : "en-US",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "0",
+          "description": lang === "de" ? "Demo kostenlos anfragen" : "Request free demo"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "TattooMate",
+          "url": "https://tattoomate.de",
+          "email": "info@tattoomate.de",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Grüne Twiete 70",
+            "addressLocality": "Halstenbek",
+            "postalCode": "25469",
+            "addressCountry": "DE"
+          }
+        }
+      }} />
       <section className="tm-section tm-section--soft tm-section--accent-top">
         <div className="tm-container tm-center tm-stack-md">
           <h1 className="tm-h1">{t(dict, "home.hero.title")}</h1>
