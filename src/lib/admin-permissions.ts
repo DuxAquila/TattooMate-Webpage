@@ -12,6 +12,8 @@ export type AdminContext = {
 };
 
 function buildRedirectToLogin(nextPath: string) {
+  console.log("BASE_URL:", process.env.BASE_URL);
+  console.log("NEXT_PUBLIC_BASE_URL:", process.env.NEXT_PUBLIC_BASE_URL);
   const url = new URL("/admin/login", process.env.BASE_URL ?? "http://localhost:3500");
   url.searchParams.set("next", nextPath);
   url.searchParams.set("err", "1");
