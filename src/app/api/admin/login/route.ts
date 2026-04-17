@@ -14,8 +14,8 @@ export async function POST(req: Request) {
   const next = String(form.get("next") ?? "/admin");
 
   const bad = () => {
-    const url = new URL(req.url);
-    url.pathname = "/admin/login";
+    const base = process.env.BASE_URL ?? `${new URL(req.url).protocol}//${new URL(req.url).host}`;
+    const url = new URL("/admin/login", base);
     url.searchParams.set("err", "1");
     if (next) url.searchParams.set("next", next);
     return NextResponse.redirect(url);
@@ -91,7 +91,7 @@ export async function POST(req: Request) {
     perms,
   });
 
-  const res = NextResponse.redirect(new URL(next.startsWith("/") ? next : "/admin", req.url));
+  const res = NextResponse.redirect(new URL(next.startsWith("/") ? next : "/admin", process.env.BASE_URL ?? req.url));
 
   res.cookies.set({
     name: "tm_admin_session",

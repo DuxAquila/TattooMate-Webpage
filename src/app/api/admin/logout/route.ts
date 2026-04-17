@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { getAdminCookieName } from "@/lib/admin-auth";
 
 export async function POST(req: Request) {
-  const res = NextResponse.redirect(new URL("/admin/login", req.url));
+  const res = NextResponse.redirect(new URL("/admin/login", process.env.BASE_URL ?? req.url));
 
   res.cookies.set({
     name: getAdminCookieName(),
