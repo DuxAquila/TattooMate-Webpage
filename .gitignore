@@ -147,3 +147,4 @@ vite.config.ts.timestamp-*
 *.kate-swp
 
 /src/generated/prisma
+data/
